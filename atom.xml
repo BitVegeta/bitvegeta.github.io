@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-11-30T11:29:07+08:00</updated>
+  <updated>2014-11-30T11:37:47+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,14 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Mac]]></title>
-    <link href="http://bitvegeta.github.io/blog/2014/11/30/mac/"/>
-    <updated>2014-11-30T11:22:31+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/2014/11/30/mac</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
 </feed>
