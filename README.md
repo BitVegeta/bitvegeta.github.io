@@ -1,2 +1,0 @@
-bitvegeta.github.io
-===================
