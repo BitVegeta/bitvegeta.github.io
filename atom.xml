@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-11-30T11:37:47+08:00</updated>
+  <updated>2014-11-30T11:42:07+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mac-Octopress-Github-Blog-Newbie-小白教程]]></title>
+    <link href="http://bitvegeta.github.io/blog/2014/11/30/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/"/>
+    <updated>2014-11-30T11:41:47+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/2014/11/30/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
