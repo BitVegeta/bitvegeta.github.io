@@ -9,7 +9,9 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="Mac系统下利用Octopress搭建Github个人Blog空间——小白教程 在 Mac 系统下，利用 Octopress 框架在 Github 上搭建一个免费的个人Blog空间。——— 相信这是很多刚接触 Mac 和 Github 的朋友们必须完成的一个成长实践。 一、前言 &hellip;">
+  <meta name="description" content="Mac系统下利用Octopress搭建Github个人Blog空间——小白教程 在 Mac 系统下，利用 Octopress 框架在 Github 上搭建一个免费的个人Blog空间。——— 相信这是很多刚接触 Mac 和 Github 的朋友们必须完成的一个成长实践。 本文目录
+一、前言
+二、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -90,6 +92,11 @@
   <div class="entry-content"><h3>Mac系统下利用Octopress搭建Github个人Blog空间——小白教程</h3>
 
 <p>在 Mac 系统下，利用 Octopress 框架在 Github 上搭建一个免费的个人Blog空间。——— 相信这是很多刚接触  Mac  和 Github 的朋友们必须完成的一个成长实践。</p>
+
+<p>本文目录
+一、前言
+二、背景知识
+三、搭建步骤</p>
 
 <h4>一、前言</h4>
 
@@ -293,11 +300,11 @@
 
 <p>   前面的问题如果顺利解决的话，这里就会轻松很多了。Octopress 的安装代码如下：</p>
 
-<pre><code class="```">   $ git clone git://github.com/imathis/octopress.git octopress
+<pre><code class="```">   $ git clone git://github.com/imathis/octopress.git octopress # 复制 octopress 到本地
    $ cd octopress ＃进入 octopress 文件夹
 </code></pre>
 
-<p>   上面的代码把 Octopress 框架复制到本地，文件夹的位置也可以自己定义，默认是上面的位置$User/Octopress。</p>
+<p>   上面的代码把 Octopress 框架复制到本地，博客文件夹的位置和名称也可以自己定义，默认是上面的位置。</p>
 
 <p>   下一步，在该文件夹安装搭建博客所需的依赖项：</p>
 
@@ -410,8 +417,26 @@
 
 <p>   最终搞明白这是Git的使用不熟练导致的。解决办法：</p>
 
-<pre><code class="```">   $ cd octopress/_deploy   $ git pull origin master   $ cd ..   $ rake gen_deploy
+<pre><code class="```">   $ cd octopress/_deploy    $ git pull origin master   $ cd ..   $ rake gen_deploy
 </code></pre>
+
+<p>   好了，现在终于看到让人欣喜的完成代码了，类似下面的：</p>
+
+<pre><code class="```">   ## Pushing generated _deploy website
+   Counting objects: 31, done.
+   Delta compression using up to 4 threads.
+   Compressing objects: 100% (12/12), done.
+   Writing objects: 100% (16/16), 28.67 KiB | 0 bytes/s, done.
+   Total 16 (delta 7), reused 0 (delta 0)
+   ## Github Pages deploy complete
+   cd -
+</code></pre>
+
+<p>   这意味着十几分钟之后，在你的浏览器地址栏输入<code><a href="http://yourname.github.io">http://yourname.github.io</a></code>，就可以看到一个专属于你个人控制的博客界面了，虽然还很初级，但是感觉很亲切有木有！？毕竟一番辛苦没有白费。</p>
+
+<p>   好了，接下来的任务就是添加博客内容以及优化博客配置了。</p>
+
+<p>   如果你是能耐住性子的话，可以再等等，把博客打扮漂亮一点再拿去朋友圈炫一下，刺激一下女友什么的。</p>
 
 <h6>5. 上传文章。</h6>
 
