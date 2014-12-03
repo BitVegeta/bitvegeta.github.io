@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-03T14:04:23+08:00</updated>
+  <updated>2014-12-03T14:26:51+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[BitVegeta]]></name>
@@ -20,21 +20,24 @@
     <id>http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
     <content type="html"><![CDATA[<p>在 Mac 系统下，利用 Octopress 框架在 Github 上搭建一个免费的个人Blog空间。——— 相信这是很多刚接触  Mac  和 Github 的朋友们必须完成的一个成长实践。</p>
 
-<p>本文目录</p>
+<p>我把自己的搭建步骤及遇到的问题全部详细的写下来，作为这个博客空间的第一篇文章，算是完成对 Octopress 和 Github 的致敬传统。同时也希望能给遇到同样问题的小白朋友们提供一些帮助！因为我相信，广大小白朋友缺乏的不是一篇精美的标准流程，而是一个整合了多种错误问题，错误代码及其解决办法的示例教程。我觉得我犯的错误属于比较经典的反面教材，正好起到抛砖引玉的作用！：）<!--more--></p>
 
-<p>一、前言</p>
+<p>由于学识粗浅，若有不对之处，还望高手指正！多谢！非小白请直接看 <strong>［搭建步骤］</strong>。</p>
 
-<p>二、背景知识</p>
+<hr />
+<p>#### 本文目录
+##### 一、前言
+##### 二、背景知识
+##### 三、搭建步骤
+##### 四、参考资料</p>
 
-<p>三、搭建步骤</p>
+<hr />
 
 <h4 id="section">一、前言</h4>
 
 <p>网上关于这方面的操作教程已经有很多，有很多博客写的结构清晰，文字易读，页面优美，令人敬佩！</p>
 
 <p>但作为一个“一直被女友鄙视智商”的小白，我自己在动手搭建过程中，还是遇到了一些问题，耗费了不少时间，折腾多次几近放弃。虽然最终借助万能的 Google 解决了安装问题，但也忍不住为广大小白的命运慨叹一番：万事开头难啊！对小白来说，这些不明觉厉的红色 Error 代码会放大成一串串难以琢磨的纠结疑问，如果没有足够的耐心和有效的解决方案，难免会急躁、苦恼，甚至失去进一步学习的激情！于是，牛人愈牛，而小白恒白，这也是“马太效应”在知识学习方面的客观体现吧！［泪］</p>
-
-<p>我把自己的搭建步骤及遇到的问题全部详细的写下来，作为这个博客空间的第一篇文章，算是完成对 Octopress 和 Github 的致敬传统。同时也希望能给遇到同样问题的小白朋友们提供一些帮助！因为我相信，广大小白朋友缺乏的不是一篇精美的标准流程，而是一个整合了多种错误问题，错误代码及其解决办法的示例教程。我觉得我犯的错误属于比较经典的反面教材，正好起到抛砖引玉的作用！：）</p>
 
 <p>由于学识粗浅，若有不对之处，还望高手指正！多谢！非小白请直接看 <strong>［搭建步骤］</strong>。</p>
 
@@ -62,6 +65,8 @@
   <li>稍安勿躁：出现错误提示不要着急，有控制的尝试解决，在未解决旧问题前不引入新问题，步步为营，各个击破；</li>
 </ol>
 
+<hr />
+
 <h4 id="redred"><red>二、背景知识</red></h4>
 
 <p>点击了解<a href="">Mac系统下利用Octopress搭建Github个人Blog空间——<strong>背景知识</strong></a>，主要包含一下内容。</p>
@@ -78,6 +83,8 @@
 </ol>
 
 <p>点击了解<a href="">Mac系统下利用Octopress搭建Github个人Blog空间——<strong>背景知识</strong></a>。</p>
+
+<hr />
 
 <h4 id="redred-1"><red>三、搭建步骤</red></h4>
 <p><strong>声明</strong>：我的 Mac OS 版本号是10.9.5。请确保您的 Mac 在翻墙状态下。下列所有命令都在终端 Terminal 软件中输入。代码中“＃”号后面是注释，不用输入。</p>
@@ -409,14 +416,13 @@
 
 <p>如果你是能耐住性子的话，可以再等等，把博客打扮漂亮一点再拿去朋友圈炫一下，刺激一下女友什么的。</p>
 
-<h5 id="section-4">四、参考资料</h5>
-<ol>
-  <li><a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a></li>
-  <li><a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a></li>
-  <li><a href="http://www.sgxiang.com/blog/2013/10/18/cong-ling-kai-shi-da-jian-ji-yu-githubde-octopressbo-ke/">在Mac上从零开始搭建基于Github的Octopress博客</a></li>
-  <li><a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">SSH原理与运用（一）：远程登录</a></li>
-  <li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a></li>
-</ol>
+<hr />
+<p>##### 四、参考资料
+   1. <a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a>
+   2. <a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>
+   3. <a href="http://www.sgxiang.com/blog/2013/10/18/cong-ling-kai-shi-da-jian-ji-yu-githubde-octopressbo-ke/">在Mac上从零开始搭建基于Github的Octopress博客</a>
+   4. <a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">SSH原理与运用（一）：远程登录</a>
+   5. <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a></p>
 ]]></content>
   </entry>
   
