@@ -4,7 +4,7 @@
   <title><![CDATA[分类：“octopress” | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T21:58:55+08:00</updated>
+  <updated>2014-12-04T22:00:59+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -98,7 +98,7 @@ $ rake gen_deploy
 <p>四、参考资料</p>
 
 <hr />
-<p><strong>一、前言</strong></p>
+<p>### <strong>一、前言</strong></p>
 
 <p>网上关于这方面的操作教程已经有很多，有很多博客写的结构清晰，文字易读，页面优美，令人敬佩！</p>
 
@@ -122,7 +122,7 @@ $ rake gen_deploy
 
 <hr />
 
-<p><strong>二、背景知识</strong></p>
+<h3 id="section"><strong>二、背景知识</strong></h3>
 
 <p><a href="">Mac系统下利用Octopress搭建Github个人Blog空间——<strong>背景知识</strong></a>，主要包含一下内容：</p>
 
@@ -144,7 +144,7 @@ $ rake gen_deploy
 
 <hr />
 
-<p><strong>三、搭建步骤</strong></p>
+<h3 id="section-1"><strong>三、搭建步骤</strong></h3>
 
 <p><strong>声明</strong>：我的 Mac OS 版本号是10.9.5。请确保您的 Mac 在翻墙状态下。下列所有命令都在终端 Terminal 软件中输入。代码中“＃”号后面是注释，不用输入。</p>
 
@@ -464,7 +464,7 @@ $ rake gen_deploy
 <p>如果你是能耐住性子的话，可以再等等，把博客打扮漂亮一点再拿去朋友圈炫一下，刺激一下女友什么的。</p>
 
 <hr />
-<p>##### 四、参考资料
+<p>### 四、参考资料
 1. <a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a>
 2. <a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>
 3. <a href="http://www.sgxiang.com/blog/2013/10/18/cong-ling-kai-shi-da-jian-ji-yu-githubde-octopressbo-ke/">在Mac上从零开始搭建基于Github的Octopress博客</a>
