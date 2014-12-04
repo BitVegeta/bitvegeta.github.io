@@ -4,7 +4,7 @@
   <title><![CDATA[分类：“octopress” | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T21:36:15+08:00</updated>
+  <updated>2014-12-04T21:55:48+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -247,11 +247,11 @@ To update Homebrew, run `brew update`.
 <p>10.9.5 的 Mac OS 版本已经预装了Ruby 2.0版本。但是这个 Ruby 版本应该是是 Mac 处理全局数据默认预装的。它的好处我暂时不太清楚，但是缺点却很明显，就是当我们以普通用户调用 Ruby 里的包管理器 Gem 时，某些情况下，系统会提示没有足够的权限，而无法操作。如下面代码所示：</p>
 
 <p><code>
- # 输入
- $ gem install bundler
- # 显示错误信息
- ERROR: While executing gem ... (Gem::FilePermissionError)
- You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
+# 输入
+$ gem install bundler
+# 显示错误信息
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
 </code></p>
 
 <p>所以，我们还是需要用 RVM 来安装一个当前用户可控的 Ruby 版本。我们选择安装最新稳定版 Ruby 2.1.5。</p>
@@ -259,229 +259,206 @@ To update Homebrew, run `brew update`.
 <p>但是，当我们直接用 RVM 下载 Ruby 时，电脑又会提示错误信息如下：</p>
 
 <p><code>
- # 输入
- $ rvm install 2.1.5
- # 显示错误信息
- Searching for binary rubies, this might take some time.
- Found remote file https://rubies.travis-ci.org/osx/10.9/x86_64/ruby-2.1.5.tar.bz2
- Checking requirements for osx.
- ERROR: '/usr/local/bin' is not writable - it is required for Homebrew, 
- try 'brew doctor' to fix it!
- Requirements installation failed with status: 1.
-</code></p>
-
-<p>其原因是因为 RVM 安装 Ruby 时需要调用全局系统目录下的 Library 文件，而这是缺乏权限的。Google 了一下，找到了这个问题的解决办法，先输入下列命令代码：</p>
-
-<p><code>
- $ rvm autolibs read-only
-</code></p>
-
-<p>然后，就可以安装 Ruby 了：</p>
+# 输入
+$ rvm install 2.1.5
+# 显示错误信息
+Searching for binary rubies, this might take some time.
+Found remote file https://rubies.travis-ci.org/osx/10.9/x86_64/ruby-2.1.5.tar.bz2
+Checking requirements for osx.
+ERROR: '/usr/local/bin' is not writable - it is required for Homebrew,
+try 'brew doctor' to fix it!
+Requirements installation failed with status: 1.
+</code>
+其原因是因为 RVM 安装 Ruby 时需要调用全局系统目录下的 Library 文件，而这是缺乏权限的。Google 了一下，找到了这个问题的解决办法，先输入下列命令代码：</p>
 
 <p><code>
- $ rvm install 2.1.5
- $ rvm use 2.1.5
- $ rvm rubygems latest
-</code></p>
-
-<p>经过一段时间的等待，总算安装好了 Ruby 2.1.5 。检查代码如下：</p>
+$ rvm autolibs read-only
+</code>
+然后，就可以安装 Ruby 了：</p>
 
 <p><code>
- # 输入
- $ ruby --version
- # 显示信息
- ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin13.0]
-</code></p>
+$ rvm install 2.1.5
+$ rvm use 2.1.5
+$ rvm rubygems latest
+</code>
+经过一段时间的等待，总算安装好了 Ruby 2.1.5 。检查代码如下：</p>
 
-<p>恭喜你，Ruby 已装好了，这意味着你不仅可以装 Octopress ，还有机会学习一门新的编程语言。这是另外的课题了，感兴趣可以自己进一步了解学习。</p>
+<p><code>
+# 输入
+$ ruby --version
+# 显示信息
+ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin13.0]
+</code>
+恭喜你，Ruby 已装好了，这意味着你不仅可以装 Octopress ，还有机会学习一门新的编程语言。这是另外的课题了，感兴趣可以自己进一步了解学习。</p>
 
 <h5 id="octopress">3. 安装Octopress。</h5>
-
-<p>前面的问题如果顺利解决的话，这里就会轻松很多了。Octopress 的安装代码如下：</p>
+<p> 
+前面的问题如果顺利解决的话，这里就会轻松很多了。Octopress 的安装代码如下：</p>
 
 <p><code>
- $ git clone git://github.com/imathis/octopress.git octopress # 复制 octopress 到本地
- $ cd octopress ＃进入 octopress 文件夹
-</code></p>
-
-<p>上面的代码把 Octopress 框架复制到本地，博客文件夹的位置和名称也可以自己定义，默认是上面的位置。</p>
+$ git clone git://github.com/imathis/octopress.git octopress # 复制 octopress 到本地
+$ cd octopress ＃进入 octopress 文件夹
+</code>
+上面的代码把 Octopress 框架复制到本地，博客文件夹的位置和名称也可以自己定义，默认是上面的位置。</p>
 
 <p>下一步，在该文件夹安装搭建博客所需的依赖项：</p>
 
 <p><code>
- $ gem install bundler
- $ bundle install
-</code></p>
-
-<p>等待一会，安装顺利完成后，接下来安装默认的主题：</p>
-
-<p><code>
- $ rake install
-</code></p>
-
-<p>紧接着输入：</p>
+$ gem install bundler
+$ bundle install
+</code>
+等待一会，安装顺利完成后，接下来安装默认的主题：</p>
 
 <p><code>
- $ rake preview
-</code></p>
+$ rake install
+</code>
+紧接着输入：</p>
 
-<p>这时，就可以在浏览器地址栏输入<code>http://localhost:4000</code>看到博客的预览样式。怎么样？喜不喜欢这个默认主题呢？不管怎样，总算是有点模样了。：）</p>
+<p><code>
+$ rake preview
+</code>
+这时，就可以在浏览器地址栏输入<code>http://localhost:4000</code>看到博客的预览样式。怎么样？喜不喜欢这个默认主题呢？不管怎样，总算是有点模样了。：）</p>
 
 <h5 id="github-pages">4. 搭建 Github Pages。</h5>
 
 <p>本地博客搭建好了，但是别人通过互联网是访问不到你的本地博客的。下一步就是要把搭建好的博客上传到网络上，可以让你的粉丝公开访问。</p>
 
 <h5 id="github--new-repository">4.1 注册 Github 账号，创建 New Repository。</h5>
-
-<p>首先注册一个自己的 Github 账户，登录后，创建自己的 New Repository（仓库，或理解成一个项目，用来存放你的博客代码及内容），然后务必设置该项目的名称为“<code>yourname.github.io</code>”，否则无法生成个人博客空间。</p>
+<p> 
+首先注册一个自己的 Github 账户，登录后，创建自己的 New Repository（仓库，或理解成一个项目，用来存放你的博客代码及内容），然后务必设置该项目的名称为“<code>yourname.github.io</code>”，否则无法生成个人博客空间。</p>
 
 <p>生成的时候，Github会建议你选择同时生成一个 README.md 文件，勾选上点击确定。然后，你会看到一个以“<code>yourname.github.io</code>”命名的代码仓库生成了。</p>
 
 <p>接下来，还是回到终端环境Terminal下，这时直接输入：</p>
 
 <p><code>
- $ rake setup_github_pages
-</code></p>
-
-<p>系统会要求你输入一个SSH地址，我们回到刚才生成的Github仓库页面，在右侧看到一个形如 git@github.com:[your_username]/[your_username].github.io.git 的<code>SSH clone URL</code>，把这个复制，输入终端回车。</p>
+$ rake setup_github_pages
+</code>
+系统会要求你输入一个SSH地址，我们回到刚才生成的Github仓库页面，在右侧看到一个形如 git@github.com:[your_username]/[your_username].github.io.git 的<code>SSH clone URL</code>，把这个复制，输入终端回车。</p>
 
 <p>不出意外，小白的电脑因为从来没有设置过 SSH key，这时一定会报错如下代码：</p>
 
 <p><code>
- ##
- Permission denied (publickey).
- fatal: Could not read from remote repository.
- Please make sure you have the correct access rightsand the repository exists.
-</code></p>
-
-<p>下面我们设置一下 SSH Key 。</p>
+##
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rightsand the repository exists.
+</code>
+下面我们设置一下 SSH Key 。</p>
 
 <h5 id="ssh-key">4.2 设置 SSH Key。</h5>
-
-<p>首先生成你的Git账号：</p>
-
-<p><code>
- $ git config --global user.name"你注册Github的用户名"
- $ git config --global user.email "你注册Github的邮箱"
-</code></p>
-
-<p>然后，生成 SSH 密钥，输入以下命令，回车：</p>
+<p> 
+首先生成你的Git账号：</p>
 
 <p><code>
- $ ssh-keygen -t rsa -C "你注册Github的邮箱"
-</code></p>
+$ git config --global user.name  "你注册Github的用户名"
+$ git config --global user.email "你注册Github的邮箱"
+</code>
+然后，生成 SSH 密钥，输入以下命令，回车：</p>
 
-<p>界面弹出下列信息，并按注释操作：</p>
+<p><code>
+$ ssh-keygen -t rsa -C "你注册Github的邮箱"
+</code>
+界面弹出下列信息，并按注释操作：</p>
 
-<p>&#8220;`
- # 显示如下代码，指出 SSH Key 的默认保存路径
- $ Enter file in which to save the key (/Users/twer/.ssh/id_rsa):
- # 直接回车,保存到默认位置</p>
-
-<p># 显示如下代码，提示设置密码
- $ Enter passphrase (empty for no passphrase):
- # 输入密码，回车</p>
-
-<p># 显示再次确认密码
- $ Enter same passphrase again:
- # 再次输入密码，回车
- &#8220;`</p>
-
-<p>好了，现在屏幕上显示一堆外星文，表示 SSH Key已经生成。下一步就是，把 SSH Key 添加到Github账户上，这样Github的服务器就能远程认证我们的身份，接受数据传输。</p>
+<p><code>
+# 显示如下代码，指出 SSH Key 的默认保存路径
+$ Enter file in which to save the key (/Users/twer/.ssh/id_rsa):
+# 直接回车,保存到默认位置
+# 显示如下代码，提示设置密码
+$ Enter passphrase (empty for no passphrase):
+# 输入密码，回车
+# 显示再次确认密码
+$ Enter same passphrase again:
+# 再次输入密码，回车
+</code>
+好了，现在屏幕上显示一堆外星文，表示 SSH Key已经生成。下一步就是，把 SSH Key 添加到Github账户上，这样Github的服务器就能远程认证我们的身份，接受数据传输。</p>
 
 <p>打开文件<code>~/.ssh/id_rsa.pub</code>，复制里面的全部内容。然后回到Github界面，点击右上角小齿轮<code>Setting</code>图标，选择<code>SSH Keys</code> 一栏，单击<code>Add SSH Key</code>，把刚才复制的内容粘贴到<code>key输入框</code>内，然后直接保存。</p>
 
-<p>至此，SSH key 就算是添加完毕。</p>
-
-<h5 id="octopress--github">4.3 上传 Octopress 到 Github。</h5>
+<p>至此，SSH key 就算是添加完毕。
+ 
+##### 4.3 上传 Octopress 到 Github。</p>
 
 <p>现在，继续尝试步骤 4.1 里面的输入命令，</p>
 
 <p><code>
- $ rake setup_github_pages
- # 输入你的 SSH clone URL 
-</code></p>
-
-<p>系统会要求你输入刚才设置的 SSH 密码，输入密码回车，你会看到刚才的错误提示消除了。接着执行：</p>
-
-<p><code>
- $ rake generate
- $ rake deploy
-</code></p>
-
-<p>哈，可恶的错误代码又出来了，这个错误也让笔者抓狂了好久，贴出来：</p>
+$ rake setup_github_pages
+# 输入你的 SSH clone URL
+</code>
+系统会要求你输入刚才设置的 SSH 密码，输入密码回车，你会看到刚才的错误提示消除了。接着执行：</p>
 
 <p><code>
- * [new branch]master -&gt; origin/master
- There is no tracking information for the current branch.
- Please specify which branch you want to merge with.
- /....../
- To git@github.com:BitVegeta/bitvegeta.github.io.git
- ! [rejected]master -&gt; master (non-fast-forward)
- error: failed to push some refs to 'git@github.com:[your_username]/
- [your_username].github.io.git'
- hint: Updates were rejected because the tip of your current branch is behind
- hint: its remote counterpart. Integrate the remote changes (e.g.
- hint: 'git pull ...') before pushing again.
- hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-</code></p>
-
-<p>最终搞明白这是Git的使用不熟练导致的。解决办法：</p>
+$ rake generate
+$ rake deploy
+</code>
+哈，可恶的错误代码又出来了，这个错误也让笔者抓狂了好久，贴出来：</p>
 
 <p><code>
- $ cd octopress/_deploy
- $ git pull origin master
- $ cd ..
- $ rake gen_deploy #‘rake generate’ 和 ‘rake deploy’ 合起来的简写
-</code></p>
-
-<p>好了，现在终于看到让人欣喜的完成代码了，类似下面的：</p>
+* [new branch] master-&gt; origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+/....../
+To git@github.com:BitVegeta/bitvegeta.github.io.git
+! [rejected] master -&gt; master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:[your_username]/
+[your_username].github.io.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+</code>
+最终搞明白这是Git的使用不熟练导致的。解决办法：</p>
 
 <p><code>
- ## Pushing generated _deploy website
- Counting objects: 31, done.
- Delta compression using up to 4 threads.
- Compressing objects: 100% (12/12), done.
- Writing objects: 100% (16/16), 28.67 KiB | 0 bytes/s, done.
- Total 16 (delta 7), reused 0 (delta 0)
- ## Github Pages deploy complete
-</code></p>
+$ cd octopress/_deploy
+$ git pull origin master
+$ cd ..
+$ rake gen_deploy #‘rake generate’ 和 ‘rake deploy’ 合起来的简写
+</code>
+好了，现在终于看到让人欣喜的完成代码了，类似下面的：</p>
 
-<p>这意味着十几分钟之后，在你的浏览器地址栏输入<code>http://yourname.github.io</code>，就可以看到一个专属于你个人控制的博客界面了，虽然还很初级，但是感觉很亲切有木有！？毕竟一番辛苦没有白费。:D</p>
+<p><code>
+## Pushing generated _deploy website
+Counting objects: 31, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (16/16), 28.67 KiB | 0 bytes/s, done.
+Total 16 (delta 7), reused 0 (delta 0)
+## Github Pages deploy complete
+</code>
+这意味着十几分钟之后，在你的浏览器地址栏输入<code>http://yourname.github.io</code>，就可以看到一个专属于你个人控制的博客界面了，虽然还很初级，但是感觉很亲切有木有！？毕竟一番辛苦没有白费。:D</p>
 
-<p>好了，接下来的任务就是添加博客内容以及优化博客配置了。</p>
-
-<h5 id="section">4.4 上传文章</h5>
+<p>好了，接下来的任务就是添加博客内容以及优化博客配置了。
+ 
+##### 4.4 上传文章</p>
 
 <p>在上传文章之前，现在 Github 当前的仓库中建立一个新的分支 Branch ，用来存放文章，图片等内容，名称按规定叫做 Source。实现代码如下：</p>
 
 <p><code>
- $ git add .
- $ git commit -m "备注内容"
- $ git push origin source
-</code></p>
-
-<p>顺利的话，你会发现 Github 当前的仓库里多了一个 branch 选项；</p>
+$ git add .
+$ git commit -m "备注内容"
+$ git push origin source
+</code>
+顺利的话，你会发现 Github 当前的仓库里多了一个 branch 选项；</p>
 
 <p>好的，现在就可以开始添加一篇新文章了，操作代码如下：</p>
 
 <p><code>
- $ cd octopress
- $ rake new_post["Post Title"]
-</code></p>
-
-<p>其中“Post Title”是你为文章所起的名字。执行后，打开文件夹<code>~/octopress/source/posts</code>，会找到一个<code>yyyy-mm-dd-Post-Title.markdown</code>的文件，<code>yyyy-mm-dd</code>是文件创建的时间，系统会自动按时间命名并排序文章。</p>
+$ cd octopress
+$ rake new_post["Post Title"]
+</code>
+其中“Post Title”是你为文章所起的名字。执行后，打开文件夹<code>~/octopress/source/posts</code>，会找到一个<code>yyyy-mm-dd-Post-Title.markdown</code>的文件，<code>yyyy-mm-dd</code>是文件创建的时间，系统会自动按时间命名并排序文章。</p>
 
 <p>好，用文本编辑器打开这个生成的文件之后，就可以写内容了。我用的编辑器是 <a href="http://25.io">MOU</a>，一款优秀且免费的 Markdown 编辑器。</p>
 
 <p>写好之后，再执行命令</p>
 
 <p><code>
- $ rake gen_deploy 
-</code></p>
-
-<p>就可以更新自己的博客空间。这时刷新一下，你的博客页面，你会发现第一篇文章已经娇羞的展现出来！：）
- 好的，最基本的工作总算完成了，相信你这时开始会有更高的要求，想把自己的博客打扮的更漂亮一点，或者个性化一点，那么，接下来的工作，就是改进 Octopress 的基本配置以及更改博客主题。</p>
+$ rake gen_deploy
+</code>
+就可以更新自己的博客空间。这时刷新一下，你的博客页面，你会发现第一篇文章已经娇羞的展现出来！：）
+好的，最基本的工作总算完成了，相信你这时开始会有更高的要求，想把自己的博客打扮的更漂亮一点，或者个性化一点，那么，接下来的工作，就是改进 Octopress 的基本配置以及更改博客主题。</p>
 
 <p>鉴于篇幅原因，这一部分内容放到下一篇文章里写。：）</p>
 
@@ -489,11 +466,11 @@ To update Homebrew, run `brew update`.
 
 <hr />
 <p>##### 四、参考资料
- 1. <a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a>
- 2. <a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>
- 3. <a href="http://www.sgxiang.com/blog/2013/10/18/cong-ling-kai-shi-da-jian-ji-yu-githubde-octopressbo-ke/">在Mac上从零开始搭建基于Github的Octopress博客</a>
- 4. <a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">SSH原理与运用（一）：远程登录</a>
- 5. <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a></p>
+1. <a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a>
+2. <a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>
+3. <a href="http://www.sgxiang.com/blog/2013/10/18/cong-ling-kai-shi-da-jian-ji-yu-githubde-octopressbo-ke/">在Mac上从零开始搭建基于Github的Octopress博客</a>
+4. <a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">SSH原理与运用（一）：远程登录</a>
+5. <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a></p>
 ]]></content>
   </entry>
   
