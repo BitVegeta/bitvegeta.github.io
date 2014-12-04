@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Liquid Exception Undefined Method Sort - 精神和时间的小屋</title>
+  <title>LLiquid Exception: Undefined Method Sort 错误解决方法 - 精神和时间的小屋</title>
   <meta name="author" content="BitVegeta">
 
   
@@ -104,7 +104,7 @@ $ rake gen_deploy
   
   <header>
     
-      <h1 class="entry-title">Liquid Exception Undefined Method Sort</h1>
+      <h1 class="entry-title">LLiquid Exception: Undefined Method Sort 错误解决方法</h1>
     
     
       <p class="meta">
@@ -149,19 +149,17 @@ $ rake gen_deploy
 <span class="line-number">9</span>
 <span class="line-number">10</span>
 <span class="line-number">11</span>
-<span class="line-number">12</span>
 </pre></td><td class="code"><pre><code class=""><span class="line"> def category_links(categories)
 </span><span class="line">      categories = categories.sort!.map { |c| category_link c }
-</span><span class="line">
-</span><span class="line">      case categories.length
-</span><span class="line">      when 0
-</span><span class="line">        ""
-</span><span class="line">      when 1
-</span><span class="line">        categories[0].to_s
-</span><span class="line">      else
-</span><span class="line">        "#{categories[0...-1].join(', ')}, #{categories[-1]}"
-</span><span class="line">      end
-</span><span class="line">    end</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class="line">        case categories.length
+</span><span class="line">        when 0
+</span><span class="line">          ""
+</span><span class="line">        when 1
+</span><span class="line">          categories[0].to_s
+</span><span class="line">        else
+</span><span class="line">          "#{categories[0...-1].join(', ')}, #{categories[-1]}"
+</span><span class="line">        end
+</span><span class="line">      end</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>然后，添加两行代码（<code>添加的代码行，后面都添加了注释</code>）：</p>
 
@@ -188,15 +186,15 @@ $ rake gen_deploy
 </span><span class="line">          categories[0].to_s
 </span><span class="line">        else
 </span><span class="line">          "#{categories[0...-1].join(', ')}, #{categories[-1]}"
-</span><span class="line">      end
-</span><span class="line">   end                      # Added this line
-</span><span class="line"> end</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class="line">        end
+</span><span class="line">      end                      # Added this line
+</span><span class="line">   end</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>保存后，运行 <code>rake gen_deploy</code>显示成功。</p>
 
 <hr />
 <p><strong>参考资料</strong></p>
 
-<p>［1］<a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">Liquid Exception: Undefined Method Sort</a></p>
+<p>[1] <a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">Liquid Exception: Undefined Method Sort</a></p>
 
 </div>
 
@@ -246,7 +244,7 @@ $ rake gen_deploy
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/liquid-exception-undefined-method-sort/">Liquid Exception Undefined Method Sort</a>
+        <a href="/blog/liquid-exception-undefined-method-sort/">LLiquid Exception: Undefined Method Sort 错误解决方法</a>
       </li>
     
       <li class="post">
