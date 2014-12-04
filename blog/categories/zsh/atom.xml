@@ -4,7 +4,7 @@
   <title><![CDATA[分类：zsh | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/zsh/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T22:57:39+08:00</updated>
+  <updated>2014-12-04T23:13:25+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -57,7 +57,7 @@ alias rake="noglob rake"
 使用转义字符’&#8217;，帮助 Zsh 读懂命令；</p>
 
 <p><code>
-rake new_post\["This is New Post"\] 
+$ rake new_post\["This is New Post"\] 
 </code>
 ***</p>
 
