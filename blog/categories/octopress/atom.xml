@@ -4,7 +4,7 @@
   <title><![CDATA[分类：“octopress” | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T21:55:48+08:00</updated>
+  <updated>2014-12-04T21:57:30+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -206,9 +206,9 @@ To update Homebrew, run `brew update`.
 <p>我们可以根据提示，通过以下代码解决这些问题（注意这是示例，要按照自己的情况对应解决）：</p>
 
 <p><code>
-   $ sudo chown -R $USER /usr/local/etc
-   $ sudo chown -R $USER /usr/local/include
-   $ brew update
+$ sudo chown -R $USER /usr/local/etc
+$ sudo chown -R $USER /usr/local/include
+$ brew update
 </code></p>
 
 <p>更多的问题，可以到 <a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 官网寻求帮助。  </p>
@@ -218,7 +218,7 @@ To update Homebrew, run `brew update`.
 <p>安装好 HomeBrew 后，用 HomeBrew 安装 RVM，命令如下：</p>
 
 <p><code>
-   $ curl -L https://get.rvm.io | bash -s stable
+$ curl -L https://get.rvm.io | bash -s stable
 </code></p>
 
 <p>执行后可能会问要求输入管理员密码，输入密码后回车。然后电脑会自动通过homebrew安装依赖包，等待一段时间后就可以成功安装好 RVM。</p>
@@ -226,7 +226,7 @@ To update Homebrew, run `brew update`.
 <p>然后输入下列代码，以载入 RVM 环境：</p>
 
 <p><code>
-   $ source ~/.rvm/scripts/rvm
+$ source ~/.rvm/scripts/rvm
 </code></p>
 
 <p>当然也可以不输上面代码，关掉当前终端窗口并重新打开即可。</p>
@@ -234,11 +234,10 @@ To update Homebrew, run `brew update`.
 <p>输入下面代码，检查是否正确安装 RVM ：</p>
 
 <p><code>
-   # 输入
-   $ rvm -v
-   # 显示
-   rvm 1.26.3 (latest) by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;, 
-   Michal Papis   &lt;mpapis@gmail.com&gt; [https://rvm.io/]
+# 输入
+$ rvm -v
+# 显示
+rvm 1.26.3 (latest) by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;, Michal Papis   &lt;mpapis@gmail.com&gt; [https://rvm.io/]
 </code>
 ##### 2.3 安装 Ruby。</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T21:55:48+08:00</updated>
+  <updated>2014-12-04T21:57:30+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -242,9 +242,9 @@
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">   $ sudo chown -R $USER /usr/local/etc
-</span><span class="line">   $ sudo chown -R $USER /usr/local/include
-</span><span class="line">   $ brew update</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ sudo chown -R $USER /usr/local/etc
+</span><span class="line">$ sudo chown -R $USER /usr/local/include
+</span><span class="line">$ brew update</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>更多的问题，可以到 <a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 官网寻求帮助。  </p>
 
@@ -253,14 +253,14 @@
 <p>安装好 HomeBrew 后，用 HomeBrew 安装 RVM，命令如下：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">   $ curl -L https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ curl -L https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>执行后可能会问要求输入管理员密码，输入密码后回车。然后电脑会自动通过homebrew安装依赖包，等待一段时间后就可以成功安装好 RVM。</p>
 
 <p>然后输入下列代码，以载入 RVM 环境：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">   $ source ~/.rvm/scripts/rvm</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ source ~/.rvm/scripts/rvm</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>当然也可以不输上面代码，关掉当前终端窗口并重新打开即可。</p>
 
@@ -270,12 +270,10 @@
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">   # 输入
-</span><span class="line">   $ rvm -v
-</span><span class="line">   # 显示
-</span><span class="line">   rvm 1.26.3 (latest) by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;, 
-</span><span class="line">   Michal Papis   &lt;mpapis@gmail.com&gt; [https://rvm.io/]</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line"># 输入
+</span><span class="line">$ rvm -v
+</span><span class="line"># 显示
+</span><span class="line">rvm 1.26.3 (latest) by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;, Michal Papis   &lt;mpapis@gmail.com&gt; [https://rvm.io/]</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>##### 2.3 安装 Ruby。</p>
 
 <p><strong>»重要提示-关于 Mac 系统自带的 Ruby</strong></p>
