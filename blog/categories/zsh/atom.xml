@@ -4,7 +4,7 @@
   <title><![CDATA[分类：zsh | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/zsh/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T22:39:59+08:00</updated>
+  <updated>2014-12-04T22:41:20+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -29,16 +29,8 @@ zsh: no matches found: new_post["example--title"]
 
 <p>求助万能的Google，找到了问题原因和解决办法：</p>
 
-<p><strong>原因：</strong></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Zsh会自动把类似‘*，(，</td>
-      <td>，&lt;，[，?’等符号识别为一种通配符；</td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>原因：</strong>
+Zsh会自动把类似‘*，(，|，&lt;，[，?’等符号识别为一种通配符；</p>
 
 <p><strong>解决办法一：</strong></p>
 
