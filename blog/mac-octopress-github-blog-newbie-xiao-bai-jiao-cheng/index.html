@@ -208,57 +208,44 @@
 
 <p><a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 的安装代码如下：</p>
 
-<p><code>
-    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-  </code></p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>»重要提示－关于 HomeBrew</strong></p>
+
+<p>由于 Mac 系统本身的一些设置问题，HomeBrew 在默认安装之后，用户在调用时经常会遇到一些权限报错信息。在不同的用户环境下，都需要重新进行一些设置更改。比如安装Ruby时会遇到下面的报错提示：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">ERROR: '/usr/local/bin' is not writable - it is required for Homebrew, try 'brew doctor' to fix it!
+</span><span class="line">Requirements installation failed with status: 1.</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>我们可以通过“brew doctor”命令来检查 HomeBrew 的问题，如下所示（为了节约页面空间，我省去了一些冗余信息）： </p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
 <span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"># 输入命令
-</span><span class="line">$ rake gen_deploy
-</span><span class="line"># 显示错误信息
-</span><span class="line">   Liquid Exception: undefined method `sort!' for nil:NilClass in _includes/post/categories.html, included in _layouts/post.html
-</span><span class="line">   jekyll 2.5.2 | Error:  undefined method `sort!' for nil:NilClass</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><strong>»重要提示－关于 HomeBrew</strong></p>
-
-<p>由于 Mac 系统本身的一些设置问题，HomeBrew 在默认安装之后，用户在调用时经常会遇到一些权限报错信息。在不同的用户环境下，都需要重新进行一些设置更改。比如安装Ruby时会遇到下面的报错提示：</p>
-
-<p><code>
-   ERROR: '/usr/local/bin' is not writable - it is required for Homebrew, 
-   try 'brew doctor' to fix it!
-   Requirements installation failed with status: 1.
-  </code></p>
-
-<p>我们可以通过“brew doctor”命令来检查 HomeBrew 的问题，如下所示（为了节约页面空间，我省去了一些冗余信息）： </p>
-
-<p>&#8220;`
-   # 输入
-   $ brew doctor
-   # 显示
-   Please note that these warnings are just used to help the Homebrew maintainers
-   with debugging if you file an issue. If everything you use Homebrew for is
-   working fine: please don’t worry and just ignore them. Thanks!</p>
-
-<p>Warning: /usr/local/etc isn’t writable.</p>
-
-<p>This can happen if you “sudo make install” software that isn’t managed by
-   by Homebrew. If a formula tries to write a file to this directory, the
-   install will fail during the link step.</p>
-
-<p>You should probably <code>chown</code> /usr/local/etc</p>
-
-<p>Warning: /usr/local/include isn’t writable.
-   /……/
-   You should probably <code>chown</code> /usr/local/include</p>
-
-<p>Warning: Your Homebrew is outdated.
-   You haven’t updated for at least 24 hours. This is a long time in brewland!
-   To update Homebrew, run <code>brew update</code>.
-   &#8220;`</p>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"># 输入
+</span><span class="line">$ brew doctor
+</span><span class="line"># 显示
+</span><span class="line">Warning: /usr/local/etc isn't writable.
+</span><span class="line">This can happen if you "sudo make install" software that isn't managed by Homebrew. If a formula tries to write a file to this directory, the install will fail during the link step.
+</span><span class="line">You should probably `chown` /usr/local/etc
+</span><span class="line">Warning: /usr/local/include isn't writable.
+</span><span class="line">/....../
+</span><span class="line">You should probably `chown` /usr/local/include
+</span><span class="line">Warning: Your Homebrew is outdated.
+</span><span class="line">You haven't updated for at least 24 hours. This is a long time in brewland!
+</span><span class="line">To update Homebrew, run `brew update`.</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>我们可以根据提示，通过以下代码解决这些问题（注意这是示例，要按照自己的情况对应解决）：</p>
 
