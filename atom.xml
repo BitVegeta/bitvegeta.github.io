@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T21:08:58+08:00</updated>
+  <updated>2014-12-04T21:13:53+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -177,13 +177,15 @@
 
 <p>而且，10.9.5 的 Mac OS 版本已经预装了Git，所以不需要重新安装。检查当前 Git 版本号，代码如下：</p>
 
-<p><code>
-   # 输入
-   $ git --version
-   # 显示
-   git version 1.9.3 (Apple Git-50)
-  </code>
-##### 2. 安装 Ruby</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"># 输入
+</span><span class="line">$ git --version
+</span><span class="line"># 显示
+</span><span class="line">git version 1.9.3 (Apple Git-50)</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>##### 2. 安装 Ruby</p>
 
 <p>安装 Ruby 有多种方法，这里推荐用 RVM 。</p>
 
@@ -196,8 +198,19 @@
 <p><a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 的安装代码如下：</p>
 
 <p><code>
-   $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
   </code></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"># 输入命令
+</span><span class="line">$ rake gen_deploy
+</span><span class="line"># 显示错误信息
+</span><span class="line">   Liquid Exception: undefined method `sort!' for nil:NilClass in _includes/post/categories.html, included in _layouts/post.html
+</span><span class="line">   jekyll 2.5.2 | Error:  undefined method `sort!' for nil:NilClass</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p><strong>»重要提示－关于 HomeBrew</strong></p>
 
