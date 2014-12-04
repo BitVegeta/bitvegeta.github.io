@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类：zsh | 精神和时间的小屋]]></title>
+  <link href="http://bitvegeta.github.io/blog/categories/zsh/atom.xml" rel="self"/>
+  <link href="http://bitvegeta.github.io/"/>
+  <updated>2014-12-04T22:39:59+08:00</updated>
+  <id>http://bitvegeta.github.io/</id>
+  <author>
+    <name><![CDATA[bitvegeta]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Zsh: No Matches Found 问题解决方法]]></title>
+    <link href="http://bitvegeta.github.io/blog/zsh-no-matches-found/"/>
+    <updated>2014-12-04T22:34:56+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/zsh-no-matches-found</id>
+    <content type="html"><![CDATA[<p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交rake命令后报错：</p>
+
+<p><code>
+# 输入
+$ rake new_post["example--title"]
+# 显示错误
+zsh: no matches found: new_post["example--title"]
+</code></p>
+
+<p>求助万能的Google，找到了问题原因和解决办法：</p>
+
+<p><strong>原因：</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Zsh会自动把类似‘*，(，</td>
+      <td>，&lt;，[，?’等符号识别为一种通配符；</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>解决办法一：</strong></p>
+
+<p>按照下面方式输入：</p>
+
+<p><code>
+# 输入
+$ rake new_post
+# 显示
+Enter a title for your post:
+</code>
+此时输入  example–title 即可。</p>
+
+<p><strong>解决办法二：</strong></p>
+
+<p>取消zsh的通配(GLOB),修改 ~/.zshrc 文件，添加下列内容：</p>
+
+<p><code>
+alias rake="noglob rake"
+</code>
+这个方法较为彻底。</p>
+
+<p><strong>解决办法三：</strong>
+使用转义字符’&#8217;，帮助 Zsh 读懂命令；</p>
+
+<p><code>
+rake new_post\["This is New Post"\] 
+</code>
+***</p>
+
+<p>P.S.其余的 Zsh: no matches found 问题都可以用类似方法解决。</p>
+
+<p><strong>参考资料</strong></p>
+
+<p>[1]<a href="https://github.com/imathis/octopress/issues/117">Not compatible with Zsh #117</a></p>
+]]></content>
+  </entry>
+  
+</feed>
