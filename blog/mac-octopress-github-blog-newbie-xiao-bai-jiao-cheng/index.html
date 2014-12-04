@@ -132,7 +132,8 @@
 <p>四、参考资料</p>
 
 <hr />
-<p>### <strong>一、前言</strong></p>
+
+<h3 id="section"><strong>一、前言</strong></h3>
 
 <p>网上关于这方面的操作教程已经有很多，有很多博客写的结构清晰，文字易读，页面优美，令人敬佩！</p>
 
@@ -156,7 +157,7 @@
 
 <hr />
 
-<h3 id="section"><strong>二、背景知识</strong></h3>
+<h3 id="section-1"><strong>二、背景知识</strong></h3>
 
 <p><a href="">Mac系统下利用Octopress搭建Github个人Blog空间——<strong>背景知识</strong></a>，主要包含一下内容：</p>
 
@@ -178,11 +179,11 @@
 
 <hr />
 
-<h3 id="section-1"><strong>三、搭建步骤</strong></h3>
+<h3 id="section-2"><strong>三、搭建步骤</strong></h3>
 
 <p><strong>声明</strong>：我的 Mac OS 版本号是10.9.5。请确保您的 Mac 在翻墙状态下。下列所有命令都在终端 Terminal 软件中输入。代码中“＃”号后面是注释，不用输入。</p>
 
-<h5 id="git">1. 安装 Git</h5>
+<h4 id="git">1. 安装 Git</h4>
 
 <p>到 <a href="http://git-scm.com/">Git</a> 官方网站，按照提示下载并安装最新版本的 Git 软件包。操作简单，无需赘言。</p>
 
@@ -197,7 +198,7 @@
 </span><span class="line"># 显示
 </span><span class="line">git version 1.9.3 (Apple Git-50)</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h5 id="ruby">2. 安装 Ruby</h5>
+<h4 id="ruby">2. 安装 Ruby</h4>
 
 <p>安装 Ruby 有多种方法，这里推荐用 RVM 。</p>
 
@@ -285,7 +286,8 @@
 </span><span class="line">$ rvm -v
 </span><span class="line"># 显示
 </span><span class="line">rvm 1.26.3 (latest) by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;, Michal Papis   &lt;mpapis@gmail.com&gt; [https://rvm.io/]</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>##### 2.3 安装 Ruby。</p>
+
+<h5 id="ruby-1">2.3 安装 Ruby。</h5>
 
 <p><strong>»重要提示-关于 Mac 系统自带的 Ruby</strong></p>
 
@@ -348,7 +350,7 @@
 </span><span class="line">ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin13.0]</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>恭喜你，Ruby 已装好了，这意味着你不仅可以装 Octopress ，还有机会学习一门新的编程语言。这是另外的课题了，感兴趣可以自己进一步了解学习。</p>
 
-<h5 id="octopress">3. 安装Octopress。</h5>
+<h4 id="octopress">3. 安装Octopress。</h4>
 <p> 
 前面的问题如果顺利解决的话，这里就会轻松很多了。Octopress 的安装代码如下：</p>
 
@@ -374,7 +376,7 @@
 </pre></td><td class="code"><pre><code class=""><span class="line">$ rake preview</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>这时，就可以在浏览器地址栏输入<code>http://localhost:4000</code>看到博客的预览样式。怎么样？喜不喜欢这个默认主题呢？不管怎样，总算是有点模样了。：）</p>
 
-<h5 id="github-pages">4. 搭建 Github Pages。</h5>
+<h4 id="github-pages">4. 搭建 Github Pages。</h4>
 
 <p>本地博客搭建好了，但是别人通过互联网是访问不到你的本地博客的。下一步就是要把搭建好的博客上传到网络上，可以让你的粉丝公开访问。</p>
 
@@ -438,9 +440,9 @@
 
 <p>打开文件<code>~/.ssh/id_rsa.pub</code>，复制里面的全部内容。然后回到Github界面，点击右上角小齿轮<code>Setting</code>图标，选择<code>SSH Keys</code> 一栏，单击<code>Add SSH Key</code>，把刚才复制的内容粘贴到<code>key输入框</code>内，然后直接保存。</p>
 
-<p>至此，SSH key 就算是添加完毕。
- 
-##### 4.3 上传 Octopress 到 Github。</p>
+<p>至此，SSH key 就算是添加完毕。</p>
+
+<h5 id="octopress--github">4.3 上传 Octopress 到 Github。</h5>
 
 <p>现在，继续尝试步骤 4.1 里面的输入命令，</p>
 
@@ -508,9 +510,9 @@
 </span><span class="line">## Github Pages deploy complete</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>这意味着十几分钟之后，在你的浏览器地址栏输入<code>http://yourname.github.io</code>，就可以看到一个专属于你个人控制的博客界面了，虽然还很初级，但是感觉很亲切有木有！？毕竟一番辛苦没有白费。:D</p>
 
-<p>好了，接下来的任务就是添加博客内容以及优化博客配置了。
- 
-##### 4.4 上传文章</p>
+<p>好了，接下来的任务就是添加博客内容以及优化博客配置了。</p>
+
+<h5 id="section-3">4.4 上传文章</h5>
 
 <p>在上传文章之前，现在 Github 当前的仓库中建立一个新的分支 Branch ，用来存放文章，图片等内容，名称按规定叫做 Source。实现代码如下：</p>
 
@@ -544,12 +546,26 @@
 <p>如果你是能耐住性子的话，可以再等等，把博客打扮漂亮一点再拿去朋友圈炫一下，刺激一下女友什么的。</p>
 
 <hr />
-<p>### 四、参考资料
-1. <a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a>
-2. <a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>
-3. <a href="http://www.sgxiang.com/blog/2013/10/18/cong-ling-kai-shi-da-jian-ji-yu-githubde-octopressbo-ke/">在Mac上从零开始搭建基于Github的Octopress博客</a>
-4. <a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">SSH原理与运用（一）：远程登录</a>
-5. <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a></p>
+
+<h3 id="section-4">四、参考资料</h3>
+
+<ol>
+  <li>
+    <p><a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a></p>
+  </li>
+  <li>
+    <p><a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.sgxiang.com/blog/2013/10/18/cong-ling-kai-shi-da-jian-ji-yu-githubde-octopressbo-ke/">在Mac上从零开始搭建基于Github的Octopress博客</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">SSH原理与运用（一）：远程登录</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a></p>
+  </li>
+</ol>
 </div>
 
 
