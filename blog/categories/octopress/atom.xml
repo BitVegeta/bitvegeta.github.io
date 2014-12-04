@@ -4,7 +4,7 @@
   <title><![CDATA[分类：“octopress” | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T18:18:25+08:00</updated>
+  <updated>2014-12-04T19:49:56+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[BitVegeta]]></name>
@@ -25,19 +25,20 @@
 <p>由于学识粗浅，若有不对之处，还望高手指正！多谢！非小白请直接看 <strong>［搭建步骤］</strong>。</p>
 
 <hr />
-<p>#### 本文目录</p>
 
-<h5 id="section">一、前言</h5>
+<h4 id="section">本文目录</h4>
 
-<h5 id="section-1">二、背景知识</h5>
+<h5 id="section-1">一、前言</h5>
 
-<h5 id="section-2">三、搭建步骤</h5>
+<h5 id="section-2">二、背景知识</h5>
 
-<h5 id="section-3">四、参考资料</h5>
+<h5 id="section-3">三、搭建步骤</h5>
+
+<h5 id="section-4">四、参考资料</h5>
 
 <hr />
 
-<h4 id="section-4">一、前言</h4>
+<h4 id="section-5">一、前言</h4>
 
 <p>网上关于这方面的操作教程已经有很多，有很多博客写的结构清晰，文字易读，页面优美，令人敬佩！</p>
 
@@ -47,7 +48,7 @@
 
 <!--more-->
 
-<h5 id="section-5">困难存在的客观原因：</h5>
+<h5 id="section-6">困难存在的客观原因：</h5>
 
 <ol>
   <li>
@@ -62,7 +63,7 @@
   </li>
 </ol>
 
-<h5 id="section-6">解决方案：</h5>
+<h5 id="section-7">解决方案：</h5>
 
 <ol>
   <li>基础铺垫：先学习了解一些基本知识，形成一个正确的感性认识，理解每一步操作的意义；</li>
@@ -383,11 +384,11 @@
    Total 16 (delta 7), reused 0 (delta 0)
    ## Github Pages deploy complete
   </code>
-   这意味着十几分钟之后，在你的浏览器地址栏输入<code>http://yourname.github.io</code>，就可以看到一个专属于你个人控制的博客界面了，虽然还很初级，但是感觉很亲切有木有！？毕竟一番辛苦没有白费。</p>
+   这意味着十几分钟之后，在你的浏览器地址栏输入<code>http://yourname.github.io</code>，就可以看到一个专属于你个人控制的博客界面了，虽然还很初级，但是感觉很亲切有木有！？毕竟一番辛苦没有白费。:D</p>
 
 <p>好了，接下来的任务就是添加博客内容以及优化博客配置了。</p>
 
-<h5 id="section-7">4.4 上传文章</h5>
+<h5 id="section-8">4.4 上传文章</h5>
 
 <p>在上传文章之前，现在 Github 当前的仓库中建立一个新的分支 Branch ，用来存放文章，图片等内容，名称按规定叫做 Source。实现代码如下：</p>
 
