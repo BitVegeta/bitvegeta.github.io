@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T19:55:08+08:00</updated>
+  <updated>2014-12-04T20:03:07+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[BitVegeta]]></name>
@@ -128,8 +128,6 @@
 
 <p>但作为一个“一直被女友鄙视智商”的小白，我自己在动手搭建过程中，还是遇到了一些问题，耗费了不少时间，折腾多次几近放弃。虽然最终借助万能的 Google 解决了安装问题，但也忍不住为广大小白的命运慨叹一番：万事开头难啊！对小白来说，这些不明觉厉的红色 Error 代码会放大成一串串难以琢磨的纠结疑问，如果没有足够的耐心和有效的解决方案，难免会急躁、苦恼，甚至失去进一步学习的激情！于是，牛人愈牛，而小白恒白，这也是“马太效应”在知识学习方面的客观体现吧！［泪］</p>
 
-<p>由于学识粗浅，若有不对之处，还望高手指正！多谢！非小白请直接看 <strong>［搭建步骤］</strong>。</p>
-
 <h5 id="section-6">困难存在的客观原因：</h5>
 
 <ol>
@@ -156,7 +154,7 @@
 
 <h4 id="redred"><red>二、背景知识</red></h4>
 
-<p>点击了解<a href="">Mac系统下利用Octopress搭建Github个人Blog空间——<strong>背景知识</strong></a>，主要包含一下内容。</p>
+<p><a href="">Mac系统下利用Octopress搭建Github个人Blog空间——<strong>背景知识</strong></a>，主要包含一下内容。</p>
 
 <ol>
   <li>程序员怎么写博客？</li>
@@ -169,11 +167,10 @@
   <li>Mac系统的文件系统设置及管理权限的一些特点？</li>
 </ol>
 
-<p>点击了解<a href="">Mac系统下利用Octopress搭建Github个人Blog空间——<strong>背景知识</strong></a>。</p>
-
 <hr />
 
 <h4 id="redred-1"><red>三、搭建步骤</red></h4>
+
 <p><strong>声明</strong>：我的 Mac OS 版本号是10.9.5。请确保您的 Mac 在翻墙状态下。下列所有命令都在终端 Terminal 软件中输入。代码中“＃”号后面是注释，不用输入。</p>
 
 <h5 id="git">1. 安装 Git。</h5>
@@ -182,13 +179,12 @@
 
 <p>而且，10.9.5 的 Mac OS 版本已经预装了Git，所以不需要重新安装。检查当前 Git 版本号，代码如下：</p>
 
-<p>&#8220;`
+<p><code>
    # 输入
-   $ git –version
+   $ git --version
    # 显示
-   git version 1.9.3 (Apple Git-50)</p>
-
-<p>&#8220;`<br />
+   git version 1.9.3 (Apple Git-50)
+  </code>
 ##### 2. 安装 Ruby。</p>
 
 <p>安装 Ruby 有多种方法，这里推荐用 RVM 。</p>
@@ -203,8 +199,9 @@
 
 <p><code>
    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-  </code>
-   <strong>»重要提示－关于 HomeBrew</strong></p>
+  </code></p>
+
+<p><strong>»重要提示－关于 HomeBrew</strong></p>
 
 <p>由于 Mac 系统本身的一些设置问题，HomeBrew 在默认安装之后，用户在调用时经常会遇到一些权限报错信息。在不同的用户环境下，都需要重新进行一些设置更改。比如安装Ruby时会遇到下面的报错提示：</p>
 
@@ -212,8 +209,9 @@
    ERROR: '/usr/local/bin' is not writable - it is required for Homebrew, 
    try 'brew doctor' to fix it!
    Requirements installation failed with status: 1.
-  </code>
-   我们可以通过“brew doctor”命令来检查 HomeBrew 的问题，如下所示（为了节约页面空间，我省去了一些冗余信息）： </p>
+  </code></p>
+
+<p>我们可以通过“brew doctor”命令来检查 HomeBrew 的问题，如下所示（为了节约页面空间，我省去了一些冗余信息）： </p>
 
 <p>&#8220;`
    # 输入
@@ -237,19 +235,18 @@
 
 <p>Warning: Your Homebrew is outdated.
    You haven’t updated for at least 24 hours. This is a long time in brewland!
-   To update Homebrew, run <code>brew update</code>.</p>
-
-<p>&#8220;`</p>
+   To update Homebrew, run <code>brew update</code>.
+   &#8220;`</p>
 
 <p>我们可以根据提示，通过以下代码解决这些问题（注意这是示例，要按照自己的情况对应解决）：</p>
 
-<p>&#8220;`
+<p><code>
    $ sudo chown -R $USER /usr/local/etc
    $ sudo chown -R $USER /usr/local/include
-   $ brew update</p>
+   $ brew update
+  </code></p>
 
-<p>&#8220;`
-   更多的问题，可以到 <a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 官网寻求帮助。   </p>
+<p>更多的问题，可以到 <a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 官网寻求帮助。  </p>
 
 <h5 id="rvm">2.2 安装 RVM。</h5>
 
@@ -257,15 +254,17 @@
 
 <p><code>
    $ curl -L https://get.rvm.io | bash -s stable
-  </code>
-   执行后可能会问要求输入管理员密码，输入密码后回车。然后电脑会自动通过homebrew安装依赖包，等待一段时间后就可以成功安装好 RVM。</p>
+  </code></p>
+
+<p>执行后可能会问要求输入管理员密码，输入密码后回车。然后电脑会自动通过homebrew安装依赖包，等待一段时间后就可以成功安装好 RVM。</p>
 
 <p>然后输入下列代码，以载入 RVM 环境：</p>
 
 <p><code>
    $ source ~/.rvm/scripts/rvm
-  </code>
-   当然也可以不输上面代码，关掉当前终端窗口并重新打开即可。</p>
+  </code></p>
+
+<p>当然也可以不输上面代码，关掉当前终端窗口并重新打开即可。</p>
 
 <p>输入下面代码，检查是否正确安装 RVM ：</p>
 
@@ -305,28 +304,32 @@
    ERROR: '/usr/local/bin' is not writable - it is required for Homebrew, 
    try 'brew doctor' to fix it!
    Requirements installation failed with status: 1.
-  </code>
-   其原因是因为 RVM 安装 Ruby 时需要调用全局系统目录下的 Library 文件，而这是缺乏权限的。Google 了一下，找到了这个问题的解决办法，先输入下列命令代码：</p>
+  </code></p>
+
+<p>其原因是因为 RVM 安装 Ruby 时需要调用全局系统目录下的 Library 文件，而这是缺乏权限的。Google 了一下，找到了这个问题的解决办法，先输入下列命令代码：</p>
 
 <p><code>
    $ rvm autolibs read-only
-  </code>
-   然后，就可以安装 Ruby 了：</p>
+  </code></p>
+
+<p>然后，就可以安装 Ruby 了：</p>
 
 <p><code>
    $ rvm install 2.1.5
    $ rvm use 2.1.5
    $ rvm rubygems latest
-  </code>
-   经过一段时间的等待，总算安装好了 Ruby 2.1.5 。检查代码如下：</p>
+  </code></p>
+
+<p>经过一段时间的等待，总算安装好了 Ruby 2.1.5 。检查代码如下：</p>
 
 <p><code>
    # 输入
    $ ruby --version
    # 显示信息
      ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin13.0]
-  </code>
-   恭喜你，Ruby 已装好了，这意味着你不仅可以装 Octopress ，还有机会学习一门新的编程语言。这是另外的课题了，感兴趣可以自己进一步了解学习。</p>
+  </code></p>
+
+<p>恭喜你，Ruby 已装好了，这意味着你不仅可以装 Octopress ，还有机会学习一门新的编程语言。这是另外的课题了，感兴趣可以自己进一步了解学习。</p>
 
 <h5 id="octopress">3. 安装Octopress。</h5>
 
@@ -335,26 +338,30 @@
 <p><code>
    $ git clone git://github.com/imathis/octopress.git octopress # 复制 octopress 到本地
    $ cd octopress ＃进入 octopress 文件夹
-  </code>
-   上面的代码把 Octopress 框架复制到本地，博客文件夹的位置和名称也可以自己定义，默认是上面的位置。</p>
+  </code></p>
+
+<p>上面的代码把 Octopress 框架复制到本地，博客文件夹的位置和名称也可以自己定义，默认是上面的位置。</p>
 
 <p>下一步，在该文件夹安装搭建博客所需的依赖项：</p>
 
 <p><code>
    $ gem install bundler
    $ bundle install
-  </code>
-   等待一会，安装顺利完成后，接下来安装默认的主题：</p>
+  </code></p>
+
+<p>等待一会，安装顺利完成后，接下来安装默认的主题：</p>
 
 <p><code>
    $ rake install
-  </code>
-   紧接着输入：</p>
+  </code></p>
+
+<p>紧接着输入：</p>
 
 <p><code>
    $ rake preview
-  </code>
-   这时，就可以在浏览器地址栏输入<code>http://localhost:4000</code>看到博客的预览样式。怎么样？喜不喜欢这个默认主题呢？不管怎样，总算是有点模样了。：）</p>
+  </code></p>
+
+<p>这时，就可以在浏览器地址栏输入<code>http://localhost:4000</code>看到博客的预览样式。怎么样？喜不喜欢这个默认主题呢？不管怎样，总算是有点模样了。：）</p>
 
 <h5 id="github-pages">4. 搭建 Github Pages。</h5>
 
@@ -370,8 +377,9 @@
 
 <p><code>
    $ rake setup_github_pages
-  </code>
-   系统会要求你输入一个SSH地址，我们回到刚才生成的Github仓库页面，在右侧看到一个形如 git@github.com:[your_username]/[your_username].github.io.git 的<code>SSH clone URL</code>，把这个复制，输入终端回车。</p>
+  </code></p>
+
+<p>系统会要求你输入一个SSH地址，我们回到刚才生成的Github仓库页面，在右侧看到一个形如 git@github.com:[your_username]/[your_username].github.io.git 的<code>SSH clone URL</code>，把这个复制，输入终端回车。</p>
 
 <p>不出意外，小白的电脑因为从来没有设置过 SSH key，这时一定会报错如下代码：</p>
 
@@ -380,8 +388,9 @@
    Permission denied (publickey).
    fatal: Could not read from remote repository.
    Please make sure you have the correct access rightsand the repository exists.
-  </code>
-   下面我们设置一下 SSH Key 。</p>
+  </code></p>
+
+<p>下面我们设置一下 SSH Key 。</p>
 
 <h5 id="ssh-key">4.2 设置 SSH Key。</h5>
 
@@ -390,13 +399,15 @@
 <p><code>
    $ git config --global user.name  "你注册Github的用户名"
    $ git config --global user.email "你注册Github的邮箱"
-  </code>
-   然后，生成 SSH 密钥，输入以下命令，回车：</p>
+  </code></p>
+
+<p>然后，生成 SSH 密钥，输入以下命令，回车：</p>
 
 <p><code>
    $ ssh-keygen -t rsa -C "你注册Github的邮箱"
-  </code>
-   界面弹出下列信息，并按注释操作：</p>
+  </code></p>
+
+<p>界面弹出下列信息，并按注释操作：</p>
 
 <p>&#8220;`
    # 显示如下代码，指出 SSH Key 的默认保存路径
@@ -410,8 +421,9 @@
 <p># 显示再次确认密码
    $ Enter same passphrase again:
    # 再次输入密码，回车
-   &#8220;`
-   好了，现在屏幕上显示一堆外星文，表示 SSH Key已经生成。下一步就是，把 SSH Key 添加到Github账户上，这样Github的服务器就能远程认证我们的身份，接受数据传输。</p>
+   &#8220;`</p>
+
+<p>好了，现在屏幕上显示一堆外星文，表示 SSH Key已经生成。下一步就是，把 SSH Key 添加到Github账户上，这样Github的服务器就能远程认证我们的身份，接受数据传输。</p>
 
 <p>打开文件<code>~/.ssh/id_rsa.pub</code>，复制里面的全部内容。然后回到Github界面，点击右上角小齿轮<code>Setting</code>图标，选择<code>SSH Keys</code> 一栏，单击<code>Add SSH Key</code>，把刚才复制的内容粘贴到<code>key输入框</code>内，然后直接保存。</p>
 
@@ -424,14 +436,16 @@
 <p><code>
    $ rake setup_github_pages
    # 输入你的 SSH clone URL 
-  </code>
-   系统会要求你输入刚才设置的 SSH 密码，输入密码回车，你会看到刚才的错误提示消除了。接着执行：</p>
+  </code></p>
+
+<p>系统会要求你输入刚才设置的 SSH 密码，输入密码回车，你会看到刚才的错误提示消除了。接着执行：</p>
 
 <p><code>
    $ rake generate
    $ rake deploy
-  </code>
-   哈，可恶的错误代码又出来了，这个错误也让笔者抓狂了好久，贴出来：</p>
+  </code></p>
+
+<p>哈，可恶的错误代码又出来了，这个错误也让笔者抓狂了好久，贴出来：</p>
 
 <p><code>
    * [new branch]      master     -&gt; origin/master
@@ -446,16 +460,18 @@
    hint: its remote counterpart. Integrate the remote changes (e.g.
    hint: 'git pull ...') before pushing again.
    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-  </code>
-   最终搞明白这是Git的使用不熟练导致的。解决办法：</p>
+  </code></p>
+
+<p>最终搞明白这是Git的使用不熟练导致的。解决办法：</p>
 
 <p><code>
    $ cd octopress/_deploy
    $ git pull origin master
    $ cd ..
    $ rake gen_deploy #‘rake generate’ 和 ‘rake deploy’ 合起来的简写
-  </code>
-   好了，现在终于看到让人欣喜的完成代码了，类似下面的：</p>
+  </code></p>
+
+<p>好了，现在终于看到让人欣喜的完成代码了，类似下面的：</p>
 
 <p><code>
    ## Pushing generated _deploy website
@@ -465,8 +481,9 @@
    Writing objects: 100% (16/16), 28.67 KiB | 0 bytes/s, done.
    Total 16 (delta 7), reused 0 (delta 0)
    ## Github Pages deploy complete
-  </code>
-   这意味着十几分钟之后，在你的浏览器地址栏输入<code>http://yourname.github.io</code>，就可以看到一个专属于你个人控制的博客界面了，虽然还很初级，但是感觉很亲切有木有！？毕竟一番辛苦没有白费。:D</p>
+  </code></p>
+
+<p>这意味着十几分钟之后，在你的浏览器地址栏输入<code>http://yourname.github.io</code>，就可以看到一个专属于你个人控制的博客界面了，虽然还很初级，但是感觉很亲切有木有！？毕竟一番辛苦没有白费。:D</p>
 
 <p>好了，接下来的任务就是添加博客内容以及优化博客配置了。</p>
 
@@ -478,16 +495,18 @@
    $ git add .
    $ git commit -m "备注内容"
    $ git push origin source
-  </code>
-   顺利的话，你会发现 Github 当前的仓库里多了一个 branch 选项；</p>
+  </code></p>
+
+<p>顺利的话，你会发现 Github 当前的仓库里多了一个 branch 选项；</p>
 
 <p>好的，现在就可以开始添加一篇新文章了，操作代码如下：</p>
 
 <p><code>
    $ cd octopress
    $ rake new_post["Post Title"]
-  </code>
-   其中“Post Title”是你为文章所起的名字。执行后，打开文件夹<code>~/octopress/source/posts</code>，会找到一个<code>yyyy-mm-dd-Post-Title.markdown</code>的文件，<code>yyyy-mm-dd</code>是文件创建的时间，系统会自动按时间命名并排序文章。</p>
+  </code></p>
+
+<p>其中“Post Title”是你为文章所起的名字。执行后，打开文件夹<code>~/octopress/source/posts</code>，会找到一个<code>yyyy-mm-dd-Post-Title.markdown</code>的文件，<code>yyyy-mm-dd</code>是文件创建的时间，系统会自动按时间命名并排序文章。</p>
 
 <p>好，用文本编辑器打开这个生成的文件之后，就可以写内容了。我用的编辑器是 <a href="http://25.io">MOU</a>，一款优秀且免费的 Markdown 编辑器。</p>
 
@@ -495,8 +514,9 @@
 
 <p><code>
    $ rake gen_deploy 
-  </code>
-   就可以更新自己的博客空间。这时刷新一下，你的博客页面，你会发现第一篇文章已经娇羞的展现出来！：）
+  </code></p>
+
+<p>就可以更新自己的博客空间。这时刷新一下，你的博客页面，你会发现第一篇文章已经娇羞的展现出来！：）
    好的，最基本的工作总算完成了，相信你这时开始会有更高的要求，想把自己的博客打扮的更漂亮一点，或者个性化一点，那么，接下来的工作，就是改进 Octopress 的基本配置以及更改博客主题。</p>
 
 <p>鉴于篇幅原因，这一部分内容放到下一篇文章里写。：）</p>
