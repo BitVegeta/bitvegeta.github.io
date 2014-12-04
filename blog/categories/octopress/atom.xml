@@ -4,7 +4,7 @@
   <title><![CDATA[分类：“octopress” | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T21:19:19+08:00</updated>
+  <updated>2014-12-04T21:21:01+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -159,8 +159,9 @@ $ rake gen_deploy
 $ git --version
 # 显示
 git version 1.9.3 (Apple Git-50)
-</code>
-##### 2. 安装 Ruby</p>
+</code></p>
+
+<h5 id="ruby">2. 安装 Ruby</h5>
 
 <p>安装 Ruby 有多种方法，这里推荐用 RVM 。</p>
 
@@ -208,7 +209,7 @@ To update Homebrew, run `brew update`.
    $ sudo chown -R $USER /usr/local/etc
    $ sudo chown -R $USER /usr/local/include
    $ brew update
-  </code></p>
+</code></p>
 
 <p>更多的问题，可以到 <a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 官网寻求帮助。  </p>
 
@@ -240,7 +241,7 @@ To update Homebrew, run `brew update`.
    Michal Papis   &lt;mpapis@gmail.com&gt; [https://rvm.io/]
   </code></p>
 
-<h5 id="ruby">2.3 安装 Ruby。</h5>
+<h5 id="ruby-1">2.3 安装 Ruby。</h5>
 
 <p><strong>»重要提示-关于 Mac 系统自带的 Ruby</strong></p>
 
