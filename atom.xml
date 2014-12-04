@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T21:57:30+08:00</updated>
+  <updated>2014-12-04T21:58:55+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -98,7 +98,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Mac版Octopress搭建Github博客教程]]></title>
+    <title type="html"><![CDATA[Octopress搭建Github博客Mac教程]]></title>
     <link href="http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/"/>
     <updated>2014-11-30T11:41:47+08:00</updated>
     <id>http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
