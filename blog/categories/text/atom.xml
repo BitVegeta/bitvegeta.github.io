@@ -4,7 +4,7 @@
   <title><![CDATA[分类：text | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/text/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-05T21:51:02+08:00</updated>
+  <updated>2014-12-05T22:31:46+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -26,9 +26,16 @@
 
 <h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
 
-<p>{ % coderay lang:ruby linenos:true “为 Sublime Text 2 设置一个符号链接” % }
-$ sudo ln -s “/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl” /usr/bin/subl
-{ % endcoderay % }</p>
+<p>{ % coderay lang:ruby linenos:true “为 Sublime Text 2 设置一个符号链接” % }</p>
+
+<p>$ sudo ln -s “/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl” /usr/bin/subl</p>
+
+<p>{ % endcoderay % }</p>
+
+<pre><code>{ % coderay [lang:lang] [linenos:true|false(default)] [title] [url] [link text] % }
+code snippet
+{ % endcoderay % }
+</code></pre>
 
 <p><strong>重要提示：Mac下这个操作要求必须是Root权限账户。</strong></p>
 
