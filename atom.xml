@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-04T23:53:53+08:00</updated>
+  <updated>2014-12-05T11:35:19+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -20,14 +20,16 @@
     <id>http://bitvegeta.github.io/blog/zsh-no-matches-found</id>
     <content type="html"><![CDATA[<p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交rake命令后报错：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;zsh: no matches found 错误&#8221; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"># 输入
-</span><span class="line">$ rake new_post["example--title"]
-</span><span class="line"># 显示错误
-</span><span class="line">zsh: no matches found: new_post["example--title"]</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="c1"># 输入</span>
+</span><span class="line"><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
+</span><span class="line"><span class="c1"># 显示错误</span>
+</span><span class="line"><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>求助万能的Google，找到了问题原因和解决办法：</p>
 
@@ -46,14 +48,17 @@
 
 <p>按照下面方式输入：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;zsh: no matches found 解决办法&#8221; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"># 输入
-</span><span class="line">$ rake new_post
-</span><span class="line"># 显示
-</span><span class="line">Enter a title for your post:</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="c1"># 输入</span>
+</span><span class="line"><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span>
+</span><span class="line"><span class="c1"># 显示</span>
+</span><span class="line"><span class="no">Enter</span> <span class="n">a</span> <span class="n">title</span> <span class="k">for</span> <span class="n">your</span> <span class="ss">post</span><span class="p">:</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <p>此时输入  example–title 即可。</p>
 
 <p><strong>解决办法二：</strong></p>
