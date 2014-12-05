@@ -9,14 +9,7 @@
   <meta name="author" content="bitvegeta">
 
   
-  <meta name="description" content="我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交rake命令后报错： "zsh: no matches found 错误" 1
-2
-3
-4
-# 输入
-$ rake new_post[&quot;example--title&quot;]
-# 显示错误
-zsh: no &hellip;">
+  <meta name="description" content="Sublime Text 作为一款优秀的文本编辑器，近年来其发展的势头一度盖过传统的 TextMate ，其拥有强大的包管理功能和优美易用的界面，被称为“最性感的编辑器”。 Sublime Text 2 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。 在终端用命令行调用 Sublime &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -101,6 +94,61 @@ zsh: no &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/sublime-text-shell-command/">Sublime Text Shell Command</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-12-05T21:40:43+08:00'><span class='date'>“2014年12月5日“</span> <span class='time'>9:40 pm</span></time>
+        
+           | <a href="/blog/sublime-text-shell-command/#disqus_thread"
+             data-disqus-identifier="http://bitvegeta.github.io/blog/sublime-text-shell-command/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.sublimetext.com/">Sublime Text</a> 作为一款优秀的文本编辑器，近年来其发展的势头一度盖过传统的 TextMate ，其拥有强大的包管理功能和优美易用的界面，被称为“最性感的编辑器”。</p>
+
+<p><a href="http://www.sublimetext.com/">Sublime Text 2</a> 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。</p>
+
+<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：</p>
+
+<h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
+
+<p>{ % coderay [lang:ruby] [linenos:true] [为 Sublime Text 2 设置一个符号链接] % }
+$ sudo ln -s “/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl” /usr/bin/subl
+{ % endcoderay % }</p>
+
+<p><strong>重要提示：Mac下这个操作要求必须是Root权限账户。</strong></p>
+
+<p>执行命令，如果运行成功，则可以直接用“subl”作为命令编辑一个文件；
+如果提示错误，则需要查看 $PATH 的值，以确保<code>/usr/bin/</code>路径在<code>/bin/</code>路径之前。查看命令如下：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ echo $PATH</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>若需更改 $PATH 变量，打开 /etc/paths 路径编辑即可；</p>
+
+<h4 id="section">参考资料</h4>
+
+<p>[1][Mac开发者2013年新机设置参考] (http://www.yangzhiping.com/tech/mac-dev.html)</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -352,6 +400,10 @@ zsh: no &hellip;">
     <section>
   <h1>最新文章</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/sublime-text-shell-command/">Sublime Text Shell Command</a>
+      </li>
     
       <li class="post">
         <a href="/blog/zsh-no-matches-found/">Zsh: No Matches Found 问题解决方法</a>
