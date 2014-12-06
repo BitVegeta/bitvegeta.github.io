@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[分类：sublime | 精神和时间的小屋]]></title>
-  <link href="http://bitvegeta.github.io/blog/categories/sublime/atom.xml" rel="self"/>
+  <title><![CDATA[分类：sublimetext2，shell | 精神和时间的小屋]]></title>
+  <link href="http://bitvegeta.github.io/blog/categories/sublimetext2,shell/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-06T21:16:14+08:00</updated>
+  <updated>2014-12-07T00:01:55+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[用命令行调用 Sublime Text 2 的方法]]></title>
+    <title type="html"><![CDATA[终端用命令行调用 Sublime Text 2]]></title>
     <link href="http://bitvegeta.github.io/blog/sublime-text-shell-command/"/>
     <updated>2014-12-05T21:40:43+08:00</updated>
     <id>http://bitvegeta.github.io/blog/sublime-text-shell-command</id>

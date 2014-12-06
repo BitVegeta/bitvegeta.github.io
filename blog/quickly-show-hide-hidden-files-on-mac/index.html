@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Mac显示／隐藏系统文件的方法 - 精神和时间的小屋</title>
+  <meta name="author" content="bitvegeta">
+
+  
+  <meta name="description" content="Mac OS 系统下，一些文件是以隐藏文件存在的，这些文件通常都会有一个‘.’作为前缀，即文件名为“.example”形式。这样的好处是，一些重要的系统文件不会被一些误操作删除或损坏，而且 Finder 界面也会显示的更为简介；但缺点就是查找更改一些东西的时候不方便。 通过Google学习了些显示 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="精神和时间的小屋" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- MathJax -->
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">精神和时间的小屋</a></h1>
+  
+    <h2>BitVegeta&#8217;s Learning Notes Blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="订阅 RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bitvegeta.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="搜索"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">主页</a></li>
+  <li><a href="/blog/archives">归档</a></li>
+  <li><a href="/about/">关于</a></li>
+
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Mac显示／隐藏系统文件的方法</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-12-06T23:09:11+08:00'><span class='date'>“2014年12月6日“</span> <span class='time'>11:09 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://bitvegeta.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Mac OS 系统下，一些文件是以隐藏文件存在的，这些文件通常都会有一个‘.’作为前缀，即文件名为“.example”形式。这样的好处是，一些重要的系统文件不会被一些误操作删除或损坏，而且 Finder 界面也会显示的更为简介；但缺点就是查找更改一些东西的时候不方便。</p>
+
+<p>通过Google学习了些显示／隐藏系统文件的方法，做下面的笔记，供大家参考。</p>
+
+<h4 id="section">1.在终端输入命令行控制</h4>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;显示／隐藏系统文件命令&#8221; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="c1"># 显示所有隐藏文件：</span>
+</span><span class="line"><span class="err">$</span> <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="o">-</span><span class="n">bool</span> <span class="kp">true</span>
+</span><span class="line">
+</span><span class="line"><span class="c1"># 隐藏所有隐藏文件：</span>
+</span><span class="line"><span class="err">$</span> <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="o">-</span><span class="n">bool</span> <span class="kp">false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>这种方法简单有效，但是容易忘记代码，需要做好笔记，推荐一种更直接的办法：</p>
+
+<h4 id="alias-">2.设置 alias 快捷控制</h4>
+
+<p>按照自己的终端修改<code>~/.zshrc</code>或<code>~/.bash_profile</code>文件，添加下面的两行代码，设置如下：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;设置 alias 快捷控制&#8221; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="c1"># 显示命令的alias</span>
+</span><span class="line"><span class="k">alias</span> <span class="n">showFiles</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app&#39;</span>
+</span><span class="line">
+</span><span class="line"><span class="c1"># 隐藏命令的alias</span>
+</span><span class="line"><span class="k">alias</span> <span class="n">hideFiles</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app&#39;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>现在就可以用“showFiles”／“hideFiles”来控制显示／隐藏系统文件了。</p>
+
+<p>当然，这个方式跟 Ubuntu 系统下 “Contrl＋h”控制显示／隐藏文件相比，还是略显麻烦。当然，Mac 下也可以自己写一个脚本控制。</p>
+
+<h4 id="workflow">3.编写控制 workflow，并设置一个快捷键调用</h4>
+
+<p>打开［Finder］，找到［应用程序］文件夹，打开［Automator］软件，在左侧［资源库］栏找到［实用工具］文件，选择其中的［运行 shell 脚本］，拖动到右侧编辑区域，输入以下脚本代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line">  <span class="no">STATUS</span><span class="o">=</span><span class="sb">`defaults read com.apple.finder AppleShowAllFiles`</span>
+</span><span class="line">  <span class="k">if</span> <span class="o">[</span> <span class="vg">$STATUS</span> <span class="o">==</span> <span class="no">YES</span> <span class="o">]</span><span class="p">;</span>
+</span><span class="line">  <span class="k">then</span>
+</span><span class="line">      <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="no">NO</span>
+</span><span class="line">  <span class="k">else</span>
+</span><span class="line">      <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="no">YES</span>
+</span><span class="line">  <span class="n">fi</span>
+</span><span class="line">  <span class="n">killall</span> <span class="no">Finder</span>
+</span><span class="line">  <span class="sr">/System/</span><span class="no">Library</span><span class="o">/</span><span class="no">CoreServices</span><span class="o">/</span><span class="no">Finder</span><span class="o">.</span><span class="n">app</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>在Service receives的下拉菜单中选择“no input”，然后将工作流程保存为“Show or Hide Files”。
+打开[Finder]的“服务”菜单，就可以看到刚才制作的“Show or Hide Files”选项。打开“系统偏好设置”，找到“键盘”里面的快捷键选项卡，设置其快捷方式为“Command+h”。</p>
+
+<p>到此，就可以快捷的切换了。：）</p>
+
+<h4 id="section-1">参考资料</h4>
+
+<p>[1]<a href="http://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/">Quickly Show/Hide Hidden Files on Mac OS X Mavericks &amp; Yosemite</a></p>
+
+<p>[2]<a href="http://blog.sina.com.cn/s/blog_59fb90df01019vod.html">mac  快速显示、隐藏 文件方法，包括快捷键</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">bitvegeta</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-12-06T23:09:11+08:00'><span class='date'>“2014年12月6日“</span> <span class='time'>11:09 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/finder/'>finder</a>, <a class='category' href='/blog/categories/mac/'>mac</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/" data-via="" data-counturl="http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/sublime-text-shell-command/" title="Previous Post: 终端用命令行调用 Sublime Text 2">&laquo; 终端用命令行调用 Sublime Text 2</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>最新文章</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/quickly-show-hide-hidden-files-on-mac/">Mac显示／隐藏系统文件的方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/sublime-text-shell-command/">终端用命令行调用 Sublime Text 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/zsh-no-matches-found/">Zsh: No Matches Found 问题解决方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/liquid-exception-undefined-method-sort/">Liquid Exception: Undefined Method Sort 错误解决方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/">Octopress搭建Github博客Mac教程</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>My Pinboard</h1>
+  <ul id="pinboard_linkroll">Fetching linkroll&#8230;</ul>
+  <p><a href="http://pinboard.in/u:BitVegeta">My Pinboard Bookmarks &raquo;</a></p>
+</section>
+<script type="text/javascript">
+  var linkroll = 'pinboard_linkroll'; //id target for pinboard list
+  var pinboard_user = "BitVegeta"; //id target for pinboard list
+  var pinboard_count = 3; //id target for pinboard list
+  (function(){
+    var pinboardInit = document.createElement('script');
+    pinboardInit.type = 'text/javascript';
+    pinboardInit.async = true;
+    pinboardInit.src = '/javascripts/pinboard.js';
+    document.getElementsByTagName('head')[0].appendChild(pinboardInit);
+  })();
+</script>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - bitvegeta - <span class="credit"><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">署名 - 非商业 - 非衍生</a></span> － 
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'bitvegeta';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/';
+        var disqus_url = 'http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
