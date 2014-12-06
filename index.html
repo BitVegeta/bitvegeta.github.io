@@ -100,7 +100,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/sublime-text-shell-command/">Sublime Text Shell Command</a></h1>
+      <h1 class="entry-title"><a href="/blog/sublime-text-shell-command/">用命令行调用 Sublime Text 2 的快捷方法设置</a></h1>
     
     
       <p class="meta">
@@ -127,16 +127,10 @@
 
 <h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
 
-<p>{ % coderay “为 Sublime Text 2 设置一个符号链接” % }</p>
-
-<p>$ sudo ln -s “/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl” /usr/bin/subl</p>
-
-<p>{ % endcoderay % }</p>
-
-<pre><code>{ % coderay [lang:lang] [linenos:true|false(default)] [title] [url] [link text] % }
-code snippet
-{ % endcoderay % }
-</code></pre>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;为 Sublime Text 2 设置一个符号链接&#8221; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="err">$</span> <span class="n">sudo</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="s2">&quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot;</span> <span class="sr">/usr/</span><span class="n">bin</span><span class="o">/</span><span class="n">subl</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p><strong>重要提示：Mac下这个操作要求必须是Root权限账户。</strong></p>
 
@@ -147,9 +141,18 @@ code snippet
 </pre></td><td class="code"><pre><code class=""><span class="line">$ echo $PATH</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>若需更改 $PATH 变量，打开 /etc/paths 路径编辑即可；</p>
 
+<h4 id="alias">自定义alias</h4>
+
+<p>在<code>~/.zshrc</code>中定义 <code>‘sb’</code>为 sublime Text 2 的别名，添加下列代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"> alias sb='subl'</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>如果你用的使 bash 终端，在<code>~/.bash_profile</code>文件中更改。</p>
+
 <h4 id="section">参考资料</h4>
 
-<p>[1][Mac开发者2013年新机设置参考] (http://www.yangzhiping.com/tech/mac-dev.html)</p>
+<p>[1]<a href="http://www.yangzhiping.com/tech/mac-dev.html">Mac开发者2013年新机设置参考</a></p>
 </div>
   
   
@@ -409,7 +412,7 @@ code snippet
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/sublime-text-shell-command/">Sublime Text Shell Command</a>
+        <a href="/blog/sublime-text-shell-command/">用命令行调用 Sublime Text 2 的快捷方法设置</a>
       </li>
     
       <li class="post">
