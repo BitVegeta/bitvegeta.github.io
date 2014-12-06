@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-06T11:31:22+08:00</updated>
+  <updated>2014-12-06T21:16:14+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[用命令行调用 Sublime Text 2 的快捷方法设置]]></title>
+    <title type="html"><![CDATA[用命令行调用 Sublime Text 2 的方法]]></title>
     <link href="http://bitvegeta.github.io/blog/sublime-text-shell-command/"/>
     <updated>2014-12-05T21:40:43+08:00</updated>
     <id>http://bitvegeta.github.io/blog/sublime-text-shell-command</id>
@@ -46,6 +46,8 @@
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class=""><span class="line"> alias sb='subl'</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>现在终端中输入‘sb example.html’，即可创建一个 html 文件。</p>
 
 <p>如果你用的使 bash 终端，在<code>~/.bash_profile</code>文件中更改。</p>
 
