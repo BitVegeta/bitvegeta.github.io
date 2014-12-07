@@ -4,7 +4,7 @@
   <title><![CDATA[分类：“octopress” | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-07T15:19:22+08:00</updated>
+  <updated>2014-12-07T21:58:15+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -75,7 +75,7 @@ $ rake gen_deploy
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Octopress搭建Github博客Mac教程]]></title>
+    <title type="html"><![CDATA[Mac版Octopress搭建Github博客教程]]></title>
     <link href="http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/"/>
     <updated>2014-11-30T11:41:47+08:00</updated>
     <id>http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
@@ -85,23 +85,35 @@ $ rake gen_deploy
 
 <p>由于学识粗浅，若有不对之处，还望高手指正！多谢！非小白请直接看 <strong>［搭建步骤］</strong>。</p>
 
-<hr />
-
 <p><strong>本文目录</strong></p>
 
-<p>一、前言</p>
-
-<p>二、背景知识</p>
-
-<p>三、搭建步骤</p>
-
-<p>四、参考资料</p>
-
-<hr />
+<ul id="markdown-toc">
+  <li><a href="#section"><strong>一、前言</strong></a></li>
+  <li><a href="#section-1"><strong>二、背景知识</strong></a></li>
+  <li><a href="#section-2"><strong>三、搭建步骤</strong></a>    <ul>
+      <li><a href="#git">1. 安装 Git</a></li>
+      <li><a href="#ruby">2. 安装 Ruby</a>        <ul>
+          <li><a href="#homebrew">2.1 安装 HomeBrew</a></li>
+          <li><a href="#rvm">2.2 安装 RVM。</a></li>
+          <li><a href="#ruby-1">2.3 安装 Ruby。</a></li>
+        </ul>
+      </li>
+      <li><a href="#octopress">3. 安装Octopress。</a></li>
+      <li><a href="#github-pages">4. 搭建 Github Pages。</a>        <ul>
+          <li><a href="#github--new-repository">4.1 注册 Github 账号，创建 New Repository。</a></li>
+          <li><a href="#ssh-key">4.2 设置 SSH Key。</a></li>
+          <li><a href="#octopress--github">4.3 上传 Octopress 到 Github。</a></li>
+          <li><a href="#section-3">4.4 上传文章</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#section-4">四、参考资料</a></li>
+</ul>
 
 <h3 id="section"><strong>一、前言</strong></h3>
 
-<p>网上关于这方面的操作教程已经有很多，有很多博客写的结构清晰，文字易读，页面优美，令人敬佩！</p>
+<p>网上关于 Octopress 搭建 Github Pages 博客的操作教程有很多，有很多博客写的结构清晰，文字易读，页面优美，令人敬佩！</p>
 
 <p>但作为一个“一直被女友鄙视智商”的小白，我自己在动手搭建过程中，还是遇到了一些问题，耗费了不少时间，折腾多次几近放弃。虽然最终借助万能的 Google 解决了安装问题，但也忍不住为广大小白的命运慨叹一番：万事开头难啊！对小白来说，这些不明觉厉的红色 Error 代码会放大成一串串难以琢磨的纠结疑问，如果没有足够的耐心和有效的解决方案，难免会急躁、苦恼，甚至失去进一步学习的激情！于是，牛人愈牛，而小白恒白，这也是“马太效应”在知识学习方面的客观体现吧！［泪］</p>
 
