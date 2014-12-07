@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-07T00:01:55+08:00</updated>
+  <updated>2014-12-07T11:28:07+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -60,11 +60,12 @@
 
 <p>当然，这个方式跟 Ubuntu 系统下 “Contrl＋h”控制显示／隐藏文件相比，还是略显麻烦。当然，Mac 下也可以自己写一个脚本控制。</p>
 
-<h4 id="workflow">3.编写控制 workflow，并设置一个快捷键调用</h4>
+<h4 id="section-1">3.编写控制脚本，并设置一个快捷键调用</h4>
 
-<p>打开［Finder］，找到［应用程序］文件夹，打开［Automator］软件，在左侧［资源库］栏找到［实用工具］文件，选择其中的［运行 shell 脚本］，拖动到右侧编辑区域，输入以下脚本代码：</p>
+<p>在［应用程序］里，找到并打开［Automator］软件，选择建立［服务］文件，在左侧［资源库］栏找到［实用工具］栏目，选择其中的［运行 shell 脚本］，拖动到右侧编辑区域，输入以下脚本代码：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>“Show／Hide Files 控制脚本” </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -84,12 +85,13 @@
 </span><span class="line">  <span class="sr">/System/</span><span class="no">Library</span><span class="o">/</span><span class="no">CoreServices</span><span class="o">/</span><span class="no">Finder</span><span class="o">.</span><span class="n">app</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>在Service receives的下拉菜单中选择“no input”，然后将工作流程保存为“Show or Hide Files”。
-打开[Finder]的“服务”菜单，就可以看到刚才制作的“Show or Hide Files”选项。打开“系统偏好设置”，找到“键盘”里面的快捷键选项卡，设置其快捷方式为“Command+h”。</p>
+<p>在［服务“收到”］的下拉菜单中选择“没有输入”，［位于］选择“Finder”，然后“Command＋s”储存脚本，将其命名为“Show／Hide Files”。然后打开[Finder]的“服务”菜单，就可以看到刚才制作的“Show／Hide Files”选项。打开 Mac 的“系统偏好设置”，找到“键盘”里面的快捷键选项卡，设置其快捷方式为“Command+h”。</p>
 
-<p>到此，就可以快捷的切换了。：）</p>
+<p>到此，就可以用快捷键方便的切换了。：）</p>
 
-<h4 id="section-1">参考资料</h4>
+<p>另外，这个脚本文件默认的保存路径是<code>“~/Libiary/Services”</code>，如果想更改，可以手动删除。</p>
+
+<h4 id="section-2">参考资料</h4>
 
 <p>[1]<a href="http://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/">Quickly Show/Hide Hidden Files on Mac OS X Mavericks &amp; Yosemite</a></p>
 
