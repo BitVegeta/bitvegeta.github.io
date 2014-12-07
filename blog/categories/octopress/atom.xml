@@ -4,7 +4,7 @@
   <title><![CDATA[分类：“octopress” | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-07T22:06:18+08:00</updated>
+  <updated>2014-12-07T22:26:12+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -84,8 +84,6 @@ $ rake gen_deploy
 <p>我把自己的搭建步骤及遇到的问题全部详细的写下来，作为这个博客空间的第一篇文章，算是完成对 Octopress 和 Github 的致敬传统。同时也希望能给遇到同样问题的小白朋友们提供一些帮助！因为我相信，广大小白朋友缺乏的不是一篇精美的标准流程，而是一个整合了多种错误问题，错误代码及其解决办法的示例教程。我觉得我犯的错误属于比较经典的反面教材，正好起到抛砖引玉的作用！：）<!--more--></p>
 
 <p>由于学识粗浅，若有不对之处，还望高手指正！多谢！非小白请直接看 <strong>［搭建步骤］</strong>。</p>
-
-<p><strong>本文目录</strong></p>
 
 <ul id="markdown-toc">
   <li><a href="#section"><strong>一、前言</strong></a></li>
