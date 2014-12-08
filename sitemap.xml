@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/</loc>
+    <loc>bitvegeta.github.com/blog/quickly-show-hide-hidden-files-on-mac/</loc>
     <lastmod>2014-12-06T23:09:11+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>bitvegeta.github.io/blog/sublime-text-shell-command/</loc>
+    <loc>bitvegeta.github.com/blog/sublime-text-shell-command/</loc>
     <lastmod>2014-12-05T21:40:43+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>bitvegeta.github.io/blog/zsh-no-matches-found/</loc>
+    <loc>bitvegeta.github.com/blog/zsh-no-matches-found/</loc>
     <lastmod>2014-12-04T22:34:56+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>bitvegeta.github.io/blog/liquid-exception-undefined-method-sort/</loc>
+    <loc>bitvegeta.github.com/blog/liquid-exception-undefined-method-sort/</loc>
     <lastmod>2014-12-04T19:46:27+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/</loc>
+    <loc>bitvegeta.github.com/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/</loc>
     <lastmod>2014-11-30T11:41:47+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>bitvegeta.github.io/404.html</loc>
-    <lastmod>2014-12-08T21:01:21+08:00</lastmod>
+    <loc>bitvegeta.github.com/404.html</loc>
+    <lastmod>2014-12-08T21:32:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>bitvegeta.github.io/</loc>
-    <lastmod>2014-12-08T21:01:21+08:00</lastmod>
+    <loc>bitvegeta.github.com/</loc>
+    <lastmod>2014-12-08T21:32:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>bitvegeta.github.io/blog/archives/</loc>
-    <lastmod>2014-12-08T21:01:21+08:00</lastmod>
+    <loc>bitvegeta.github.com/blog/archives/</loc>
+    <lastmod>2014-12-08T21:32:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>bitvegeta.github.io/about/</loc>
-    <lastmod>2014-12-08T21:01:21+08:00</lastmod>
+    <loc>bitvegeta.github.com/about/</loc>
+    <lastmod>2014-12-08T21:32:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
