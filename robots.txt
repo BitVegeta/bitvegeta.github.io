@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://bitvegeta.github.io/sitemap.xml 
+Sitemap: bitvegeta.github.io/sitemap.xml 

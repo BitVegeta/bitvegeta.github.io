@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[精神和时间的小屋]]></title>
-  <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
-  <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-08T16:59:40+08:00</updated>
-  <id>http://bitvegeta.github.io/</id>
+  <link href="bitvegeta.github.io/atom.xml" rel="self"/>
+  <link href="bitvegeta.github.io/"/>
+  <updated>2014-12-08T21:01:21+08:00</updated>
+  <id>bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mac显示／隐藏系统文件的方法]]></title>
-    <link href="http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/"/>
+    <link href="bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/"/>
     <updated>2014-12-06T23:09:11+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac</id>
+    <id>bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac</id>
     <content type="html"><![CDATA[<p>Mac OS 系统下，一些文件是以隐藏文件存在的，这些文件通常都会有一个‘.’作为前缀，即文件名为“.example”形式。这样的好处是，一些重要的系统文件不会被一些误操作删除或损坏，而且 Finder 界面也会显示的更为简介；但缺点就是查找更改一些东西的时候不方便。</p>
 
 <p>通过Google学习了些显示／隐藏系统文件的方法，做下面的笔记，供大家参考。</p>
@@ -100,9 +100,9 @@
   
   <entry>
     <title type="html"><![CDATA[终端用命令行调用 Sublime Text 2]]></title>
-    <link href="http://bitvegeta.github.io/blog/sublime-text-shell-command/"/>
+    <link href="bitvegeta.github.io/blog/sublime-text-shell-command/"/>
     <updated>2014-12-05T21:40:43+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/sublime-text-shell-command</id>
+    <id>bitvegeta.github.io/blog/sublime-text-shell-command</id>
     <content type="html"><![CDATA[<p><a href="http://www.sublimetext.com/">Sublime Text</a> 作为一款优秀的文本编辑器，近年来其发展的势头一度盖过传统的 TextMate ，其拥有强大的包管理功能和优美易用的界面，被称为“最性感的编辑器”。</p>
 
 <p><a href="http://www.sublimetext.com/">Sublime Text 2</a> 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。</p>
@@ -144,9 +144,9 @@
   
   <entry>
     <title type="html"><![CDATA[Zsh: No Matches Found 问题解决方法]]></title>
-    <link href="http://bitvegeta.github.io/blog/zsh-no-matches-found/"/>
+    <link href="bitvegeta.github.io/blog/zsh-no-matches-found/"/>
     <updated>2014-12-04T22:34:56+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/zsh-no-matches-found</id>
+    <id>bitvegeta.github.io/blog/zsh-no-matches-found</id>
     <content type="html"><![CDATA[<p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交rake命令后报错：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;zsh: no matches found 错误&#8221; </span></figcaption>
@@ -158,6 +158,18 @@
 </span><span class="line"><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
 </span><span class="line"><span class="c1"># 显示错误</span>
 </span><span class="line"><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">
+</span><span class="line"># 输入
+</span><span class="line">$ rake new_post["example--title"]
+</span><span class="line"># 显示错误
+</span><span class="line">zsh: no matches found: new_post["example--title"]
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>求助万能的Google，找到了问题原因和解决办法：</p>
@@ -216,9 +228,9 @@
   
   <entry>
     <title type="html"><![CDATA[Liquid Exception: Undefined Method Sort 错误解决方法]]></title>
-    <link href="http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort/"/>
+    <link href="bitvegeta.github.io/blog/liquid-exception-undefined-method-sort/"/>
     <updated>2014-12-04T19:46:27+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort</id>
+    <id>bitvegeta.github.io/blog/liquid-exception-undefined-method-sort</id>
     <content type="html"><![CDATA[<p>折腾了一下午自己的 Octopress 博客配置，但是在提交更新时出现了一些问题，代码如下：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -299,10 +311,10 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Mac版Octopress搭建Github博客教程]]></title>
-    <link href="http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/"/>
+    <title type="html"><![CDATA[Mac版Octopress搭建Github博客[小白教程]]]></title>
+    <link href="bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/"/>
     <updated>2014-11-30T11:41:47+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
+    <id>bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
     <content type="html"><![CDATA[<p>在 Mac 系统下，利用 Octopress 框架在 Github 上搭建一个免费的个人Blog空间。——— 相信这是很多刚接触  Mac  和 Github 的朋友们必须完成的一个成长实践。</p>
 
 <p>我把自己的搭建步骤及遇到的问题全部详细的写下来，作为这个博客空间的第一篇文章，算是完成对 Octopress 和 Github 的致敬传统。同时也希望能给遇到同样问题的小白朋友们提供一些帮助！因为我相信，广大小白朋友缺乏的不是一篇精美的标准流程，而是一个整合了多种错误问题，错误代码及其解决办法的示例教程。我觉得我犯的错误属于比较经典的反面教材，正好起到抛砖引玉的作用！：）<!--more--></p>
