@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-13T16:32:17+08:00</updated>
+  <updated>2014-12-13T16:34:58+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[Mac显示／隐藏系统文件的方法]]></title>
-    <link href="http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac"/>
+    <link href="http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/"/>
     <updated>2014-12-06T23:09:11+08:00</updated>
     <id>http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac</id>
     <content type="html"><![CDATA[<p>Mac OS 系统下，一些文件是以隐藏文件存在的，这些文件通常都会有一个‘.’作为前缀，即文件名为“.example”形式。这样的好处是，一些重要的系统文件不会被一些误操作删除或损坏，而且 Finder 界面也会显示的更为简介；但缺点就是查找更改一些东西的时候不方便。</p>
@@ -101,7 +101,7 @@
   
   <entry>
     <title type="html"><![CDATA[终端用命令行调用 Sublime Text 2]]></title>
-    <link href="http://bitvegeta.github.io/blog/sublime-text-shell-command"/>
+    <link href="http://bitvegeta.github.io/blog/sublime-text-shell-command/"/>
     <updated>2014-12-05T21:40:43+08:00</updated>
     <id>http://bitvegeta.github.io/blog/sublime-text-shell-command</id>
     <content type="html"><![CDATA[<p><a href="http://www.sublimetext.com/">Sublime Text</a> 作为一款优秀的文本编辑器，近年来其发展的势头一度盖过传统的 TextMate ，其拥有强大的包管理功能和优美易用的界面，被称为“最性感的编辑器”。</p>
@@ -145,7 +145,7 @@
   
   <entry>
     <title type="html"><![CDATA[Zsh: No Matches Found 问题解决方法]]></title>
-    <link href="http://bitvegeta.github.io/blog/zsh-no-matches-found"/>
+    <link href="http://bitvegeta.github.io/blog/zsh-no-matches-found/"/>
     <updated>2014-12-04T22:34:56+08:00</updated>
     <id>http://bitvegeta.github.io/blog/zsh-no-matches-found</id>
     <content type="html"><![CDATA[<p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交rake命令后报错：</p>
@@ -217,7 +217,7 @@
   
   <entry>
     <title type="html"><![CDATA[Liquid Exception: Undefined Method Sort 错误解决方法]]></title>
-    <link href="http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort"/>
+    <link href="http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort/"/>
     <updated>2014-12-04T19:46:27+08:00</updated>
     <id>http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort</id>
     <content type="html"><![CDATA[<p>折腾了一下午自己的 Octopress 博客配置，但是在提交更新时出现了一些问题，代码如下：</p>
@@ -301,7 +301,7 @@
   
   <entry>
     <title type="html"><![CDATA[Mac版Octopress搭建Github博客[小白教程]]]></title>
-    <link href="http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng"/>
+    <link href="http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng/"/>
     <updated>2014-11-30T11:41:47+08:00</updated>
     <id>http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
     <content type="html"><![CDATA[<p>在 Mac 系统下，利用 Octopress 框架在 Github 上搭建一个免费的个人Blog空间。——— 相信这是很多刚接触  Mac  和 Github 的朋友们必须完成的一个成长实践。</p>

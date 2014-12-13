@@ -4,7 +4,7 @@
   <title><![CDATA[分类：zsh | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/zsh/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-13T16:32:17+08:00</updated>
+  <updated>2014-12-13T16:34:58+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[Zsh: No Matches Found 问题解决方法]]></title>
-    <link href="http://bitvegeta.github.io/blog/zsh-no-matches-found"/>
+    <link href="http://bitvegeta.github.io/blog/zsh-no-matches-found/"/>
     <updated>2014-12-04T22:34:56+08:00</updated>
     <id>http://bitvegeta.github.io/blog/zsh-no-matches-found</id>
     <content type="html"><![CDATA[<p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交rake命令后报错：</p>

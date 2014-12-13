@@ -4,7 +4,7 @@
   <title><![CDATA[分类：sublimetext | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/sublimetext/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2014-12-13T16:32:17+08:00</updated>
+  <updated>2014-12-13T16:34:58+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[终端用命令行调用 Sublime Text 2]]></title>
-    <link href="http://bitvegeta.github.io/blog/sublime-text-shell-command"/>
+    <link href="http://bitvegeta.github.io/blog/sublime-text-shell-command/"/>
     <updated>2014-12-05T21:40:43+08:00</updated>
     <id>http://bitvegeta.github.io/blog/sublime-text-shell-command</id>
     <content type="html"><![CDATA[<p><a href="http://www.sublimetext.com/">Sublime Text</a> 作为一款优秀的文本编辑器，近年来其发展的势头一度盖过传统的 TextMate ，其拥有强大的包管理功能和优美易用的界面，被称为“最性感的编辑器”。</p>
