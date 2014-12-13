@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[分类：octopress | 精神和时间的小屋]]></title>
-  <link href="bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="bitvegeta.github.io/"/>
-  <updated>2014-12-13T16:27:01+08:00</updated>
-  <id>bitvegeta.github.io/</id>
+  <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://bitvegeta.github.io/"/>
+  <updated>2014-12-13T16:32:17+08:00</updated>
+  <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Liquid Exception: Undefined Method Sort 错误解决方法]]></title>
-    <link href="bitvegeta.github.io/blog/liquid-exception-undefined-method-sort"/>
+    <link href="http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort"/>
     <updated>2014-12-04T19:46:27+08:00</updated>
-    <id>bitvegeta.github.io/blog/liquid-exception-undefined-method-sort</id>
+    <id>http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort</id>
     <content type="html"><![CDATA[<p>折腾了一下午自己的 Octopress 博客配置，但是在提交更新时出现了一些问题，代码如下：</p>
 
 <p><code>
@@ -76,9 +76,9 @@ $ rake gen_deploy
   
   <entry>
     <title type="html"><![CDATA[Mac版Octopress搭建Github博客[小白教程]]]></title>
-    <link href="bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng"/>
+    <link href="http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng"/>
     <updated>2014-11-30T11:41:47+08:00</updated>
-    <id>bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
+    <id>http://bitvegeta.github.io/blog/mac-octopress-github-blog-newbie-xiao-bai-jiao-cheng</id>
     <content type="html"><![CDATA[<p>在 Mac 系统下，利用 Octopress 框架在 Github 上搭建一个免费的个人Blog空间。——— 相信这是很多刚接触  Mac  和 Github 的朋友们必须完成的一个成长实践。</p>
 
 <p>我把自己的搭建步骤及遇到的问题全部详细的写下来，作为这个博客空间的第一篇文章，算是完成对 Octopress 和 Github 的致敬传统。同时也希望能给遇到同样问题的小白朋友们提供一些帮助！因为我相信，广大小白朋友缺乏的不是一篇精美的标准流程，而是一个整合了多种错误问题，错误代码及其解决办法的示例教程。我觉得我犯的错误属于比较经典的反面教材，正好起到抛砖引玉的作用！：）<!--more--></p>
