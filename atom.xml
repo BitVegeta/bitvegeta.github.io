@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-01-05T21:32:08+08:00</updated>
+  <updated>2015-01-05T21:35:33+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Basic Knowledge for Programmer]]></title>
-    <link href="http://bitvegeta.github.io/blog/basic-knowledge-for-programmer/"/>
+    <title type="html"><![CDATA[编程必读经典书籍]]></title>
+    <link href="http://bitvegeta.github.io/blog/classic-books%EF%BC%8Dfor-programmer/"/>
     <updated>2015-01-05T20:55:09+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/basic-knowledge-for-programmer</id>
+    <id>http://bitvegeta.github.io/blog/classic-books－for-programmer</id>
     <content type="html"><![CDATA[<p>2015-01-05</p>
 
 <p>今天看了技术大牛<a href="http://www.cnblogs.com/jeffreyzhao">老赵</a>在博客园的博客，虽然很久未见更新了，有点可惜，但是从列表中找到几篇对新手推荐的内容。</p>
@@ -25,11 +25,56 @@
 <p>总结一下，必看的好书：</p>
 
 <ul>
-  <li>《深入理解计算机系统（修订版）》／《Computer Systems: A Programmer’s Perspective》</li>
-  <li>《计算机程序的构造与解释》／《Structure and Interpretation of Computer Programs》</li>
-  <li>《程序员修炼之道——从小工到专家》／《The Pragmatic Programmer: From Journeyman to Master》</li>
-  <li>《高效程序员的45个习惯》／《Practices of an Agile Developer》</li>
-  <li>《软件开发沉思录：ThoughtWorks文集》／《The ThoughtWorks Anthology》</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>《深入理解计算机系统（修订版）》</td>
+          <td>《Computer Systems: A Programmer’s Perspective》</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>《计算机程序的构造与解释》</td>
+          <td>《Structure and Interpretation of Computer Programs》</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>《程序员修炼之道——从小工到专家》</td>
+          <td>《The Pragmatic Programmer: From Journeyman to Master》</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>《高效程序员的45个习惯》</td>
+          <td>《Practices of an Agile Developer》</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>《软件开发沉思录：ThoughtWorks文集》</td>
+          <td>《The ThoughtWorks Anthology》</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
   <li>《程序员的自我修养——链接、装载与库》</li>
 </ul>
 ]]></content>
