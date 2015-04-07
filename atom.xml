@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-07T20:56:26+08:00</updated>
+  <updated>2015-04-07T20:58:49+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -51,8 +51,9 @@
 </span><span class="line">	Friends  []*Friend
 </span><span class="line">}</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>{ % coderay lang:go linenos:true test-test % }
-package main</p>
+<p>{ % coderay lang:go linenos:true test-test % }</p>
+
+<p>package main</p>
 
 <p>import (
 	“html/template”
@@ -67,8 +68,9 @@ package main</p>
 	UserName string
 	Emails   []string
 	Friends  []*Friend
-}
-{ % endcoderay % }</p>
+}</p>
+
+<p>{ % endcoderay % }</p>
 ]]></content>
   </entry>
   
