@@ -138,6 +138,24 @@ package main import ( "html/template" "os"
 </span><span class="line">	Friends  []*Friend
 </span><span class="line">}</span></code></pre></td></tr></table></div></figure></notextile></div>
 
+<p>{ % coderay [lang:lang] [linenos:true|false(default)] [title] [url] [link text] % }
+package main</p>
+
+<p>import (
+	“html/template”
+	“os”
+)</p>
+
+<p>type Friend struct {
+	Fname string
+}</p>
+
+<p>type Person struct {
+	UserName string
+	Emails   []string
+	Friends  []*Friend
+}
+{ % endcoderay % }</p>
 </div>
 
 
