@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-02-14T23:36:34+08:00</updated>
+  <updated>2015-04-07T20:50:06+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://bitvegeta.github.io/blog/test/"/>
+    <updated>2015-04-07T17:57:52+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/test</id>
+    <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">package main
+</span><span class="line">
+</span><span class="line">import (
+</span><span class="line">	"html/template"
+</span><span class="line">	"os"
+</span><span class="line">)
+</span><span class="line">
+</span><span class="line">type Friend struct {
+</span><span class="line">	Fname string
+</span><span class="line">}
+</span><span class="line">
+</span><span class="line">type Person struct {
+</span><span class="line">	UserName string
+</span><span class="line">	Emails   []string
+</span><span class="line">	Friends  []*Friend
+</span><span class="line">}</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[我有一个宝贝]]></title>
