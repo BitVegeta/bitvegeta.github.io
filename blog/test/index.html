@@ -25,9 +25,8 @@
 14
 15
 16
-package main import ( "html/template" "os"
-) type Friend struct { Fname string
-} &hellip;">
+package main import ( &quot;html/template&quot; &quot;os&quot;
+) type Friend struct &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,7 +104,7 @@ package main import ( "html/template" "os"
   </header>
 
 
-<div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -121,22 +120,23 @@ package main import ( "html/template" "os"
 <span class="line-number">14</span>
 <span class="line-number">15</span>
 <span class="line-number">16</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">package main
+</pre></td><td class="code"><pre><code class="go"><span class="line"><span class="kn">package</span> <span class="nx">main</span>
 </span><span class="line">
-</span><span class="line">import (
-</span><span class="line">	"html/template"
-</span><span class="line">	"os"
-</span><span class="line">)
+</span><span class="line"><span class="kn">import</span> <span class="p">(</span>
+</span><span class="line">	<span class="s">&quot;html/template&quot;</span>
+</span><span class="line">	<span class="s">&quot;os&quot;</span>
+</span><span class="line"><span class="p">)</span>
 </span><span class="line">
-</span><span class="line">type Friend struct {
-</span><span class="line">	Fname string
-</span><span class="line">}
+</span><span class="line"><span class="kd">type</span> <span class="nx">Friend</span> <span class="kd">struct</span> <span class="p">{</span>
+</span><span class="line">	<span class="nx">Fname</span> <span class="kt">string</span>
+</span><span class="line"><span class="p">}</span>
 </span><span class="line">
-</span><span class="line">type Person struct {
-</span><span class="line">	UserName string
-</span><span class="line">	Emails   []string
-</span><span class="line">	Friends  []*Friend
-</span><span class="line">}</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class="line"><span class="kd">type</span> <span class="nx">Person</span> <span class="kd">struct</span> <span class="p">{</span>
+</span><span class="line">	<span class="nx">UserName</span> <span class="kt">string</span>
+</span><span class="line">	<span class="nx">Emails</span>   <span class="p">[]</span><span class="kt">string</span>
+</span><span class="line">	<span class="nx">Friends</span>  <span class="p">[]</span><span class="o">*</span><span class="nx">Friend</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>{ % coderay lang:go linenos:true test-test % }</p>
 
