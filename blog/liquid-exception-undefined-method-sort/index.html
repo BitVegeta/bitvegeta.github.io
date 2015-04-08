@@ -9,13 +9,14 @@
   <meta name="author" content="bitvegeta">
 
   
-  <meta name="description" content="Liquid Exception: Undefined Method Sort 错误解决方法 “2014年12月4日“ 7:46 pm 折腾了一下午自己的 Octopress 博客配置，但是在提交更新时出现了一些问题，代码如下： 1
+  <meta name="description" content="折腾了一下午自己的 Octopress 博客配置，但是在提交更新时出现了一些问题，代码如下： 1
 2
 3
 4
 5
 # 输入命令
-$ rake &hellip;">
+$ rake gen_deploy
+# 显示错误信息 Liquid Exception: undefined method `sort!' for nil: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,6 +88,9 @@ $ rake &hellip;">
 
 
 <time class='entry-date' datetime='2014-12-04T19:46:27+08:00'><span class='date'>“2014年12月4日“</span> <span class='time'>7:46 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://bitvegeta.github.io">Comments</a>
         
       </p>
     
@@ -173,8 +177,6 @@ $ rake &hellip;">
 
 
 
-          | <a href="#comments">Comments</a>
-
 
   <footer>
     <p class="meta">
@@ -218,6 +220,12 @@ $ rake &hellip;">
   </footer>
 </article>
 
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
 </div>
 
 <aside class="sidebar">
@@ -260,7 +268,7 @@ $ rake &hellip;">
   </ul>
 </section><section>
 <h1>最新评论</h1>
-<ul class="ds-recent-comments" data-num-items="5" data-show-avatars="0" data-show-time="0" data-show-title="0" data-show-admin="0" data-excerpt-length="18"></ul>
+<ul class="ds-recent-comments" data-num-items="" data-show-avatars="" data-show-time="" data-show-title="" data-show-admin="" data-excerpt-length=""></ul>
 
 </section>
 
@@ -309,6 +317,22 @@ $ rake &hellip;">
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'BitVegeta';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort/';
+        var disqus_url = 'http://bitvegeta.github.io/blog/liquid-exception-undefined-method-sort/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
