@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-08T17:42:37+08:00</updated>
+  <updated>2015-04-08T17:46:55+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Test]]></title>
     <link href="http://bitvegeta.github.io/blog/test/"/>
-    <updated>2015-04-07T17:57:52+08:00</updated>
+    <updated>2015-04-07T00:00:00+08:00</updated>
     <id>http://bitvegeta.github.io/blog/test</id>
     <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
