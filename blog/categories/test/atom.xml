@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类：test | 精神和时间的小屋]]></title>
+  <link href="http://bitvegeta.github.io/blog/categories/test/atom.xml" rel="self"/>
+  <link href="http://bitvegeta.github.io/"/>
+  <updated>2015-04-09T11:31:32+08:00</updated>
+  <id>http://bitvegeta.github.io/</id>
+  <author>
+    <name><![CDATA[bitvegeta]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://bitvegeta.github.io/blog/test/"/>
+    <updated>2015-04-07T17:57:52+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/test</id>
+    <content type="html"><![CDATA[<p>&#8220;` go</p>
+
+<p>package main</p>
+
+<p>import (
+	“html/template”
+	“os”
+)</p>
+
+<p>type Friend struct {
+	Fname string
+}</p>
+
+<p>type Person struct {
+	UserName string
+	Emails   []string
+	Friends  []*Friend
+}
+&#8220;`</p>
+
+<p>{ % coderay lang:go linenos:true test-test % }</p>
+
+<p>package main</p>
+
+<p>import (
+	“html/template”
+	“os”
+)</p>
+
+<p>type Friend struct {
+	Fname string
+}</p>
+
+<p>type Person struct {
+	UserName string
+	Emails   []string
+	Friends  []*Friend
+}</p>
+
+<p>{ % endcoderay % }</p>
+
+<p><figure class='code'><figcaption><span>linenos:false “zsh: no matches found 解决办法” </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># 输入</span>
+</span><span class='line'><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span>
+</span><span class='line'><span class="c1"># 显示</span>
+</span><span class='line'><span class="no">Enter</span> <span class="n">a</span> <span class="n">title</span> <span class="k">for</span> <span class="n">your</span> <span class="ss">post</span><span class="p">:</span>
+</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>
