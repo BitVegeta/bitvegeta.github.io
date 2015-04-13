@@ -4,7 +4,7 @@
   <title><![CDATA[分类：octopress | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-09T11:31:32+08:00</updated>
+  <updated>2015-04-13T16:35:04+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -27,7 +27,7 @@ $ rake gen_deploy
    Liquid Exception: undefined method `sort!' for nil:NilClass in _includes/post/categories.html, included in _layouts/post.html
    jekyll 2.5.2 | Error:  undefined method `sort!' for nil:NilClass
 </code>
-在万能的 Google 上找到了解决办法，感谢！这位同学的博客<a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">[1]</a>也是 Octopress ，哈哈！:D </p>
+在万能的 Google 上找到了解决办法，感谢！这位同学的博客<a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">[1]</a>也是 Octopress ，哈哈！:D <!--more--></p>
 
 <p><strong>解决办法是：</strong></p>
 

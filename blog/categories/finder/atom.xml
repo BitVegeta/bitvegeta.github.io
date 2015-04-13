@@ -4,7 +4,7 @@
   <title><![CDATA[分类：finder | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/finder/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-09T11:31:32+08:00</updated>
+  <updated>2015-04-13T16:35:04+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -20,7 +20,7 @@
     <id>http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac</id>
     <content type="html"><![CDATA[<p>Mac OS 系统下，一些文件是以隐藏文件存在的，这些文件通常都会有一个‘.’作为前缀，即文件名为“.example”形式。这样的好处是，一些重要的系统文件不会被一些误操作删除或损坏，而且 Finder 界面也会显示的更为简介；但缺点就是查找更改一些东西的时候不方便。</p>
 
-<p>通过Google学习了些显示／隐藏系统文件的方法，做下面的笔记，供大家参考。</p>
+<p>通过Google学习了些显示／隐藏系统文件的方法，做下面的笔记，供大家参考。<!--more--></p>
 
 <h4 id="section">1.在终端输入命令行控制</h4>
 

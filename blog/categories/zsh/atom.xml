@@ -4,7 +4,7 @@
   <title><![CDATA[分类：zsh | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/zsh/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-09T11:31:32+08:00</updated>
+  <updated>2015-04-13T16:35:04+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -31,7 +31,7 @@
 </span><span class='line'><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="err">“</span><span class="n">example</span><span class="err">–</span><span class="n">title</span><span class="err">”</span><span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure></p>
 
-<p>求助万能的Google，找到了问题原因和解决办法：</p>
+<p>求助万能的Google，找到了问题原因和解决办法：<!--more--></p>
 
 <p><strong>原因：</strong></p>
 

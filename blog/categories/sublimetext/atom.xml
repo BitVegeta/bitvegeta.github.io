@@ -4,7 +4,7 @@
   <title><![CDATA[分类：sublimetext | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/sublimetext/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-09T11:31:32+08:00</updated>
+  <updated>2015-04-13T16:35:04+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -22,7 +22,7 @@
 
 <p><a href="http://www.sublimetext.com/">Sublime Text 2</a> 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。</p>
 
-<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：</p>
+<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：<!--more--></p>
 
 <h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
 

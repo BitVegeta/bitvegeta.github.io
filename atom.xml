@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-09T11:31:32+08:00</updated>
+  <updated>2015-04-13T16:35:04+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -189,6 +189,8 @@
 <span class="line-number">96</span>
 <span class="line-number">97</span>
 <span class="line-number">98</span>
+<span class="line-number">99</span>
+<span class="line-number">100</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">我有一个宝贝
 </span><span class="line">她早晨醒来的第一个表情就是微笑
 </span><span class="line">她笑着喊哥哥的样子
@@ -198,6 +200,8 @@
 </span><span class="line">也喜欢被抱抱
 </span><span class="line">她被抱着的时候
 </span><span class="line">会甜甜的说 好幸福
+</span><span class="line">
+</span><span class="line">//&lt;!--more--&gt;
 </span><span class="line">
 </span><span class="line">她会习惯性的说谢谢 
 </span><span class="line">谢谢哥哥帮我倒水
@@ -301,7 +305,7 @@
 
 <p>今天看了技术大牛<a href="http://www.cnblogs.com/jeffreyzhao">老赵</a>在博客园的博客，虽然很久未见更新了，有点可惜，但是从列表中找到几篇对新手推荐的内容。</p>
 
-<p>总结一下，必看的好书：</p>
+<p>总结一下，必看的好书：<!--more--></p>
 
 <ul>
   <li>《深入理解计算机系统（修订版）》/《Computer Systems: A Programmer’s Perspective》</li>
@@ -321,7 +325,7 @@
     <id>http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac</id>
     <content type="html"><![CDATA[<p>Mac OS 系统下，一些文件是以隐藏文件存在的，这些文件通常都会有一个‘.’作为前缀，即文件名为“.example”形式。这样的好处是，一些重要的系统文件不会被一些误操作删除或损坏，而且 Finder 界面也会显示的更为简介；但缺点就是查找更改一些东西的时候不方便。</p>
 
-<p>通过Google学习了些显示／隐藏系统文件的方法，做下面的笔记，供大家参考。</p>
+<p>通过Google学习了些显示／隐藏系统文件的方法，做下面的笔记，供大家参考。<!--more--></p>
 
 <h4 id="section">1.在终端输入命令行控制</h4>
 
@@ -409,7 +413,7 @@
 
 <p><a href="http://www.sublimetext.com/">Sublime Text 2</a> 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。</p>
 
-<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：</p>
+<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：<!--more--></p>
 
 <h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
 
@@ -462,7 +466,7 @@
 </span><span class="line"><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>求助万能的Google，找到了问题原因和解决办法：</p>
+<p>求助万能的Google，找到了问题原因和解决办法：<!--more--></p>
 
 <p><strong>原因：</strong></p>
 
@@ -522,7 +526,7 @@
 </span><span class="line"># 显示错误信息
 </span><span class="line">   Liquid Exception: undefined method `sort!' for nil:NilClass in _includes/post/categories.html, included in _layouts/post.html
 </span><span class="line">   jekyll 2.5.2 | Error:  undefined method `sort!' for nil:NilClass</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>在万能的 Google 上找到了解决办法，感谢！这位同学的博客<a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">[1]</a>也是 Octopress ，哈哈！:D </p>
+<p>在万能的 Google 上找到了解决办法，感谢！这位同学的博客<a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">[1]</a>也是 Octopress ，哈哈！:D <!--more--></p>
 
 <p><strong>解决办法是：</strong></p>
 

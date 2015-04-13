@@ -307,6 +307,8 @@ package main import ( &quot;html/template&quot; &quot;os&quot;
 <span class="line-number">96</span>
 <span class="line-number">97</span>
 <span class="line-number">98</span>
+<span class="line-number">99</span>
+<span class="line-number">100</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">我有一个宝贝
 </span><span class="line">她早晨醒来的第一个表情就是微笑
 </span><span class="line">她笑着喊哥哥的样子
@@ -316,6 +318,8 @@ package main import ( &quot;html/template&quot; &quot;os&quot;
 </span><span class="line">也喜欢被抱抱
 </span><span class="line">她被抱着的时候
 </span><span class="line">会甜甜的说 好幸福
+</span><span class="line">
+</span><span class="line">//&lt;!--more--&gt;
 </span><span class="line">
 </span><span class="line">她会习惯性的说谢谢 
 </span><span class="line">谢谢哥哥帮我倒水
@@ -444,18 +448,12 @@ package main import ( &quot;html/template&quot; &quot;os&quot;
 
 <p>今天看了技术大牛<a href="http://www.cnblogs.com/jeffreyzhao">老赵</a>在博客园的博客，虽然很久未见更新了，有点可惜，但是从列表中找到几篇对新手推荐的内容。</p>
 
-<p>总结一下，必看的好书：</p>
-
-<ul>
-  <li>《深入理解计算机系统（修订版）》/《Computer Systems: A Programmer’s Perspective》</li>
-  <li>《计算机程序的构造与解释》/《Structure and Interpretation of Computer Programs》</li>
-  <li>《程序员修炼之道——从小工到专家》/《The Pragmatic Programmer: From Journeyman to Master》</li>
-  <li>《高效程序员的45个习惯》/《Practices of an Agile Developer》</li>
-  <li>《软件开发沉思录：ThoughtWorks文集》/《The ThoughtWorks Anthology》</li>
-  <li>《程序员的自我修养——链接、装载与库》</li>
-</ul>
-</div>
+<p>总结一下，必看的好书：</div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/classic-books%EF%BC%8Dfor-programmer/">阅读全文 &rarr;</a>
+    </footer>
   
 
 
@@ -489,84 +487,12 @@ package main import ( &quot;html/template&quot; &quot;os&quot;
 
   <div class="entry-content"><p>Mac OS 系统下，一些文件是以隐藏文件存在的，这些文件通常都会有一个‘.’作为前缀，即文件名为“.example”形式。这样的好处是，一些重要的系统文件不会被一些误操作删除或损坏，而且 Finder 界面也会显示的更为简介；但缺点就是查找更改一些东西的时候不方便。</p>
 
-<p>通过Google学习了些显示／隐藏系统文件的方法，做下面的笔记，供大家参考。</p>
-
-<h4 id="section">1.在终端输入命令行控制</h4>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;显示／隐藏系统文件命令&#8221; </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="c1"># 显示所有隐藏文件：</span>
-</span><span class="line"><span class="err">$</span> <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="o">-</span><span class="n">bool</span> <span class="kp">true</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># 隐藏所有隐藏文件：</span>
-</span><span class="line"><span class="err">$</span> <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="o">-</span><span class="n">bool</span> <span class="kp">false</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>这种方法简单有效，但是容易忘记代码，需要做好笔记，推荐一种更直接的办法：</p>
-
-<h4 id="alias-">2.设置 alias 快捷控制</h4>
-
-<p>按照自己的终端修改<code>~/.zshrc</code>或<code>~/.bash_profile</code>文件，添加下面的两行代码，设置如下：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;设置 alias 快捷控制&#8221; </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="c1"># 显示命令的alias</span>
-</span><span class="line"><span class="k">alias</span> <span class="n">showFiles</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># 隐藏命令的alias</span>
-</span><span class="line"><span class="k">alias</span> <span class="n">hideFiles</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app&#39;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>现在就可以用“showFiles”／“hideFiles”来控制显示／隐藏系统文件了。</p>
-
-<p>当然，这个方式跟 Ubuntu 系统下 “Contrl＋h”控制显示／隐藏文件相比，还是略显麻烦。当然，Mac 下也可以自己写一个脚本控制。</p>
-
-<h4 id="section-1">3.编写控制脚本，并设置一个快捷键调用</h4>
-
-<p>在［应用程序］里，找到并打开［Automator］软件，选择建立［服务］文件，在左侧［资源库］栏找到［实用工具］栏目，选择其中的［运行 shell 脚本］，拖动到右侧编辑区域，输入以下脚本代码：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>“Show／Hide Files 控制脚本” </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line">  <span class="no">STATUS</span><span class="o">=</span><span class="sb">`defaults read com.apple.finder AppleShowAllFiles`</span>
-</span><span class="line">  <span class="k">if</span> <span class="o">[</span> <span class="vg">$STATUS</span> <span class="o">==</span> <span class="no">YES</span> <span class="o">]</span><span class="p">;</span>
-</span><span class="line">  <span class="k">then</span>
-</span><span class="line">      <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="no">NO</span>
-</span><span class="line">  <span class="k">else</span>
-</span><span class="line">      <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="no">YES</span>
-</span><span class="line">  <span class="n">fi</span>
-</span><span class="line">  <span class="n">killall</span> <span class="no">Finder</span>
-</span><span class="line">  <span class="sr">/System/</span><span class="no">Library</span><span class="o">/</span><span class="no">CoreServices</span><span class="o">/</span><span class="no">Finder</span><span class="o">.</span><span class="n">app</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>在［服务“收到”］的下拉菜单中选择“没有输入”，［位于］选择“Finder”，然后“Command＋s”储存脚本，将其命名为“Show／Hide Files”。然后打开[Finder]的“服务”菜单，就可以看到刚才制作的“Show／Hide Files”选项。打开 Mac 的“系统偏好设置”，找到“键盘”里面的快捷键选项卡，设置其快捷方式为“Command+h”。</p>
-
-<p>到此，就可以用快捷键方便的切换了。：）</p>
-
-<p>另外，这个脚本文件默认的保存路径是<code>“~/Libiary/Services”</code>，如果想更改，可以手动删除。</p>
-
-<h4 id="section-2">参考资料</h4>
-
-<p>[1]<a href="http://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/">Quickly Show/Hide Hidden Files on Mac OS X Mavericks &amp; Yosemite</a></p>
-
-<p>[2]<a href="http://blog.sina.com.cn/s/blog_59fb90df01019vod.html">mac  快速显示、隐藏 文件方法，包括快捷键</a></p>
-</div>
+<p>通过Google学习了些显示／隐藏系统文件的方法，做下面的笔记，供大家参考。</div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/quickly-show-hide-hidden-files-on-mac/">阅读全文 &rarr;</a>
+    </footer>
   
 
 
@@ -602,40 +528,12 @@ package main import ( &quot;html/template&quot; &quot;os&quot;
 
 <p><a href="http://www.sublimetext.com/">Sublime Text 2</a> 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。</p>
 
-<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：</p>
-
-<h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;为 Sublime Text 2 设置一个符号链接&#8221; </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="err">$</span> <span class="n">sudo</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="s2">&quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot;</span> <span class="sr">/usr/</span><span class="n">bin</span><span class="o">/</span><span class="n">subl</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><strong>重要提示：Mac下这个操作要求必须是Root权限账户。</strong></p>
-
-<p>执行命令，如果运行成功，则可以直接用“subl”作为命令编辑一个文件；
-如果提示错误，则需要查看 $PATH 的值，以确保<code>/usr/bin/</code>路径在<code>/bin/</code>路径之前。查看命令如下：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">$ echo $PATH</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>若需更改 $PATH 变量，打开 /etc/paths 路径编辑即可；</p>
-
-<h4 id="alias">自定义alias</h4>
-
-<p>在<code>~/.zshrc</code>中定义 <code>‘sb’</code>为 sublime Text 2 的别名，添加下列代码：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"> alias sb='subl'</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>现在终端中输入‘sb example.html’，即可创建一个 html 文件。</p>
-
-<p>如果你用的使 bash 终端，在<code>~/.bash_profile</code>文件中更改。</p>
-
-<h4 id="section">参考资料</h4>
-
-<p>[1]<a href="http://www.yangzhiping.com/tech/mac-dev.html">Mac开发者2013年新机设置参考</a></p>
-</div>
+<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：</div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/sublime-text-shell-command/">阅读全文 &rarr;</a>
+    </footer>
   
 
 
@@ -680,48 +578,12 @@ package main import ( &quot;html/template&quot; &quot;os&quot;
 </span><span class="line"><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>求助万能的Google，找到了问题原因和解决办法：</p>
-
-<p><strong>原因：</strong></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Zsh会自动把类似‘*，(，</td>
-      <td>，&lt;，[，?’等符号识别为一种通配符；</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>解决办法一：</strong></p>
-
-<p>按照下面方式输入：</p>
-
-<p>此时输入  example–title 即可。</p>
-
-<p><strong>解决办法二：</strong></p>
-
-<p>取消zsh的通配(GLOB),修改 ~/.zshrc 文件，添加下列内容：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">alias rake="noglob rake"</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>这个方法较为彻底。</p>
-
-<p><strong>解决办法三：</strong></p>
-
-<p>使用转义字符’&#8217;，帮助 Zsh 读懂命令；</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">$ rake new_post\["This is New Post"\] </span></code></pre></td></tr></table></div></figure></notextile></div>
-<hr />
-
-<p>P.S.其余的 Zsh: no matches found 问题都可以用类似方法解决。</p>
-
-<p><strong>参考资料</strong></p>
-
-<p>[1]<a href="https://github.com/imathis/octopress/issues/117">Not compatible with Zsh #117</a></p>
-</div>
+<p>求助万能的Google，找到了问题原因和解决办法：</div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/zsh-no-matches-found/">阅读全文 &rarr;</a>
+    </footer>
   
 
 
@@ -765,72 +627,12 @@ package main import ( &quot;html/template&quot; &quot;os&quot;
 </span><span class="line"># 显示错误信息
 </span><span class="line">   Liquid Exception: undefined method `sort!' for nil:NilClass in _includes/post/categories.html, included in _layouts/post.html
 </span><span class="line">   jekyll 2.5.2 | Error:  undefined method `sort!' for nil:NilClass</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>在万能的 Google 上找到了解决办法，感谢！这位同学的博客<a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">[1]</a>也是 Octopress ，哈哈！:D </p>
-
-<p><strong>解决办法是：</strong></p>
-
-<p>用 Sublime 打开 <code>~/Octopress/plugins/category_generator.rb</code> 文件，找到下面的这段代码：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"> def category_links(categories)
-</span><span class="line">      categories = categories.sort!.map { |c| category_link c }
-</span><span class="line">        case categories.length
-</span><span class="line">        when 0
-</span><span class="line">          ""
-</span><span class="line">        when 1
-</span><span class="line">          categories[0].to_s
-</span><span class="line">        else
-</span><span class="line">          "#{categories[0...-1].join(', ')}, #{categories[-1]}"
-</span><span class="line">        end
-</span><span class="line">      end</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>然后，添加两行代码（<code>添加的代码行，后面都添加了注释</code>）：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"> def category_links(categories)
-</span><span class="line">   if categories != nil     # Added this line 添加这一行
-</span><span class="line">      categories = categories.sort!.map { |c| category_link c }
-</span><span class="line">        case categories.length
-</span><span class="line">        when 0
-</span><span class="line">          ""
-</span><span class="line">        when 1
-</span><span class="line">          categories[0].to_s
-</span><span class="line">        else
-</span><span class="line">          "#{categories[0...-1].join(', ')}, #{categories[-1]}"
-</span><span class="line">        end
-</span><span class="line">      end                      # Added this line 添加这一行
-</span><span class="line">   end</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>保存后，运行 <code>rake gen_deploy</code>显示成功。</p>
-
-<hr />
-<p><strong>参考资料</strong></p>
-
-<p>[1] <a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">Liquid Exception: Undefined Method Sort</a></p>
-
-</div>
+<p>在万能的 Google 上找到了解决办法，感谢！这位同学的博客<a href="http://blog.gordontillman.info/blog/2014-11-26-liquid-exception:-undefined-method-sort.html">[1]</a>也是 Octopress ，哈哈！:D </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/liquid-exception-undefined-method-sort/">阅读全文 &rarr;</a>
+    </footer>
   
 
 
