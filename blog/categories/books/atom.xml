@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类：books | 精神和时间的小屋]]></title>
+  <link href="http://bitvegeta.github.io/blog/categories/books/atom.xml" rel="self"/>
+  <link href="http://bitvegeta.github.io/"/>
+  <updated>2015-04-14T10:36:53+08:00</updated>
+  <id>http://bitvegeta.github.io/</id>
+  <author>
+    <name><![CDATA[bitvegeta]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[[书单]_编程必读经典书籍]]></title>
+    <link href="http://bitvegeta.github.io/blog/classic-books%EF%BC%8Dfor-programmer/"/>
+    <updated>2015-01-05T20:55:09+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/classic-books－for-programmer</id>
+    <content type="html"><![CDATA[<p>2015-01-05</p>
+
+<p>今天看了技术大牛，微博活跃分子<a href="http://weibo.com/jeffz">@老赵</a>在博客园的<a href="http://www.cnblogs.com/jeffreyzhao">博客</a>，虽然很久未见更新了，有点可惜，但是从列表中找到几篇对新手推荐的内容。</p>
+
+<p>总结一下，几本编程必看的好书：<!--more--></p>
+
+<ul>
+  <li>《深入理解计算机系统（修订版）》/《Computer Systems: A Programmer’s Perspective》</li>
+  <li>《计算机程序的构造与解释》/《Structure and Interpretation of Computer Programs》</li>
+  <li>《程序员修炼之道——从小工到专家》/《The Pragmatic Programmer: From Journeyman to Master》</li>
+  <li>《高效程序员的45个习惯》/《Practices of an Agile Developer》</li>
+  <li>《软件开发沉思录：ThoughtWorks文集》/《The ThoughtWorks Anthology》</li>
+  <li>《程序员的自我修养——链接、装载与库》</li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>

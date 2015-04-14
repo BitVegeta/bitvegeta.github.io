@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-14T00:08:49+08:00</updated>
+  <updated>2015-04-14T10:36:53+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -309,15 +309,15 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[编程必读经典书籍]]></title>
+    <title type="html"><![CDATA[[书单]_编程必读经典书籍]]></title>
     <link href="http://bitvegeta.github.io/blog/classic-books%EF%BC%8Dfor-programmer/"/>
     <updated>2015-01-05T20:55:09+08:00</updated>
     <id>http://bitvegeta.github.io/blog/classic-books－for-programmer</id>
     <content type="html"><![CDATA[<p>2015-01-05</p>
 
-<p>今天看了技术大牛<a href="http://www.cnblogs.com/jeffreyzhao">老赵</a>在博客园的博客，虽然很久未见更新了，有点可惜，但是从列表中找到几篇对新手推荐的内容。</p>
+<p>今天看了技术大牛，微博活跃分子<a href="http://weibo.com/jeffz">@老赵</a>在博客园的<a href="http://www.cnblogs.com/jeffreyzhao">博客</a>，虽然很久未见更新了，有点可惜，但是从列表中找到几篇对新手推荐的内容。</p>
 
-<p>总结一下，必看的好书：<!--more--></p>
+<p>总结一下，几本编程必看的好书：<!--more--></p>
 
 <ul>
   <li>《深入理解计算机系统（修订版）》/《Computer Systems: A Programmer’s Perspective》</li>
@@ -331,7 +331,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Mac显示／隐藏系统文件的方法]]></title>
+    <title type="html"><![CDATA[[Mac]Finder 显示／隐藏系统文件的方法]]></title>
     <link href="http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac/"/>
     <updated>2014-12-06T23:09:11+08:00</updated>
     <id>http://bitvegeta.github.io/blog/quickly-show-hide-hidden-files-on-mac</id>
