@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: SublimeText | 精神和时间的小屋]]></title>
+  <link href="http://bitvegeta.github.io/tags/sublimetext/atom.xml" rel="self"/>
+  <link href="http://bitvegeta.github.io/"/>
+  <updated>2015-04-15T22:36:54+08:00</updated>
+  <id>http://bitvegeta.github.io/</id>
+  <author>
+    <name><![CDATA[Bitegeta]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[终端用命令行调用 Sublime Text 2]]></title>
+    <link href="http://bitvegeta.github.io/blog/sublime-text-shell-command/"/>
+    <updated>2014-12-05T21:40:43+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/sublime-text-shell-command</id>
+    <content type="html"><![CDATA[<p><a href="http://www.sublimetext.com/">Sublime Text</a> 作为一款优秀的文本编辑器，近年来其发展的势头一度盖过传统的 TextMate ，其拥有强大的包管理功能和优美易用的界面，被称为“最性感的编辑器”。</p>
+
+<p><a href="http://www.sublimetext.com/">Sublime Text 2</a> 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。</p>
+
+<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：<!--more--></p>
+
+<h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
+
+<p>{% codeblock lang:ruby “为 Sublime Text 2 设置一个符号链接” %}
+$ sudo ln -s “/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl” /usr/bin/subl
+{% endcodeblock %}</p>
+
+<p><strong>重要提示：Mac下这个操作要求必须是Root权限账户。</strong></p>
+
+<p>执行命令，如果运行成功，则可以直接用“subl”作为命令编辑一个文件；
+如果提示错误，则需要查看 $PATH 的值，以确保<code>/usr/bin/</code>路径在<code>/bin/</code>路径之前。查看命令如下：</p>
+
+<p><code>
+$ echo $PATH
+</code>
+若需更改 $PATH 变量，打开 /etc/paths 路径编辑即可；</p>
+
+<h4 id="alias">自定义alias</h4>
+
+<p>在<code>~/.zshrc</code>中定义 <code>‘sb’</code>为 sublime Text 2 的别名，添加下列代码：</p>
+
+<p><code>
+ alias sb='subl'
+</code></p>
+
+<p>现在终端中输入‘sb example.html’，即可创建一个 html 文件。</p>
+
+<p>如果你用的使 bash 终端，在<code>~/.bash_profile</code>文件中更改。</p>
+
+<h4 id="section">参考资料</h4>
+
+<p>[1]<a href="http://www.yangzhiping.com/tech/mac-dev.html">Mac开发者2013年新机设置参考</a></p>
+]]></content>
+  </entry>
+  
+</feed>
