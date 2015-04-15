@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tag: aa | 精神和时间的小屋]]></title>
-  <link href="http://bitvegeta.github.io/tags/aa/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: aa bb | 精神和时间的小屋]]></title>
+  <link href="http://bitvegeta.github.io/tags/aa-bb/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-15T11:04:57+08:00</updated>
+  <updated>2015-04-15T11:25:35+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
