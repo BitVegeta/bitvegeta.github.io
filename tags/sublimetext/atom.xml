@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: SublimeText | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/tags/sublimetext/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-15T22:59:51+08:00</updated>
+  <updated>2015-04-15T23:02:13+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -26,9 +26,10 @@
 
 <h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
 
-<p>{% codeblock lang:ruby “为 Sublime Text 2 设置一个符号链接” %}
-$ sudo ln -s “/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl” /usr/bin/subl
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>“为 Sublime Text 2 设置一个符号链接” </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="err">$</span> <span class="n">sudo</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="err">“</span><span class="o">/</span><span class="no">Applications</span><span class="o">/</span><span class="no">Sublime</span> <span class="no">Text</span> <span class="mi">2</span><span class="o">.</span><span class="n">app</span><span class="o">/</span><span class="no">Contents</span><span class="o">/</span><span class="no">SharedSupport</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">subl</span><span class="err">”</span> <span class="sr">/usr/</span><span class="n">bin</span><span class="o">/</span><span class="n">subl</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><strong>重要提示：Mac下这个操作要求必须是Root权限账户。</strong></p>
 

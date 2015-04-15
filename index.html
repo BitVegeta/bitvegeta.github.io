@@ -10,7 +10,13 @@
   <meta name="author" content="Bitegeta">
 
   
-  <meta name="description" content="在完善美化 Octopress Github Pages 博客过程中，又遇到不少问题，原因各种各样，有的至今不明所以，现把操作步骤，问题及解决方法一并记录到这里，供搜索参考，或深入研究。有不对之处，还望高手斧正！ 一、侧边栏添加－分类目录 Categories 网上已经有很详细明白的教程， &hellip;">
+  <meta name="description" content=" 我有一个宝贝
+她早晨醒来的第一个表情就是微笑
+她笑着喊哥哥的样子
+真的好美 她喜欢抱抱别人
+也喜欢被抱抱
+她被抱着的时候
+会甜甜的说 好幸福 ">
   
 &#8211;>
 <meta name="author" content="Bitegeta">
@@ -78,184 +84,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/octopress-error-and-solution-in-github-pages-building/">Octopress 优化中的错误和解决方法</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-15T22:11:07+08:00'><span class='date'>“2015年4月15日“</span> <span class='time'>10:11 pm</span></time>
-        
-           | <a href="/blog/octopress-error-and-solution-in-github-pages-building/#disqus_thread"
-             data-disqus-identifier="http://bitvegeta.github.io/blog/octopress-error-and-solution-in-github-pages-building/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在完善美化 Octopress Github Pages 博客过程中，又遇到不少问题，原因各种各样，有的至今不明所以，现把操作步骤，问题及解决方法一并记录到这里，供搜索参考，或深入研究。有不对之处，还望高手斧正！</p>
-
-<h4 id="categories">一、侧边栏添加－分类目录 Categories</h4>
-
-<p>网上已经有很详细明白的教程，这里的内容参考原文链接见[1]。</p>
-
-<h5 id="categorylist">增加category_list插件</h5>
-
-<p>保存以下代码到 <code>plugins/category_list_tag.rb</code> ：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">module Jekyll
-</span><span class="line">  class CategoryListTag &lt; Liquid::Tag
-</span><span class="line">    def render(context)
-</span><span class="line">      html = ""
-</span><span class="line">      categories = context.registers[:site].categories.keys
-</span><span class="line">      categories.sort.each do |category|
-</span><span class="line">        posts_in_category = context.registers[:site].categories[category].size
-</span><span class="line">        category_dir = context.registers[:site].config['category_dir']
-</span><span class="line">        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
-</span><span class="line">        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
-</span><span class="line">      end
-</span><span class="line">      html
-</span><span class="line">    end
-</span><span class="line">  end
-</span><span class="line">end
-</span><span class="line">Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>这个插件会向 liquid 注册一个名为 category_list 的 tag，该 tag 就是以 li 的形式将站点所有的 category 组织起来。如果要将 category 加入到侧边导航栏，需要增加一个 aside。</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/octopress-error-and-solution-in-github-pages-building/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/test/">Test</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-07T17:57:52+08:00'><span class='date'>“2015年4月7日“</span> <span class='time'>5:57 pm</span></time>
-        
-           | <a href="/blog/test/#disqus_thread"
-             data-disqus-identifier="http://bitvegeta.github.io/blog/test/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-</pre></td><td class="code"><pre><code class="go"><span class="line"><span class="kn">package</span> <span class="nx">main</span>
-</span><span class="line">
-</span><span class="line"><span class="kn">import</span> <span class="p">(</span>
-</span><span class="line">	<span class="s">&quot;html/template&quot;</span>
-</span><span class="line">	<span class="s">&quot;os&quot;</span>
-</span><span class="line"><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">type</span> <span class="nx">Friend</span> <span class="kd">struct</span> <span class="p">{</span>
-</span><span class="line">	<span class="nx">Fname</span> <span class="kt">string</span>
-</span><span class="line"><span class="p">}</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">type</span> <span class="nx">Person</span> <span class="kd">struct</span> <span class="p">{</span>
-</span><span class="line">	<span class="nx">UserName</span> <span class="kt">string</span>
-</span><span class="line">	<span class="nx">Emails</span>   <span class="p">[]</span><span class="kt">string</span>
-</span><span class="line">	<span class="nx">Friends</span>  <span class="p">[]</span><span class="o">*</span><span class="nx">Friend</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>{ % coderay lang:go linenos:true test-test % }</p>
-
-<p>package main</p>
-
-<p>import (
-	“html/template”
-	“os”
-)</p>
-
-<p>type Friend struct {
-	Fname string
-}</p>
-
-<p>type Person struct {
-	UserName string
-	Emails   []string
-	Friends  []*Friend
-}</p>
-
-<p>{ % endcoderay % }</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>linenos:false &#8220;zsh: no matches found 解决办法&#8221; </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="c1"># 输入</span>
-</span><span class="line"><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span>
-</span><span class="line"><span class="c1"># 显示</span>
-</span><span class="line"><span class="no">Enter</span> <span class="n">a</span> <span class="n">title</span> <span class="k">for</span> <span class="n">your</span> <span class="ss">post</span><span class="p">:</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-</div>
-  
-  
-
-
-
-
-    </article>
   
   
     <article>
@@ -580,14 +408,6 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/octopress-error-and-solution-in-github-pages-building/">Octopress 优化中的错误和解决方法</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/test/">Test</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/i-have-a-baby/">我有一个宝贝</a>
       </li>
     
@@ -599,6 +419,14 @@
         <a href="/blog/quickly-show-hide-hidden-files-on-mac/">[Mac]Finder 显示／隐藏系统文件的方法</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/sublime-text-shell-command/">终端用命令行调用 Sublime Text 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/zsh-no-matches-found/">Zsh: No Matches Found 问题解决方法</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -606,17 +434,17 @@
   <ul id="categories">
     <li class='category'><a href='/blog/categories/books/'>Books (1)</a></li>
 <li class='category'><a href='/blog/categories/life/'>Life (1)</a></li>
-<li class='category'><a href='/blog/categories/mac/'>Mac (1)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>Octopress (3)</a></li>
-<li class='category'><a href='/blog/categories/sublimetext/'>Sublimetext (1)</a></li>
-<li class='category'><a href='/blog/categories/test/'>Test (1)</a></li>
+<li class='category'><a href='/blog/categories/mac/'>Mac (2)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>Octopress (2)</a></li>
 <li class='category'><a href='/blog/categories/zsh/'>Zsh (1)</a></li>
 
   </ul>
 </section><section>
   <h1>标签</h1>
   <ul class="tag-cloud">
-    
+    <a style="font-size: NaN%" href="/tags/finder/">Finder</a>
+<a style="font-size: NaN%" href="/tags/sublimetext/">SublimeText</a>
+
   </ul>
 </section>
 
