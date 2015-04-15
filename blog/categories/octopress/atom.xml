@@ -4,7 +4,7 @@
   <title><![CDATA[分类：octopress | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-15T22:50:21+08:00</updated>
+  <updated>2015-04-15T22:59:18+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress 优化中的错误和解决方法]]></title>
-    <link href="http://bitvegeta.github.io/blog/octopress-error-and-solution-in-github-pages-building/"/>
-    <updated>2015-04-15T22:11:07+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/octopress-error-and-solution-in-github-pages-building</id>
+    <link href="http://bitvegeta.github.io/blog/octopress-error-and-solution/"/>
+    <updated>2015-04-15T22:57:42+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/octopress-error-and-solution</id>
     <content type="html"><![CDATA[<p>在完善美化 Octopress Github Pages 博客过程中，又遇到不少问题，原因各种各样，有的至今不明所以，现把操作步骤，问题及解决方法一并记录到这里，供搜索参考，或深入研究。有不对之处，还望高手斧正！</p>
 
 <h4 id="categories">一、侧边栏添加－分类目录 Categories</h4>
