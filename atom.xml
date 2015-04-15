@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-15T08:47:31+08:00</updated>
+  <updated>2015-04-15T10:25:21+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[bitvegeta]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Test2]]></title>
+    <link href="http://bitvegeta.github.io/blog/test2/"/>
+    <updated>2015-04-15T10:23:31+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/test2</id>
+    <content type="html"><![CDATA[<p>nihao
+laldsjf
+asdjfl </p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Test]]></title>
