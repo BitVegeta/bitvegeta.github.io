@@ -4,7 +4,7 @@
   <title><![CDATA[分类：zsh | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/zsh/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-15T22:07:47+08:00</updated>
+  <updated>2015-04-15T22:12:26+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -20,12 +20,16 @@
     <id>http://bitvegeta.github.io/blog/zsh-no-matches-found</id>
     <content type="html"><![CDATA[<p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交rake命令后报错：</p>
 
-<p>{% codeblock lang:ruby “zsh: no matches found 错误” %}
-# 输入
-$ rake new_post[“example–title”]
-# 显示错误
-zsh: no matches found: new_post[“example–title”]
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>“zsh: no matches found 错误” </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># 输入</span>
+</span><span class='line'><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span><span class="o">[</span><span class="err">“</span><span class="n">example</span><span class="err">–</span><span class="n">title</span><span class="err">”</span><span class="o">]</span>
+</span><span class='line'><span class="c1"># 显示错误</span>
+</span><span class='line'><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="err">“</span><span class="n">example</span><span class="err">–</span><span class="n">title</span><span class="err">”</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>求助万能的Google，找到了问题原因和解决办法：<!--more--></p>
 

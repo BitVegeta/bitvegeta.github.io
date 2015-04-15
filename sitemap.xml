@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://bitvegeta.github.io/blog/octopress-error-and-solution-for-github-pages/</loc>
-    <lastmod>2015-04-15T14:24:38+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://bitvegeta.github.io/blog/text3/</loc>
-    <lastmod>2015-04-15T12:57:17+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://bitvegeta.github.io/blog/test2/</loc>
-    <lastmod>2015-04-15T10:23:31+08:00</lastmod>
+    <loc>http://bitvegeta.github.io/blog/octopress-error-and-solution-in-github-pages-building/</loc>
+    <lastmod>2015-04-15T22:11:07+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -57,31 +47,31 @@
   </url>
   <url>
     <loc>http://bitvegeta.github.io/404.html</loc>
-    <lastmod>2015-04-15T22:07:47+08:00</lastmod>
+    <lastmod>2015-04-15T22:12:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://bitvegeta.github.io/</loc>
-    <lastmod>2015-04-15T22:07:47+08:00</lastmod>
+    <lastmod>2015-04-15T22:12:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://bitvegeta.github.io/blog/archives/</loc>
-    <lastmod>2015-04-15T22:07:47+08:00</lastmod>
+    <lastmod>2015-04-15T22:12:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://bitvegeta.github.io/about/</loc>
-    <lastmod>2015-04-15T22:07:47+08:00</lastmod>
+    <lastmod>2015-04-15T22:12:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://bitvegeta.github.io/life/</loc>
-    <lastmod>2015-04-15T22:07:47+08:00</lastmod>
+    <lastmod>2015-04-15T22:12:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
