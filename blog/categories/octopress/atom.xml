@@ -4,7 +4,7 @@
   <title><![CDATA[分类：octopress | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-15T22:04:08+08:00</updated>
+  <updated>2015-04-15T22:06:36+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -28,25 +28,24 @@
 
 <p>保存以下代码到 <code>plugins/category_list_tag.rb</code> ：</p>
 
-<p>&#8220;`
+<p><code>
 module Jekyll
   class CategoryListTag &lt; Liquid::Tag
     def render(context)
-      html = “”
+      html = ""
       categories = context.registers[:site].categories.keys
       categories.sort.each do |category|
         posts_in_category = context.registers[:site].categories[category].size
-        category_dir = context.registers[:site].config[‘category_dir’]
-        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, ‘-‘).gsub(/-{2,}/, ‘-‘).downcase)
-        html « “&lt;li class=&#8217;category&#8217;&gt;<a href="http://bitvegeta.github.io/#{category_url}/">#{category} (#{posts_in_category})</a>&lt;/li&gt;\n”
+        category_dir = context.registers[:site].config['category_dir']
+        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='http://bitvegeta.github.io/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
       end
       html
     end
   end
-end</p>
-
-<p>Liquid::Template.register_tag(‘category_list’, Jekyll::CategoryListTag)
-&#8220;`</p>
+end
+Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+</code></p>
 
 <p>这个插件会向 liquid 注册一个名为 category_list 的 tag，该 tag 就是以 li 的形式将站点所有的 category 组织起来。如果要将 category 加入到侧边导航栏，需要增加一个 aside。</p>
 
@@ -146,17 +145,16 @@ end</p>
   </li>
 </ul>
 
-<p>上面步骤完成，在测试文档中添加 tag ，如下：</p>
+<p>上面步骤完成，在测试文档中 yml 添加 tag ，如下：</p>
 
-<h2 id="section">&#8220;`</h2>
-<p>layout: post
+<p>&#8220;`
+layout: post
 title: “test”
 date: 2015-04-15 13:23:35 +0800
 comments: true
 categories: Octopress
 tags: tt ss</p>
 
-<hr />
 <p>&#8220;`</p>
 
 <p>然后在终端 <code>rake gen_deploy</code> 生成新页面，我遇到了两个错误：</p>
@@ -183,7 +181,7 @@ Build Warning: Layout 'nil' requested in tags/ss/atom.xml does not exist.
 - `source/_includes/custom/category_feed.xml`
 </code></pre>
 
-<h3 id="section-1">参考资料</h3>
+<h3 id="section">参考资料</h3>
 
 <ul>
   <li>
