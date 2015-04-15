@@ -4,7 +4,7 @@
   <title><![CDATA[分类：octopress | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-15T23:05:18+08:00</updated>
+  <updated>2015-04-15T23:09:45+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -20,11 +20,11 @@
     <id>http://bitvegeta.github.io/blog/octopress-error-and-solution</id>
     <content type="html"><![CDATA[<p>在完善美化 Octopress Github Pages 博客过程中，又遇到不少问题，原因各种各样，有的至今不明所以，现把操作步骤，问题及解决方法一并记录到这里，供搜索参考，或深入研究。有不对之处，还望高手斧正！</p>
 
-<h3 id="categories">侧边栏添加－分类目录 Categories</h3>
+<h4 id="categories">一、侧边栏添加－分类目录 Categories</h4>
 
 <p>网上已经有很详细明白的教程，这里的内容参考原文链接见[1]。</p>
 
-<p><strong>增加category_list插件</strong></p>
+<h5 id="categorylist">增加category_list插件</h5>
 
 <p>保存以下代码到 <code>plugins/category_list_tag.rb</code> ：</p>
 
@@ -47,9 +47,10 @@ end
 Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
 </code></p>
 
-<p>这个插件会向 liquid 注册一个名为 category_list 的 tag，该 tag 就是以 li 的形式将站点所有的 category 组织起来。如果要将 category 加入到侧边导航栏，需要增加一个 aside。</p>
+<p>这个插件会向 liquid 注册一个名为 category_list 的 tag，该 tag 就是以 li 的形式将站点所有的 category 组织起来。如果要将 category 加入到侧边导航栏，需要增加一个 aside。
+<!--more--></p>
 
-<p><strong>增加aside</strong></p>
+<h5 id="aside">增加aside</h5>
 
 <p>复制以下代码到 <code>source/_includes/asides/category_list.html</code>。</p>
 
@@ -68,7 +69,7 @@ default_asides: [asides/category_list.html, asides/recent_posts.html]
 </code>
 以上 asides 可根据自己的需求调整，比如进行一些汉化的工作。</p>
 
-<p><strong>问题</strong></p>
+<h5 id="section"><code>遇到的问题</code></h5>
 
 <p>在测试文档里添加 category 重新生成页面后，我遇到了一个问题：<strong>categories 的显示首字母不是大写的</strong>;几经搜索，终于解决了这个问题，参考方案来源在［2］里；</p>
 
@@ -93,7 +94,12 @@ end</p>
 
 <p>Liquid::Template.register_tag(‘category_list’, Jekyll::CategoryListTag)
 &#8220;`
-### 侧边栏添加－标签云 Tags</p>
+<br /></p>
+
+<hr />
+<p><br /></p>
+
+<h4 id="tags">二、侧边栏添加－标签云 Tags</h4>
 
 <p>标签云的解决方案最常见的是一个 NB 程序员叫 robbyedwards 写的插件。这里的内容参考原文链接见[3]。</p>
 
@@ -132,8 +138,9 @@ end</p>
     {% tag_cloud font-size: 90-210%, limit: 10, style: para %}
   </ul>
 </section>
-<p>&#8220;`
-其中的 tag_cloud 参数，<code>style :para</code>指定不使用li来分割，<code>limit</code>限定10个tag，<code>font-size</code> 指定tag的大小范围，具体参数参看官方文档。</p>
+<p>&#8220;`</p>
+
+<p>其中的 tag_cloud 参数，<code>style :para</code>指定不使用li来分割，<code>limit</code>限定10个tag，<code>font-size</code> 指定tag的大小范围，具体参数参看官方文档。</p>
 
 <ul>
   <li>
@@ -159,7 +166,7 @@ tags: tt ss</p>
 
 <p>然后在终端 <code>rake gen_deploy</code> 生成新页面，我遇到了两个错误：</p>
 
-<p><strong>错误一</strong></p>
+<h5 id="section-1"><code>错误一</code></h5>
 
 <p><code>
 Liquid Exception: comparison of Array with Array failed in _layouts/page.html
@@ -167,7 +174,7 @@ jekyll 2.5.2 | Error:  comparison of Array with Array failed
 </code>
 - 解决办法：去掉 tag_cloud 里面的 <code>limit:</code>参数即可；</p>
 
-<p><strong>错误二</strong></p>
+<h5 id="section-2"><code>错误二</code></h5>
 
 <p><code>
 Build Warning: Layout 'nil' requested in tags/tt/atom.xml does not exist.
@@ -181,21 +188,17 @@ Build Warning: Layout 'nil' requested in tags/ss/atom.xml does not exist.
 - `source/_includes/custom/category_feed.xml`
 </code></pre>
 
-<h3 id="section">参考资料</h3>
+<p><br /></p>
+
+<hr />
+<p><br /></p>
+
+<h5 id="section-3">参考资料</h5>
 
 <ul>
-  <li>
-    <p>[1]<a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">为octopress添加分类(category)列表</a>
-[1]:http://codemacro.com/2012/07/18/add-category-list-to-octopress/</p>
-  </li>
-  <li>
-    <p>[2]<a href="http://myweb.jowai.info/jekyll-graphic-from-hello-world-to-a-fully-functioning-personal-site/">图解Jekyll：从Hello World到功能完善的个人站点</a>
-[2]:http://myweb.jowai.info/jekyll-graphic-from-hello-world-to-a-fully-functioning-personal-site/</p>
-  </li>
-  <li>
-    <p>[3]<a href="http://codemacro.com/2012/07/18/add-tag-to-octopress/">为octopress添加tag cloud</a>
-[3]:http://codemacro.com/2012/07/18/add-tag-to-octopress/</p>
-  </li>
+  <li>[1]<a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">为octopress添加分类(category)列表</a></li>
+  <li>[2]<a href="http://myweb.jowai.info/jekyll-graphic-from-hello-world-to-a-fully-functioning-personal-site/">图解Jekyll：从Hello World到功能完善的个人站点</a></li>
+  <li>[3]<a href="http://codemacro.com/2012/07/18/add-tag-to-octopress/">为octopress添加tag cloud</a></li>
 </ul>
 ]]></content>
   </entry>
