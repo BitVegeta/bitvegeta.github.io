@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-16T09:44:42+08:00</updated>
+  <updated>2015-04-16T09:49:41+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -205,6 +205,93 @@ tags: tt ss
 
 <hr />
 
+<h4 id="tags">二、添加标签云 Tags</h4>
+
+<p>标签云的解决方案最常见的是一个 NB 程序员叫 robbyedwards 写的插件。这里的内容参考原文链接见[3]。</p>
+
+<p><strong>首先</strong>，到 robbyedwards 的 Github 个人主页 clone 两个项目。</p>
+
+<ul>
+  <li>
+    <p>用来生成 tag 页面： <code>https://github.com/robbyedwards/octopress-tag-pages</code>；</p>
+  </li>
+  <li>
+    <p>用来生成 tag 云：<code>https://github.com/robbyedwards/octopress-tag-cloud</code></p>
+  </li>
+</ul>
+
+<p><strong>octopress-tag-pages</strong></p>
+
+<ul>
+  <li>复制 <code>tag_generator.rb</code> 到 <code>/plugins</code> 目录；</li>
+  <li>复制 <code>tag_index.html</code> 到 <code>/source/_layouts</code> 目录；</li>
+  <li>复制 <code>tag_feed.xml</code> 到 <code>/source/_includes/custom/</code> 目录。</li>
+</ul>
+
+<p><strong>octopress-tag-cloud</strong></p>
+
+<ul>
+  <li>复制 <code>tag_cloud.rb</code> 到 <code>/plugins</code> 目录；</li>
+  <li>
+    <p>复制以下代码到 <code>/source/_includes/custom/asides/tags.html</code>。</p>
+
+    <p>其中的 tag_cloud 参数，<code>style :para</code>指定不使用li来分割，<code>limit</code>限定10个tag，<code>font-size</code> 指定tag的大小范围，具体参数参看官方文档。</p>
+  </li>
+  <li>
+    <p>最后，在 _config.xml 的 default_asides 中添加这个 tag cloud ，如下：</p>
+
+    <p><code>
+ default_asides: [asides/category_list.html, asides/recent_posts.html, custom/asides/tags.html]
+</code></p>
+  </li>
+</ul>
+
+<p>上面步骤完成，在测试文档中 yml 添加了两个测试tag ，如下：</p>
+
+<p><code>
+tags: tt ss
+  </code></p>
+
+<p>然后在终端 <code>rake gen_deploy</code> 生成新页面，我遇到了两个错误：</p>
+
+<h5 id="section-1"><错误一></错误一></h5>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Liquid Exception: comparison of Array with Array failed in _layouts/page.html
+</span><span class="line">jekyll 2.5.2 | Error:  comparison of Array with Array failed</span></code></pre></td></tr></table></div></figure></notextile></div>
+<ul>
+  <li>解决办法：这里 tag 的数量受限制，去掉 tag_cloud 里面的 <code>limit:</code>参数即可；</li>
+</ul>
+
+<h5 id="section-2"><错误二></错误二></h5>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Build Warning: Layout 'nil' requested in tags/tt/atom.xml does not exist.
+</span><span class="line">Build Warning: Layout 'nil' requested in tags/ss/atom.xml does not exist.</span></code></pre></td></tr></table></div></figure></notextile></div>
+<ul>
+  <li>
+    <p>解决办法：检查并确保下列的文件其头部信息里同样为 <code>layout: null</code>;</p>
+
+    <ul>
+      <li>首先，检查刚才复制的 <code>/source/_layouts／tag_index.html</code> 文件;</li>
+      <li><code>source/atom.xml</code></li>
+      <li><code>source/robots.txt</code></li>
+      <li><code>source/_includes/custom/category_feed.xml</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h5 id="section-3">参考资料</h5>
+
+<ul>
+  <li>[1]<a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">为octopress添加分类(category)列表</a></li>
+  <li>[2]<a href="http://myweb.jowai.info/jekyll-graphic-from-hello-world-to-a-fully-functioning-personal-site/">图解Jekyll：从Hello World到功能完善的个人站点</a></li>
+  <li>[3]<a href="http://codemacro.com/2012/07/18/add-tag-to-octopress/">为octopress添加tag cloud</a></li>
+</ul>
 ]]></content>
   </entry>
   
