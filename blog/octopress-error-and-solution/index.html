@@ -147,7 +147,8 @@
 
 <h5 id="aside">增加aside</h5>
 
-<p>复制以下代码到 <code>source/_includes/asides/category_list.html</code>。</p>
+<p>复制以下代码到 <code>source/_includes/asides/category_list.html</code>。<code>注意：</code>先去掉“%”之前的”&#8221;
+。</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -158,11 +159,7 @@
 </pre></td><td class="code"><pre><code class=""><span class="line">&lt;section&gt;
 </span><span class="line">  &lt;h1&gt;Categories&lt;/h1&gt;
 </span><span class="line">  &lt;ul id="categories"&gt;
-</span><span class="line">    <li class="category"><a href="/blog/categories/books/">Books (1)</a></li>
-<li class="category"><a href="/blog/categories/life/">Life (1)</a></li>
-<li class="category"><a href="/blog/categories/mac/">Mac (3)</a></li>
-<li class="category"><a href="/blog/categories/octopress/">Octopress (3)</a></li>
-
+</span><span class="line">    {\% category_list \%}
 </span><span class="line">  &lt;/ul&gt;
 </span><span class="line">&lt;/section&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>配置侧边栏需要修改 _config.yml 文件，修改其 default_asides 项：</p>
@@ -171,7 +168,7 @@
 </pre></td><td class="code"><pre><code class=""><span class="line">default_asides: [asides/category_list.html, asides/recent_posts.html]</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>以上 asides 可根据自己的需求调整，比如进行一些汉化的工作。</p>
 
-<h5 id="section">**<遇到的问题>**</遇到的问题></h5>
+<h5 id="section"><遇到的问题></遇到的问题></h5>
 
 <p>在测试文档里添加 category 重新生成页面后，我遇到了一个问题：<strong>categories 的显示首字母不是大写的</strong>；几经搜索，终于解决了这个问题，参考方案来源在［2］里；</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[分类：octopress | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-16T10:34:33+08:00</updated>
+  <updated>2015-04-16T10:38:00+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -51,17 +51,14 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
 
 <h5 id="aside">增加aside</h5>
 
-<p>复制以下代码到 <code>source/_includes/asides/category_list.html</code>。</p>
+<p>复制以下代码到 <code>source/_includes/asides/category_list.html</code>。<code>注意：</code>先去掉“%”之前的”&#8221;
+。</p>
 
 <p>&#8220;`</p>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/books/'>Books (1)</a></li>
-<li class='category'><a href='/blog/categories/life/'>Life (1)</a></li>
-<li class='category'><a href='/blog/categories/mac/'>Mac (3)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>Octopress (3)</a></li>
-
+    {\% category_list \%}
   </ul>
 </section>
 <p>&#8220;`
@@ -72,7 +69,7 @@ default_asides: [asides/category_list.html, asides/recent_posts.html]
 </code>
 以上 asides 可根据自己的需求调整，比如进行一些汉化的工作。</p>
 
-<h5 id="section">**<遇到的问题>**</遇到的问题></h5>
+<h5 id="section"><遇到的问题></遇到的问题></h5>
 
 <p>在测试文档里添加 category 重新生成页面后，我遇到了一个问题：<strong>categories 的显示首字母不是大写的</strong>；几经搜索，终于解决了这个问题，参考方案来源在［2］里；</p>
 
