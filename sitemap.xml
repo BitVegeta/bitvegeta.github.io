@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://bitvegeta.github.io/blog/lllll/</loc>
-    <lastmod>2015-04-16T09:38:44+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://bitvegeta.github.io/blog/te-se-t/</loc>
-    <lastmod>2015-04-16T08:33:53+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://bitvegeta.github.io/blog/tesst/</loc>
+    <loc>http://bitvegeta.github.io/blog/octopress-error-and-solution/</loc>
     <lastmod>2015-04-16T08:28:17+08:00</lastmod>
     <priority>0.8</priority>
   </url>
@@ -52,31 +42,31 @@
   </url>
   <url>
     <loc>http://bitvegeta.github.io/404.html</loc>
-    <lastmod>2015-04-16T09:50:57+08:00</lastmod>
+    <lastmod>2015-04-16T10:05:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://bitvegeta.github.io/</loc>
-    <lastmod>2015-04-16T09:50:57+08:00</lastmod>
+    <lastmod>2015-04-16T10:05:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://bitvegeta.github.io/blog/archives/</loc>
-    <lastmod>2015-04-16T09:50:57+08:00</lastmod>
+    <lastmod>2015-04-16T10:05:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://bitvegeta.github.io/about/</loc>
-    <lastmod>2015-04-16T09:50:57+08:00</lastmod>
+    <lastmod>2015-04-16T10:05:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://bitvegeta.github.io/life/</loc>
-    <lastmod>2015-04-16T09:50:57+08:00</lastmod>
+    <lastmod>2015-04-16T10:05:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

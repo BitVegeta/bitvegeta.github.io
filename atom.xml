@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-16T09:50:57+08:00</updated>
+  <updated>2015-04-16T10:05:29+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -14,85 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Lllll]]></title>
-    <link href="http://bitvegeta.github.io/blog/lllll/"/>
-    <updated>2015-04-16T09:38:44+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/lllll</id>
-    <content type="html"><![CDATA[<h4 id="tags">二、添加标签云 Tags</h4>
-
-<p>标签云的解决方案最常见的是一个 NB 程序员叫 robbyedwards 写的插件。这里的内容参考原文链接见[3]。</p>
-
-<p><strong>首先</strong>，到 robbyedwards 的 Github 个人主页 clone 两个项目。</p>
-
-<ul>
-  <li>
-    <p>用来生成 tag 页面： <code>https://github.com/robbyedwards/octopress-tag-pages</code>；</p>
-  </li>
-  <li>
-    <p>用来生成 tag 云：<code>https://github.com/robbyedwards/octopress-tag-cloud</code></p>
-  </li>
-</ul>
-
-<p><strong>octopress-tag-pages</strong></p>
-
-<ul>
-  <li>复制 <code>tag_generator.rb</code> 到 <code>/plugins</code> 目录；</li>
-  <li>复制 <code>tag_index.html</code> 到 <code>/source/_layouts</code> 目录；</li>
-  <li>复制 <code>tag_feed.xml</code> 到 <code>/source/_includes/custom/</code> 目录。</li>
-</ul>
-
-<p><strong>octopress-tag-cloud</strong></p>
-
-<ul>
-  <li>复制 <code>tag_cloud.rb</code> 到 <code>/plugins</code> 目录；</li>
-  <li>
-    <p>复制以下代码到 <code>/source/_includes/custom/asides/tags.html</code>。</p>
-
-    <p>其中的 tag_cloud 参数，<code>style :para</code>指定不使用li来分割，<code>limit</code>限定10个tag，<code>font-size</code> 指定tag的大小范围，具体参数参看官方文档。</p>
-  </li>
-  <li>最后，在 _config.xml 的 default_asides 中添加这个 tag cloud ，如下：</li>
-</ul>
-
-<p>上面步骤完成，在测试文档中 yml 添加了两个测试tag ，如下：</p>
-
-<p><code>
-tags: tt ss
-  </code></p>
-
-<p>然后在终端 <code>rake gen_deploy</code> 生成新页面，我遇到了两个错误：</p>
-
-<h5 id="section">错误一</h5>
-
-<ul>
-  <li>解决办法：这里 tag 的数量受限制，去掉 tag_cloud 里面的 <code>limit:</code>参数即可；</li>
-</ul>
-
-<h5 id="section-1">错误二</h5>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">Build Warning: Layout 'nil' requested in tags/tt/atom.xml does not exist.
-</span><span class="line">Build Warning: Layout 'nil' requested in tags/ss/atom.xml does not exist.</span></code></pre></td></tr></table></div></figure></notextile></div>
-<ul>
-  <li>解决办法：检查并确保下列的文件其头部信息里同样为 <code>layout: null</code>;</li>
-</ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[特色t]]></title>
-    <link href="http://bitvegeta.github.io/blog/te-se-t/"/>
-    <updated>2015-04-16T08:33:53+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/te-se-t</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tesst]]></title>
-    <link href="http://bitvegeta.github.io/blog/tesst/"/>
+    <title type="html"><![CDATA[Octopress 优化中遇到的错误和解决办法]]></title>
+    <link href="http://bitvegeta.github.io/blog/octopress-error-and-solution/"/>
     <updated>2015-04-16T08:28:17+08:00</updated>
-    <id>http://bitvegeta.github.io/blog/tesst</id>
+    <id>http://bitvegeta.github.io/blog/octopress-error-and-solution</id>
     <content type="html"><![CDATA[<p>在完善美化 Octopress Github Pages 博客过程中，又遇到不少问题，原因各种各样，有的至今不明所以，现把操作步骤，问题及解决方法一并记录到这里，供搜索参考，或深入研究。有不对之处，还望高手斧正！</p>
 
 <h4 id="categories">一、侧边栏添加－分类目录 Categories</h4>
@@ -154,7 +79,7 @@ tags: tt ss
 </span><span class="line">    <li class="category"><a href="http://bitvegeta.github.io/blog/categories/books/">Books (1)</a></li>
 <li class="category"><a href="http://bitvegeta.github.io/blog/categories/life/">Life (1)</a></li>
 <li class="category"><a href="http://bitvegeta.github.io/blog/categories/mac/">Mac (3)</a></li>
-<li class="category"><a href="http://bitvegeta.github.io/blog/categories/octopress/">Octopress (2)</a></li>
+<li class="category"><a href="http://bitvegeta.github.io/blog/categories/octopress/">Octopress (3)</a></li>
 
 </span><span class="line">  &lt;/ul&gt;
 </span><span class="line">&lt;/section&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
@@ -202,10 +127,11 @@ tags: tt ss
 </span><span class="line">  end
 </span><span class="line">end
 </span><span class="line">Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p><br /></p>
 
 <hr />
-
-<h4 id="tags">二、添加标签云 Tags</h4>
+<p><br />
+#### 二、添加标签云 Tags</p>
 
 <p>标签云的解决方案最常见的是一个 NB 程序员叫 robbyedwards 写的插件。这里的内容参考原文链接见[3]。</p>
 
@@ -232,7 +158,11 @@ tags: tt ss
 
 <ul>
   <li>复制 <code>tag_cloud.rb</code> 到 <code>/plugins</code> 目录；</li>
-  <li>复制以下代码到 <code>/source/_includes/custom/asides/tags.html</code>。</li>
+  <li>复制以下代码到 <code>/source/_includes/custom/asides/tags.html</code>。
+    <ul>
+      <li><code>注意：</code>务必把两个“%”之前的转义符“\”去掉；你可能会问，为什么本文显示要添加这两个转义符号，这不是多次一举么？这是因为如果不加的话，这个代码块会导致报错：<code>Liquid Exception: comparison of Array with Array failed in _posts</code>，原因是Jekyll渲染含有Liquid标签的代码块是会引起混乱，具体原理，目前我也还没搞懂，是经过痛苦的试验摸索出来的，暂时先备案以后慢慢弄懂。可参考[4]。</li>
+    </ul>
+  </li>
 </ul>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -297,7 +227,10 @@ tags: tt ss
   </li>
 </ul>
 
+<p><br /></p>
+
 <hr />
+<p><br /></p>
 
 <h5 id="section-3">参考资料</h5>
 
@@ -305,6 +238,7 @@ tags: tt ss
   <li>[1]<a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">为octopress添加分类(category)列表</a></li>
   <li>[2]<a href="http://myweb.jowai.info/jekyll-graphic-from-hello-world-to-a-fully-functioning-personal-site/">图解Jekyll：从Hello World到功能完善的个人站点</a></li>
   <li>[3]<a href="http://codemacro.com/2012/07/18/add-tag-to-octopress/">为octopress添加tag cloud</a></li>
+  <li>[4]<a href="http://yanping.me/cn/blog/2011/12/15/building-static-sites-with-jekyll/">【译文】用Jekyll构建静态网站</a></li>
 </ul>
 ]]></content>
   </entry>
