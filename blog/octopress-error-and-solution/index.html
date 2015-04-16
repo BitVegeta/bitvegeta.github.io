@@ -147,7 +147,7 @@
 
 <h5 id="aside">2.增加aside</h5>
 
-<p>复制以下代码到 <code>source/_includes/asides/category_list.html</code>。<code>注意：</code>先去掉“%”之前的”&#8221;
+<p>复制以下代码到 <code>source/_includes/asides/category_list.html</code>。<code>注意：</code>先去掉“%”之前的“\”
 。</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -168,7 +168,7 @@
 </pre></td><td class="code"><pre><code class=""><span class="line">default_asides: [asides/category_list.html, asides/recent_posts.html]</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>以上 asides 可根据自己的需求调整，比如进行一些汉化的工作。</p>
 
-<p>**<遇到的问题>**</遇到的问题></p>
+<h5 id="section"><遇到的问题></遇到的问题></h5>
 
 <p>在测试文档里添加 category 重新生成页面后，我遇到了一个问题：<strong>categories 的显示首字母不是大写的</strong>；几经搜索，终于解决了这个问题，参考方案来源在［2］里；</p>
 
@@ -277,7 +277,7 @@ tags: tt ss
 
 <p>然后在终端 <code>rake gen_deploy</code> 生成新页面，我遇到了两个错误：</p>
 
-<h5 id="section"><错误一></错误一></h5>
+<h5 id="section-1"><错误一></错误一></h5>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -287,7 +287,7 @@ tags: tt ss
   <li>解决办法：这里 tag 的数量受限制，去掉 tag_cloud 里面的 <code>limit:</code>参数即可；</li>
 </ul>
 
-<h5 id="section-1"><错误二></错误二></h5>
+<h5 id="section-2"><错误二></错误二></h5>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -309,7 +309,7 @@ tags: tt ss
 <hr />
 <p><br /></p>
 
-<h4 id="section-2">参考资料</h4>
+<h4 id="section-3">参考资料</h4>
 
 <ul>
   <li>[1]<a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">为octopress添加分类(category)列表</a></li>
