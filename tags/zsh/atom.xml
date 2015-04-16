@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[分类：zsh | 精神和时间的小屋]]></title>
-  <link href="http://bitvegeta.github.io/blog/categories/zsh/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: zsh | 精神和时间的小屋]]></title>
+  <link href="http://bitvegeta.github.io/tags/zsh/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-16T08:18:29+08:00</updated>
+  <updated>2015-04-16T08:20:32+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Zsh: No Matches Found 问题解决方法]]></title>
+    <title type="html"><![CDATA[Zsh: no matches found 问题解决方法]]></title>
     <link href="http://bitvegeta.github.io/blog/zsh-no-matches-found/"/>
     <updated>2014-12-04T22:34:56+08:00</updated>
     <id>http://bitvegeta.github.io/blog/zsh-no-matches-found</id>
