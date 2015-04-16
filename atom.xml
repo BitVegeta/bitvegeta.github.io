@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-16T12:57:19+08:00</updated>
+  <updated>2015-04-16T13:03:49+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -617,16 +617,16 @@ tags: tt ss
     <link href="http://bitvegeta.github.io/blog/zsh-no-matches-found/"/>
     <updated>2014-12-04T22:34:56+08:00</updated>
     <id>http://bitvegeta.github.io/blog/zsh-no-matches-found</id>
-    <content type="html"><![CDATA[<p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交rake命令后报错：</p>
+    <content type="html"><![CDATA[<p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交 Octopress 博客 <code>rake new_post</code> 命令后报错：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;zsh: no matches found 错误&#8221; </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="c1"># 输入</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">//</span> <span class="err">输入</span>
 </span><span class="line"><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
-</span><span class="line"><span class="c1"># 显示错误</span>
+</span><span class="line"><span class="sr">//</span> <span class="err">显示错误</span>
 </span><span class="line"><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
