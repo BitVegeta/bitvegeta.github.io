@@ -10,13 +10,8 @@
   <meta name="author" content="Bitegeta">
 
   
-  <meta name="description" content=" 我有一个宝贝
-她早晨醒来的第一个表情就是微笑
-她笑着喊哥哥的样子
-真的好美 她喜欢抱抱别人
-也喜欢被抱抱
-她被抱着的时候
-会甜甜的说 好幸福 ">
+  <meta name="description" content="
+">
   
 &#8211;>
 <meta name="author" content="Bitegeta">
@@ -84,6 +79,120 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/te-se-t/">特色t</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-04-16T08:33:53+08:00'><span class='date'>“2015年4月16日“</span> <span class='time'>8:33 am</span></time>
+        
+           | <a href="/blog/te-se-t/#disqus_thread"
+             data-disqus-identifier="http://bitvegeta.github.io/blog/te-se-t/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/tesst/">Tesst</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-04-16T08:28:17+08:00'><span class='date'>“2015年4月16日“</span> <span class='time'>8:28 am</span></time>
+        
+           | <a href="/blog/tesst/#disqus_thread"
+             data-disqus-identifier="http://bitvegeta.github.io/blog/tesst/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在完善美化 Octopress Github Pages 博客过程中，又遇到不少问题，原因各种各样，有的至今不明所以，现把操作步骤，问题及解决方法一并记录到这里，供搜索参考，或深入研究。有不对之处，还望高手斧正！</p>
+
+<h4 id="categories">一、侧边栏添加－分类目录 Categories</h4>
+
+<p>网上已经有很详细明白的教程，这里的内容参考原文链接见[1]。</p>
+
+<h5 id="categorylist">增加category_list插件</h5>
+
+<p>保存以下代码到 <code>plugins/category_list_tag.rb</code> ：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">module Jekyll
+</span><span class="line">  class CategoryListTag &lt; Liquid::Tag
+</span><span class="line">    def render(context)
+</span><span class="line">      html = ""
+</span><span class="line">      categories = context.registers[:site].categories.keys
+</span><span class="line">      categories.sort.each do |category|
+</span><span class="line">        posts_in_category = context.registers[:site].categories[category].size
+</span><span class="line">        category_dir = context.registers[:site].config['category_dir']
+</span><span class="line">        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+</span><span class="line">        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+</span><span class="line">      end
+</span><span class="line">      html
+</span><span class="line">    end
+</span><span class="line">  end
+</span><span class="line">end
+</span><span class="line">Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>这个插件会向 liquid 注册一个名为 category_list 的 tag，该 tag 就是以 li 的形式将站点所有的 category 组织起来。如果要将 category 加入到侧边导航栏，需要增加一个 aside。</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/tesst/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+
+
+    </article>
   
   
     <article>
@@ -408,6 +517,14 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/te-se-t/">特色t</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/tesst/">Tesst</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/i-have-a-baby/">我有一个宝贝</a>
       </li>
     
@@ -417,14 +534,6 @@
     
       <li class="post">
         <a href="/blog/quickly-show-hide-hidden-files-on-mac/">Finder显示｜隐藏系统文件的方法</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/sublime-text-shell-command/">终端用命令行调用 Sublime Text 2</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/zsh-no-matches-found/">Zsh: No Matches Found 问题解决方法</a>
       </li>
     
   </ul>
