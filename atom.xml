@@ -4,7 +4,7 @@
   <title><![CDATA[精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-16T10:38:00+08:00</updated>
+  <updated>2015-04-16T11:06:35+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -24,7 +24,7 @@
 
 <p>网上已经有很详细明白的教程，这里的内容参考原文链接见[1]。</p>
 
-<h5 id="categorylist">增加category_list插件</h5>
+<h5 id="categorylist">1.增加category_list插件</h5>
 
 <p>保存以下代码到 <code>plugins/category_list_tag.rb</code> ：</p>
 
@@ -63,7 +63,7 @@
 
 <p>这个插件会向 liquid 注册一个名为 category_list 的 tag，该 tag 就是以 li 的形式将站点所有的 category 组织起来。如果要将 category 加入到侧边导航栏，需要增加一个 aside。<!--more--></p>
 
-<h5 id="aside">增加aside</h5>
+<h5 id="aside">2.增加aside</h5>
 
 <p>复制以下代码到 <code>source/_includes/asides/category_list.html</code>。<code>注意：</code>先去掉“%”之前的”&#8221;
 。</p>
@@ -86,7 +86,7 @@
 </pre></td><td class="code"><pre><code class=""><span class="line">default_asides: [asides/category_list.html, asides/recent_posts.html]</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>以上 asides 可根据自己的需求调整，比如进行一些汉化的工作。</p>
 
-<h5 id="section"><遇到的问题></遇到的问题></h5>
+<p>**<遇到的问题>**</遇到的问题></p>
 
 <p>在测试文档里添加 category 重新生成页面后，我遇到了一个问题：<strong>categories 的显示首字母不是大写的</strong>；几经搜索，终于解决了这个问题，参考方案来源在［2］里；</p>
 
@@ -124,15 +124,15 @@
 </span><span class="line">  end
 </span><span class="line">end
 </span><span class="line">Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p><br /></p>
 
 <hr />
-<p><br />
-#### 二、添加标签云 Tags</p>
+<p><br /></p>
+
+<h4 id="tags">二、添加标签云 Tags</h4>
 
 <p>标签云的解决方案最常见的是一个 NB 程序员叫 robbyedwards 写的插件。这里的内容参考原文链接见[3]。</p>
 
-<p><strong>首先</strong>，到 robbyedwards 的 Github 个人主页 clone 两个项目。</p>
+<p><strong>1.</strong>首先到 robbyedwards 的 Github 个人主页 clone 两个项目。</p>
 
 <ul>
   <li>
@@ -143,7 +143,7 @@
   </li>
 </ul>
 
-<p><strong>octopress-tag-pages</strong></p>
+<p><strong>2.octopress-tag-pages</strong></p>
 
 <ul>
   <li>复制 <code>tag_generator.rb</code> 到 <code>/plugins</code> 目录；</li>
@@ -151,7 +151,7 @@
   <li>复制 <code>tag_feed.xml</code> 到 <code>/source/_includes/custom/</code> 目录。</li>
 </ul>
 
-<p><strong>octopress-tag-cloud</strong></p>
+<p><strong>3.octopress-tag-cloud</strong></p>
 
 <ul>
   <li>复制 <code>tag_cloud.rb</code> 到 <code>/plugins</code> 目录；</li>
@@ -195,7 +195,7 @@ tags: tt ss
 
 <p>然后在终端 <code>rake gen_deploy</code> 生成新页面，我遇到了两个错误：</p>
 
-<h5 id="section-1"><错误一></错误一></h5>
+<h5 id="section"><错误一></错误一></h5>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -205,7 +205,7 @@ tags: tt ss
   <li>解决办法：这里 tag 的数量受限制，去掉 tag_cloud 里面的 <code>limit:</code>参数即可；</li>
 </ul>
 
-<h5 id="section-2"><错误二></错误二></h5>
+<h5 id="section-1"><错误二></错误二></h5>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -224,12 +224,10 @@ tags: tt ss
   </li>
 </ul>
 
-<p><br /></p>
-
 <hr />
 <p><br /></p>
 
-<h5 id="section-3">参考资料</h5>
+<h4 id="section-2">参考资料</h4>
 
 <ul>
   <li>[1]<a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">为octopress添加分类(category)列表</a></li>
