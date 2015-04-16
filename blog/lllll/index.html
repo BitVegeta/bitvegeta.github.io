@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>终端用命令行调用 Sublime Text 2 - 精神和时间的小屋</title>
+  <title>Lllll - 精神和时间的小屋</title>
 <!--
   <meta name="author" content="Bitegeta">
 
   
-  <meta name="description" content="Sublime Text 作为一款优秀的文本编辑器，近年来其发展的势头一度盖过传统的 TextMate ，其拥有强大的包管理功能和优美易用的界面，被称为“最性感的编辑器”。 Sublime Text 2 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。 在终端用命令行调用 Sublime &hellip;">
+  <meta name="description" content="二、添加标签云 Tags 标签云的解决方案最常见的是一个 NB 程序员叫 robbyedwards 写的插件。这里的内容参考原文链接见[3]。 首先，到 robbyedwards 的 Github 个人主页 clone 两个项目。 用来生成 tag 页面： https://github.com/ &hellip;">
   
 &#8211;>
 <meta name="author" content="Bitegeta">
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bitvegeta.github.io/blog/sublime-text-shell-command">
+  <link rel="canonical" href="http://bitvegeta.github.io/blog/lllll">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="精神和时间的小屋" type="application/atom+xml">
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">终端用命令行调用 Sublime Text 2</h1>
+      <h1 class="entry-title">Lllll</h1>
     
     
       <p class="meta">
@@ -90,7 +90,7 @@
 
 
 
-<time class='entry-date' datetime='2014-12-05T21:40:43+08:00'><span class='date'>“2014年12月5日“</span> <span class='time'>9:40 pm</span></time>
+<time class='entry-date' datetime='2015-04-16T09:38:44+08:00'><span class='date'>“2015年4月16日“</span> <span class='time'>9:38 am</span></time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://bitvegeta.github.io">Comments</a>
@@ -100,42 +100,64 @@
   </header>
 
 
-<div class="entry-content"><p><a href="http://www.sublimetext.com/">Sublime Text</a> 作为一款优秀的文本编辑器，近年来其发展的势头一度盖过传统的 TextMate ，其拥有强大的包管理功能和优美易用的界面，被称为“最性感的编辑器”。</p>
+<div class="entry-content"><h4 id="tags">二、添加标签云 Tags</h4>
 
-<p><a href="http://www.sublimetext.com/">Sublime Text 2</a> 是一款免费的应用，推荐刚接触 Mac 和编程的同学使用。</p>
+<p>标签云的解决方案最常见的是一个 NB 程序员叫 robbyedwards 写的插件。这里的内容参考原文链接见[3]。</p>
 
-<p>在终端用命令行调用 Sublime Text 2 的快捷方法设置如下：<!--more--></p>
+<p><strong>首先</strong>，到 robbyedwards 的 Github 个人主页 clone 两个项目。</p>
 
-<h4 id="sublime-text-2-">为 Sublime Text 2 设置一个符号链接</h4>
+<ul>
+  <li>
+    <p>用来生成 tag 页面： <code>https://github.com/robbyedwards/octopress-tag-pages</code>；</p>
+  </li>
+  <li>
+    <p>用来生成 tag 云：<code>https://github.com/robbyedwards/octopress-tag-cloud</code></p>
+  </li>
+</ul>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;为 Sublime Text 2 设置一个符号链接&#8221; </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="err">$</span> <span class="n">sudo</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="s2">&quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot;</span> <span class="sr">/usr/</span><span class="n">bin</span><span class="o">/</span><span class="n">subl</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p><strong>octopress-tag-pages</strong></p>
 
-<p><strong>重要提示：Mac下这个操作要求必须是Root权限账户。</strong></p>
+<ul>
+  <li>复制 <code>tag_generator.rb</code> 到 <code>/plugins</code> 目录；</li>
+  <li>复制 <code>tag_index.html</code> 到 <code>/source/_layouts</code> 目录；</li>
+  <li>复制 <code>tag_feed.xml</code> 到 <code>/source/_includes/custom/</code> 目录。</li>
+</ul>
 
-<p>执行命令，如果运行成功，则可以直接用“subl”作为命令编辑一个文件；
-如果提示错误，则需要查看 $PATH 的值，以确保<code>/usr/bin/</code>路径在<code>/bin/</code>路径之前。查看命令如下：</p>
+<p><strong>octopress-tag-cloud</strong></p>
+
+<ul>
+  <li>复制 <code>tag_cloud.rb</code> 到 <code>/plugins</code> 目录；</li>
+  <li>
+    <p>复制以下代码到 <code>/source/_includes/custom/asides/tags.html</code>。</p>
+
+    <p>其中的 tag_cloud 参数，<code>style :para</code>指定不使用li来分割，<code>limit</code>限定10个tag，<code>font-size</code> 指定tag的大小范围，具体参数参看官方文档。</p>
+  </li>
+  <li>最后，在 _config.xml 的 default_asides 中添加这个 tag cloud ，如下：</li>
+</ul>
+
+<p>上面步骤完成，在测试文档中 yml 添加了两个测试tag ，如下：</p>
+
+<p><code>
+tags: tt ss
+  </code></p>
+
+<p>然后在终端 <code>rake gen_deploy</code> 生成新页面，我遇到了两个错误：</p>
+
+<h5 id="section">错误一</h5>
+
+<ul>
+  <li>解决办法：这里 tag 的数量受限制，去掉 tag_cloud 里面的 <code>limit:</code>参数即可；</li>
+</ul>
+
+<h5 id="section-1">错误二</h5>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">$ echo $PATH</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>若需更改 $PATH 变量，打开 /etc/paths 路径编辑即可；</p>
-
-<h4 id="alias">自定义alias</h4>
-
-<p>在<code>~/.zshrc</code>中定义 <code>‘sb’</code>为 sublime Text 2 的别名，添加下列代码：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"> alias sb='subl'</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>现在终端中输入‘sb example.html’，即可创建一个 html 文件。</p>
-
-<p>如果你用的使 bash 终端，在<code>~/.bash_profile</code>文件中更改。</p>
-
-<h4 id="section">参考资料</h4>
-
-<p>[1]<a href="http://www.yangzhiping.com/tech/mac-dev.html">Mac开发者2013年新机设置参考</a></p>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Build Warning: Layout 'nil' requested in tags/tt/atom.xml does not exist.
+</span><span class="line">Build Warning: Layout 'nil' requested in tags/ss/atom.xml does not exist.</span></code></pre></td></tr></table></div></figure></notextile></div>
+<ul>
+  <li>解决办法：检查并确保下列的文件其头部信息里同样为 <code>layout: null</code>;</li>
+</ul>
 </div>
 
 
@@ -153,14 +175,8 @@
 
 
 
-<time class='entry-date' datetime='2014-12-05T21:40:43+08:00'><span class='date'>“2014年12月5日“</span> <span class='time'>9:40 pm</span></time>
+<time class='entry-date' datetime='2015-04-16T09:38:44+08:00'><span class='date'>“2015年4月16日“</span> <span class='time'>9:38 am</span></time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/mac/'>mac</a>
-  
-</span>
 
 
     </p>
@@ -174,10 +190,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/zsh-no-matches-found/" title="Previous Post: Zsh: no matches found 问题解决方法">&laquo; Zsh: no matches found 问题解决方法</a>
+        <a class="basic-alignment left" href="/blog/te-se-t/" title="Previous Post: 特色t">&laquo; 特色t</a>
       
-      
-        <a class="basic-alignment right" href="/blog/quickly-show-hide-hidden-files-on-mac/" title="Next Post: Finder显示｜隐藏系统文件的方法">Finder显示｜隐藏系统文件的方法 &raquo;</a>
       
     </p>
   </footer>
@@ -287,8 +301,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://bitvegeta.github.io/blog/sublime-text-shell-command/';
-        var disqus_url = 'http://bitvegeta.github.io/blog/sublime-text-shell-command/';
+        var disqus_identifier = 'http://bitvegeta.github.io/blog/lllll/';
+        var disqus_url = 'http://bitvegeta.github.io/blog/lllll/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Finder | 精神和时间的小屋]]></title>
   <link href="http://bitvegeta.github.io/tags/finder/atom.xml" rel="self"/>
   <link href="http://bitvegeta.github.io/"/>
-  <updated>2015-04-16T09:44:14+08:00</updated>
+  <updated>2015-04-16T09:44:42+08:00</updated>
   <id>http://bitvegeta.github.io/</id>
   <author>
     <name><![CDATA[Bitegeta]]></name>
@@ -24,13 +24,18 @@
 
 <h4 id="section">1.在终端输入命令行控制</h4>
 
-<p>{% codeblock lang:ruby “显示／隐藏系统文件命令” %}
-# 显示所有隐藏文件：
-$ defaults write com.apple.finder AppleShowAllFiles -bool true</p>
-
-<h1 id="section-1">隐藏所有隐藏文件：</h1>
-<p>$ defaults write com.apple.finder AppleShowAllFiles -bool false
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>“显示／隐藏系统文件命令” </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># 显示所有隐藏文件：</span>
+</span><span class='line'><span class="err">$</span> <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="o">-</span><span class="n">bool</span> <span class="kp">true</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1 id=&quot;section-1&quot;&gt;隐藏所有隐藏文件：&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="err">$</span> <span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="o">-</span><span class="n">bool</span> <span class="kp">false</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>这种方法简单有效，但是容易忘记代码，需要做好笔记，推荐一种更直接的办法：</p>
 
@@ -38,13 +43,18 @@ $ defaults write com.apple.finder AppleShowAllFiles -bool true</p>
 
 <p>按照自己的终端修改<code>~/.zshrc</code>或<code>~/.bash_profile</code>文件，添加下面的两行代码，设置如下：</p>
 
-<p>{% codeblock lang:ruby “设置 alias 快捷控制” %}
-# 显示命令的alias
-alias showFiles=’defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app’ </p>
-
-<h1 id="alias">隐藏命令的alias</h1>
-<p>alias hideFiles=’defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app’
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>“设置 alias 快捷控制” </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># 显示命令的alias</span>
+</span><span class='line'><span class="k">alias</span> <span class="n">showFiles</span><span class="o">=</span><span class="err">’</span><span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="no">YES</span><span class="p">;</span> <span class="n">killall</span> <span class="no">Finder</span> <span class="sr">/System/</span><span class="no">Library</span><span class="o">/</span><span class="no">CoreServices</span><span class="o">/</span><span class="no">Finder</span><span class="o">.</span><span class="n">app</span><span class="err">’</span> <span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1 id=&quot;alias&quot;&gt;隐藏命令的alias&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="k">alias</span> <span class="n">hideFiles</span><span class="o">=</span><span class="err">’</span><span class="n">defaults</span> <span class="n">write</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span> <span class="no">NO</span><span class="p">;</span> <span class="n">killall</span> <span class="no">Finder</span> <span class="sr">/System/</span><span class="no">Library</span><span class="o">/</span><span class="no">CoreServices</span><span class="o">/</span><span class="no">Finder</span><span class="o">.</span><span class="n">app</span><span class="err">’</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>现在就可以用“showFiles”／“hideFiles”来控制显示／隐藏系统文件了。</p>
 
@@ -54,17 +64,26 @@ alias showFiles=’defaults write com.apple.finder AppleShowAllFiles YES; killal
 
 <p>在［应用程序］里，找到并打开［Automator］软件，选择建立［服务］文件，在左侧［资源库］栏找到［实用工具］栏目，选择其中的［运行 shell 脚本］，拖动到右侧编辑区域，输入以下脚本代码：</p>
 
-<p>{% codeblock lang:ruby “Show／Hide Files 控制脚本” %}
-  STATUS=<code>defaults read com.apple.finder AppleShowAllFiles</code> 
-  if [ $STATUS == YES ]; 
-  then 
-      defaults write com.apple.finder AppleShowAllFiles NO 
-  else 
-      defaults write com.apple.finder AppleShowAllFiles YES 
-  fi 
-  killall Finder
-  /System/Library/CoreServices/Finder.app
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>“Show／Hide Files 控制脚本” </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>  <span class="no">STATUS</span><span class="o">=&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">defaults</span> <span class="n">read</span> <span class="n">com</span><span class="o">.</span><span class="n">apple</span><span class="o">.</span><span class="n">finder</span> <span class="no">AppleShowAllFiles</span><span class="o">&lt;</span><span class="sr">/code&gt; </span>
+</span><span class='line'><span class="sr">  if [ $STATUS == YES ]; </span>
+</span><span class='line'><span class="sr">  then </span>
+</span><span class='line'><span class="sr">      defaults write com.apple.finder AppleShowAllFiles NO </span>
+</span><span class='line'><span class="sr">  else </span>
+</span><span class='line'><span class="sr">      defaults write com.apple.finder AppleShowAllFiles YES </span>
+</span><span class='line'><span class="sr">  fi </span>
+</span><span class='line'><span class="sr">  killall Finder</span>
+</span><span class='line'><span class="sr">  /</span><span class="no">System</span><span class="o">/</span><span class="no">Library</span><span class="o">/</span><span class="no">CoreServices</span><span class="o">/</span><span class="no">Finder</span><span class="o">.</span><span class="n">app</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>在［服务“收到”］的下拉菜单中选择“没有输入”，［位于］选择“Finder”，然后“Command＋s”储存脚本，将其命名为“Show／Hide Files”。然后打开[Finder]的“服务”菜单，就可以看到刚才制作的“Show／Hide Files”选项。打开 Mac 的“系统偏好设置”，找到“键盘”里面的快捷键选项卡，设置其快捷方式为“Command+h”。</p>
 
