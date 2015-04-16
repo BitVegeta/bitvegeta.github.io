@@ -239,11 +239,25 @@
 
 <ul>
   <li>复制 <code>tag_cloud.rb</code> 到 <code>/plugins</code> 目录；</li>
-  <li>
-    <p>复制以下代码到 <code>/source/_includes/custom/asides/tags.html</code>。</p>
+  <li>复制以下代码到 <code>/source/_includes/custom/asides/tags.html</code>。</li>
+</ul>
 
-    <p>其中的 tag_cloud 参数，<code>style :para</code>指定不使用li来分割，<code>limit</code>限定10个tag，<code>font-size</code> 指定tag的大小范围，具体参数参看官方文档。</p>
-  </li>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">   &lt;section&gt;
+</span><span class="line">     &lt;h1&gt;Tags&lt;/h1&gt;
+</span><span class="line">     &lt;ul class="tag-cloud"&gt;
+</span><span class="line">       {\% tag_cloud font-size: 90-210%, limit: 10, style: para \%}
+</span><span class="line">     &lt;/ul&gt;
+</span><span class="line">   &lt;/section&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>其中的 tag_cloud 参数，<code>style :para</code>指定不使用li来分割，<code>limit</code>限定10个tag，<code>font-size</code> 指定tag的大小范围，具体参数参看官方文档。</p>
+
+<ul>
   <li>
     <p>最后，在 _config.xml 的 default_asides 中添加这个 tag cloud ，如下：</p>
 
