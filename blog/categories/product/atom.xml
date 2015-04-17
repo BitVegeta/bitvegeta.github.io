@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类：product | 精神和时间的小屋]]></title>
+  <link href="http://bitvegeta.github.io/blog/categories/product/atom.xml" rel="self"/>
+  <link href="http://bitvegeta.github.io/"/>
+  <updated>2015-04-17T09:24:02+08:00</updated>
+  <id>http://bitvegeta.github.io/</id>
+  <author>
+    <name><![CDATA[bitvegeta]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[收集－好的产品｜运营｜设计点滴]]></title>
+    <link href="http://bitvegeta.github.io/blog/a-collection-of-good-design-for-applications/"/>
+    <updated>2015-04-17T08:50:32+08:00</updated>
+    <id>http://bitvegeta.github.io/blog/a-collection-of-good-design-for-applications</id>
+    <content type="html"><![CDATA[<p>1.拉勾网</p>
+
+<ul>
+  <li><strong>简历投递实时数据刷新</strong>：
+    <ul>
+      <li>用户的感知更多，网站更透明，所以对网站信任度增加；</li>
+      <li>好工作机会有限，找工作的认知变成了抢机会营销自己，有“占便宜”和“需要抢”的心理在里面，将求职欲望和本能冲动联系在一起；想“试试看”的人越来越多； </li>
+    </ul>
+  </li>
+  <li><strong>薪酬范围合理上调</strong>：
+    <ul>
+      <li>相信只有很小比例的人能拿到薪资范围的最高薪，但这吊足了大部分人的欲望</li>
+      <li>强化了认知洗脑：好工作是“跳槽”换出来的，增强了对招聘网站的依赖性，并形成“找／换好工作就想到拉勾网的条件反射；</li>
+    </ul>
+  </li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>
