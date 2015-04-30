@@ -5,22 +5,17 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Zsh: No Matches Found 问题解决方法 - 精神和时间的小屋</title>
+  <title>分类：psychology - 精神和时间的小屋</title>
 <!--
   <meta name="author" content="bitvegeta">
 
   
-  <meta name="description" content="我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交 Octopress 博客 rake new_post 命令后报错： "zsh: no matches found 错误" 1
-2
-3
-4
-// 输入
-$ rake new_post[&quot;example-- &hellip;">
+  <meta name="description" content="Category: psychology">
   
 &#8211;>
 <meta name="author" content="bitvegeta">
 
-<meta name="description" content="一个程序菜鸟，产品小白，心灵鸡汤界明日之星的超级赛亚自我修炼！">
+<meta name="description" content="Category: psychology">
 <meta name="keywords" content="Golang, JavaScript, PM, Swift, Study Notes, 学习心理, 读书笔记, 产品设计">
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,7 +24,7 @@ $ rake new_post[&quot;example-- &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bitvegeta.github.io/blog/zsh-no-matches-found">
+  <link rel="canonical" href="http://bitvegeta.github.io/blog/categories/psychology">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="精神和时间的小屋" type="application/atom+xml">
@@ -82,134 +77,36 @@ $ rake new_post[&quot;example-- &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Zsh: No Matches Found 问题解决方法</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-12-04T22:34:56+08:00'><span class='date'>“2014年12月4日“</span> <span class='time'>10:34 pm</span></time>
-        
-           | <a href="#disqus_thread"
-             data-disqus-identifier="http://bitvegeta.github.io">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">分类：psychology</h1>
     
   </header>
-
-
-<div class="entry-content"><p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交 Octopress 博客 <code>rake new_post</code> 命令后报错：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;zsh: no matches found 错误&#8221; </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">//</span> <span class="err">输入</span>
-</span><span class="line"><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
-</span><span class="line"><span class="sr">//</span> <span class="err">显示错误</span>
-</span><span class="line"><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>求助万能的Google，找到了问题原因和解决办法：<!--more--></p>
-
-<p><strong>原因：</strong></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Zsh会自动把类似‘*，(，</td>
-      <td>，&lt;，[，?’等符号识别为一种通配符；</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>解决办法一：</strong></p>
-
-<p>按照下面方式输入：</p>
-
-<p>此时输入  example–title 即可。</p>
-
-<p><strong>解决办法二：</strong></p>
-
-<p>取消zsh的通配(GLOB),修改 ~/.zshrc 文件，添加下列内容：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">alias rake="noglob rake"</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>这个方法较为彻底。</p>
-
-<p><strong>解决办法三：</strong></p>
-
-<p>使用转义字符’&#8217;，帮助 Zsh 读懂命令；</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">$ rake new_post\["This is New Post"\] </span></code></pre></td></tr></table></div></figure></notextile></div>
-<hr />
-
-<p>P.S.其余的 Zsh: no matches found 问题都可以用类似方法解决。</p>
-
-<p><strong>参考资料</strong></p>
-
-<p>[1]<a href="https://github.com/imathis/octopress/issues/117">Not compatible with Zsh #117</a></p>
-</div>
-
-
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">bitvegeta</span></span>
-
-      
+  <div id="blog-archives" class="category">
 
 
 
-
-<time class='entry-date' datetime='2014-12-04T22:34:56+08:00'><span class='date'>“2014年12月4日“</span> <span class='time'>10:34 pm</span></time>
-      
-
-<span class="categories">
   
-    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  <h2>2015</h2>
+
+<article>
   
-</span>
+<h1><a href="/blog/day-day-up/">Day Day Up</a></h1>
+<time datetime="2015-04-30T07:51:32+08:00" pubdate><span class='month'>04月</span> <span class='day'>30日</span> <span class='year'>2015</span></time>
+
+<footer>
+  <span class="categories">分类： <a class='category' href='/blog/categories/psychology/'>psychology</a></span>
+</footer>
 
 
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/liquid-exception-undefined-method-sort/" title="Previous Post: Liquid Exception: undefined method sort 错误解决方法">&laquo; Liquid Exception: undefined method sort 错误解决方法</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/sublime-text-shell-command/" title="Next Post: 终端用命令行调用 Sublime Text 2">终端用命令行调用 Sublime Text 2 &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
+
+  
+</article>
 
 </div>
 
@@ -267,6 +164,7 @@ $ rake new_post[&quot;example-- &hellip;">
 </aside>
 
 
+
     </div>
   </div>
   <footer role="contentinfo"><!-- MathJax -->
@@ -310,10 +208,7 @@ $ rake new_post[&quot;example-- &hellip;">
       var disqus_shortname = 'BitVegeta';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://bitvegeta.github.io/blog/zsh-no-matches-found/';
-        var disqus_url = 'http://bitvegeta.github.io/blog/zsh-no-matches-found/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

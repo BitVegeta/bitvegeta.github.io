@@ -5,17 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Zsh: No Matches Found 问题解决方法 - 精神和时间的小屋</title>
+  <title>Day Day Up - 精神和时间的小屋</title>
 <!--
   <meta name="author" content="bitvegeta">
 
   
-  <meta name="description" content="我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交 Octopress 博客 rake new_post 命令后报错： "zsh: no matches found 错误" 1
-2
-3
-4
-// 输入
-$ rake new_post[&quot;example-- &hellip;">
+  <meta name="description" content="=== 4.29/2015 接受了入职小培训，Kevin 简单介绍了团队文化和业务。会后我忍不住插嘴点评了“核心价值观”，想表达“最高境界的洗脑是自我洗脑／员工基于个人意志追求的价值观正好跟团队要求的价值match时。。。”的意思，但是没搂住，没总结好，反而显得否定调侃了 Kevin 的洗脑工作， &hellip;">
   
 &#8211;>
 <meta name="author" content="bitvegeta">
@@ -29,7 +24,7 @@ $ rake new_post[&quot;example-- &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bitvegeta.github.io/blog/zsh-no-matches-found">
+  <link rel="canonical" href="http://bitvegeta.github.io/blog/day-day-up">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="精神和时间的小屋" type="application/atom+xml">
@@ -86,7 +81,7 @@ $ rake new_post[&quot;example-- &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Zsh: No Matches Found 问题解决方法</h1>
+      <h1 class="entry-title">Day Day Up</h1>
     
     
       <p class="meta">
@@ -95,7 +90,7 @@ $ rake new_post[&quot;example-- &hellip;">
 
 
 
-<time class='entry-date' datetime='2014-12-04T22:34:56+08:00'><span class='date'>“2014年12月4日“</span> <span class='time'>10:34 pm</span></time>
+<time class='entry-date' datetime='2015-04-30T07:51:32+08:00'><span class='date'>“2015年4月30日“</span> <span class='time'>7:51 am</span></time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://bitvegeta.github.io">Comments</a>
@@ -105,59 +100,90 @@ $ rake new_post[&quot;example-- &hellip;">
   </header>
 
 
-<div class="entry-content"><p>我的终端环境是 iTerm2 + Zsh 组合，今天发现，在Zsh环境下提交 Octopress 博客 <code>rake new_post</code> 命令后报错：</p>
+<div class="entry-content"><p>===</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;zsh: no matches found 错误&#8221; </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">//</span> <span class="err">输入</span>
-</span><span class="line"><span class="err">$</span> <span class="n">rake</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
-</span><span class="line"><span class="sr">//</span> <span class="err">显示错误</span>
-</span><span class="line"><span class="ss">zsh</span><span class="p">:</span> <span class="n">no</span> <span class="n">matches</span> <span class="ss">found</span><span class="p">:</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;example--title&quot;</span><span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>4.29/2015</p>
 
-<p>求助万能的Google，找到了问题原因和解决办法：<!--more--></p>
+<p>接受了入职小培训，Kevin 简单介绍了团队文化和业务。会后我忍不住插嘴点评了“核心价值观”，想表达“最高境界的洗脑是自我洗脑／员工基于个人意志追求的价值观正好跟团队要求的价值match时。。。”的意思，但是没搂住，没总结好，反而显得否定调侃了 Kevin 的洗脑工作，有点作死的感觉!汗，敢发言是好，但口才不佳，还没打腹稿也不能随便瞎BB啊。</p>
 
-<p><strong>原因：</strong></p>
+<p>值得记录的有几点：</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Zsh会自动把类似‘*，(，</td>
-      <td>，&lt;，[，?’等符号识别为一种通配符；</td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li>
+    <p>对于“透明沟通”要求所折射出来人格问题</p>
 
-<p><strong>解决办法一：</strong></p>
+    <p>“有问题应及时透明正面沟通”。不要随便在背后说自己团队或某个人的坏话，哪怕是离职之后都应当注意言辞。如果爱惜自己的羽毛，务必谨言。虽然我的人品绝不至于那样，但最怕有情绪时容易失控，说漏嘴。这给局外人的印象是很不好的，因为他并不曾了解过你的真实处境，所以不能对你的抱怨情绪产生共鸣，反而会怀疑你的人品和成熟度以及你言辞的真实性，从而导致道德上的不信任感。我自离职后对外人一字未提之前的不爽，但是今天面试时，却忍不住情绪翻涌，说了一些对之前团队氛围否定态度的话，虽不尖刻，但我明显能感觉到 Kevin 的关切和考量。<strong>换位思考和总结</strong>:</p>
 
-<p>按照下面方式输入：</p>
+    <blockquote>
+      <p>加入一个新团队或开启新旅程的唯一理由应该是这个新事物点燃了你真正的Passion，而不是因为它比之前的要好，或者之前的太差；</p>
+    </blockquote>
 
-<p>此时输入  example–title 即可。</p>
+    <blockquote>
+      <p>现雇主最关注的是你能做什么，你从过往的经历学到了什么，你是否对现在的业务充满激情，而不是你之前过的开不开心。</p>
+    </blockquote>
 
-<p><strong>解决办法二：</strong></p>
+    <blockquote>
+      <p>能快速放下过去的不爽和情绪包袱是心智健全的表现，习惯抱怨的人会给自己和别人带来负能量，需要心理建设；</p>
+    </blockquote>
 
-<p>取消zsh的通配(GLOB),修改 ~/.zshrc 文件，添加下列内容：</p>
+    <blockquote>
+      <p>人应当尽量做到享受自己人生的每个阶段，哪怕那段经历你过的真心艰苦；不要企望别人真正了解你的感受，甚至是你的亲人；你所应该做到就是：保持微笑，给自己和周围的人正能量！</p>
+    </blockquote>
+  </li>
+</ul>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">alias rake="noglob rake"</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>这个方法较为彻底。</p>
+<p>写到这里，我忍不住乐了，不仅因为从逻辑上说服了自己，更重要的是，我有一个乐观可爱的女友一直在给我正能量的影响！</p>
 
-<p><strong>解决办法三：</strong></p>
+<ul>
+  <li>
+    <p>每日精进</p>
 
-<p>使用转义字符’&#8217;，帮助 Zsh 读懂命令；</p>
+    <p>这跟我内在追求是一致的，而且这也是我自己的痛点。</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">$ rake new_post\["This is New Post"\] </span></code></pre></td></tr></table></div></figure></notextile></div>
-<hr />
+    <p>在上一个团队所受的憋屈给我自尊心造成很大的伤害，心里憋着一股火，着急想在工作和事业上证明自己，这也是我昨天有点表现激进的原因。但是正如尼采所说<strong>“人一切的痛苦，本质上都是对自己的无能的愤怒”</strong>，我深刻明白，最让自己恼火的是，我在自尊心受挫时，无法进行强有力的反击，因为自己是那么的。。。不行！尤其是当我试图换个工作，想要求一个体面的薪水时被动的局面更让我恼火！</p>
 
-<p>P.S.其余的 Zsh: no matches found 问题都可以用类似方法解决。</p>
+    <p>我也经常堕入自责的情绪中，变得脾气暴躁和焦虑。</p>
 
-<p><strong>参考资料</strong></p>
+    <p>但我在慢慢的改进，学会化解这些负面情绪，让自己淡定冷静下来，克服诸多弱点，保持学习进步；总的目标也可以总结一下：</p>
 
-<p>[1]<a href="https://github.com/imathis/octopress/issues/117">Not compatible with Zsh #117</a></p>
+    <blockquote>
+      <p>做减法，聚焦目标；时间管理，健康管理，耐心坚持；</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>还得感谢我的宝贝女友，想到她能使我变得开心平和！爱你！：）</p>
+
+<ul>
+  <li>
+    <p>社交恐惧和幽默谈吐</p>
+
+    <p>我有一定程度的社交恐惧，具体表现为在生人场面会感到拘谨，从小内向羞涩，甚至不敢跟女孩子说话，过度关注自己在别人眼中的表现，俗话说放不开；工作后有改善，但是依然有明显的短板；容易给人过于拘谨或过于严肃的感觉，不容易亲近；</p>
+
+    <p>跟女朋友一起总结发现，那些当团队领导不见的技术多牛，智商多高，但几乎个个都是高情商段子手，不一定句句逗人乐，但一定会给人说话办事很舒服的感觉，那些受欢迎的同事往往也表现类似；</p>
+
+    <p>废话不多说了，总结一下：</p>
+
+    <blockquote>
+      <p>自己放不开会给别人也造成压力，不舒服感；</p>
+    </blockquote>
+
+    <blockquote>
+      <p>保持微笑，眼神敢于直视和停留，不要扫视，以免让人感觉不被尊重；</p>
+    </blockquote>
+
+    <blockquote>
+      <p>学习幽默的表达方式，幽默不仅是彰显人格魅力的沁心香气，也是填补人格缺陷的最佳药剂；</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>薪资不满意怎么办</p>
+
+    <p>额，我现在的对策是：暂时忘掉这些，精力集中在自己可以学习进步的地方，相信自我强大是下一步变好的基础，而以后怎么办？过一个月后，三个月后看看自己的水平再说！</p>
+
+    <p>感谢宝贝女友的支持和理解！爱你！：）</p>
+  </li>
+</ul>
 </div>
 
 
@@ -175,12 +201,12 @@ $ rake new_post[&quot;example-- &hellip;">
 
 
 
-<time class='entry-date' datetime='2014-12-04T22:34:56+08:00'><span class='date'>“2014年12月4日“</span> <span class='time'>10:34 pm</span></time>
+<time class='entry-date' datetime='2015-04-30T07:51:32+08:00'><span class='date'>“2015年4月30日“</span> <span class='time'>7:51 am</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+    <a class='category' href='/blog/categories/psychology/'>psychology</a>
   
 </span>
 
@@ -196,10 +222,8 @@ $ rake new_post[&quot;example-- &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/liquid-exception-undefined-method-sort/" title="Previous Post: Liquid Exception: undefined method sort 错误解决方法">&laquo; Liquid Exception: undefined method sort 错误解决方法</a>
+        <a class="basic-alignment left" href="/blog/a-collection-of-good-design-for-applications/" title="Previous Post: 收集_产品｜运营｜设计好点子 ">&laquo; 收集_产品｜运营｜设计好点子 </a>
       
-      
-        <a class="basic-alignment right" href="/blog/sublime-text-shell-command/" title="Next Post: 终端用命令行调用 Sublime Text 2">终端用命令行调用 Sublime Text 2 &raquo;</a>
       
     </p>
   </footer>
@@ -311,8 +335,8 @@ $ rake new_post[&quot;example-- &hellip;">
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://bitvegeta.github.io/blog/zsh-no-matches-found/';
-        var disqus_url = 'http://bitvegeta.github.io/blog/zsh-no-matches-found/';
+        var disqus_identifier = 'http://bitvegeta.github.io/blog/day-day-up/';
+        var disqus_url = 'http://bitvegeta.github.io/blog/day-day-up/';
         var disqus_script = 'embed.js';
       
     (function () {
